@@ -1,0 +1,40 @@
+p img {
+  height: 1.0em;
+  vertical-align: baseline;
+}
+
+/*table.schedule {
+  border: double 2px;
+}*/
+
+table.schedule td {
+  border: double 2px;
+}
+
+/*h3 a {
+  height: 0.3px;
+  vertical-align: baseline;
+}*/
+
+h3 img, h3 canvas {
+  vertical-align: text-top;
+}
+
+.legend {
+  float: right;
+}
+
+th.center {
+  text-align: center;
+}
+
+.row-highlight {
+  background-color: #B7D1EC; /*#F0FFF0;*/
+}
+
+p sup {
+  font-size: 50%;
+  vertical-align: super;
+}
+
+.lightgrey { color: lightgrey; }

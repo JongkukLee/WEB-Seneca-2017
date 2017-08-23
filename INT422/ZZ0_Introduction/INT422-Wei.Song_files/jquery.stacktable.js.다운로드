@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://ict.senecacollege.ca/sites/all/themes/seneca_bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/?q=home" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/?q=node/544" />
+  <title>Welcome | ICT Seneca - School of Information &amp; Communications Technology</title>
+  <link type="text/css" rel="stylesheet" href="//ict.senecacollege.ca/sites/default/files/public_files/advagg_css/css__9cWqptSUNYq5YedfIwh33VxtugFVWjDdEsblT8GhLKI__quUjyhSfbEukHj8a0hYvzm9VTmPALmSZvA0xfM_Oxzo__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//ict.senecacollege.ca/sites/default/files/public_files/advagg_css/css__VIZVuFEB1hw7QCOn8W7MWF0rm5Nte4mbIYied-_IA50__8dRhD9-yXht5zVU8vbqZ6ccYbwK0ujO_xqkC0mLV36g__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//ict.senecacollege.ca/sites/default/files/public_files/advagg_css/css__9ZRFQMADJZMitrdX1-TDcHW6etI23W7hZnM2HX9qzcE__IjkdMHBHZwK4N60spc91OpWTsLzp4rOHZyTWluBE2iE__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//ict.senecacollege.ca/sites/default/files/public_files/advagg_css/css__CY0vWWiCIjwu6kbNUOgGgKiAKcqlDNKbPEC_8z3uuG8__WRa03PA9DDbeTOiXRoYzEPXba4L9Jd2ElWwjCLEVQvw__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.css" media="all" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")</script>
+<script src="//ict.senecacollege.ca/sites/default/files/public_files/advagg_js/js__H5AFmq1RrXKsrazzPq_xPQPy4K0wUKqecPjczzRiTgQ__pvMy9xuoSPQFd66KrT2VKWaMlgLMOpiRiOjd0EZRxs8__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="//ict.senecacollege.ca/sites/default/files/public_files/advagg_js/js__a2MZdSpN5eMQEnkCxU1li7WtovsL5LNqkHBFVo4Zl2Y__A5bO_Oglu-UPcvWmpTCkajBK-XJAl_3iVBGA8GwXgPI__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.js"></script>
+<script src="//ict.senecacollege.ca/sites/default/files/public_files/advagg_js/js__yXGqaFKDgRsbu6zZiBrmc5TNVRgV6AKZN95o1ywOgaI__puiJsjM8Rd6cjAZ3nfPB81rOEYxEhGa8Jaw2wFBTcYs__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.js"></script>
+<script src="//ict.senecacollege.ca/sites/default/files/public_files/advagg_js/js__jz6aFrJZPGLqUxSKk6HH2ccwa-W9meT_nHDmJ3plcQU__Ev3eZ44RqkYbUpp1kAeWVnR2Aha6bMOS7JNyIb6EAHQ__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"seneca_bootstrap","theme_token":"-fLaylxg5XhSNcMioo0LOCBYKeykDNuKlBLr2sCekWY","css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/footer_sitemap\/footer_sitemap.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/dhtml_menu\/dhtml_menu.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/custom_search\/custom_search.css":1,"sites\/all\/modules\/responsive_dropdown_menus\/theme\/responsive-dropdown-menus.css":1,"\/\/netdna.bootstrapcdn.com\/bootstrap\/3.0.2\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bootstrap\/css\/overrides.css":1,"sites\/all\/themes\/seneca_bootstrap\/css\/style.css":1},"js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/ajax.aspnetcdn.com\/ajax\/jQuery\/jquery-1.8.2.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/netdna.bootstrapcdn.com\/bootstrap\/3.0.2\/js\/bootstrap.min.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/dhtml_menu\/dhtml_menu.js":1,"sites\/all\/modules\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/responsive_dropdown_menus\/theme\/responsive-dropdown-menus.js":1,"sites\/all\/themes\/seneca_bootstrap\/js\/seneca_bootstrap.js":1,"sites\/all\/themes\/seneca_bootstrap\/js\/jquery-cookie-1.4.1\/jquery.cookie.js":1}},"dhtmlMenu":{"nav":"none","animation":{"effects":{"height":"height","width":"width","opacity":"opacity"},"speed":"500"},"effects":{"siblings":"close-same-tree","children":"none","remember":"0"},"filter":{"type":"blacklist","list":{"menu-resource-service":"menu-resource-service","devel":0,"main-menu":0,"management":0,"menu-academics-programs-help-men":0,"menu-audience":0,"menu-community-menu":0,"menu-prospective-students":0,"menu-public-menu":0,"menu-student-menu":0,"navigation":0,"shortcut-set-1":0,"user-menu":0}}},"custom_search":{"form_target":"_self","solr":0},"extlink":{"extTarget":"_blank","extClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":"mailto"},"responsive_dropdown_menus":{"menu-aed---applied-electronics-d":"AED - Applied Electronics Design","menu-ast---applied-science-and-t":"AST - Applied Science and Technology Fundamentals","menu-bsd---bachelor-of-technolog":"BSD - Bachelor of Technology - Software Development","menu-bachelor-s-degrees":"Bachelor\u0027s Degrees","menu-cns---computer-networking-a":"CNS - Computer Networking and Technical Support","menu-cpa---computer-programming-":"CPA - Computer Programming and Analysis","menu-cpd---computer-programmer":"CPD - Computer Programmer","menu-cty---computer-systems-tech":"CTY - Computer Systems Technology","menu-dad---database-application-":"DAD - Database Application Developer","devel":"Development","menu-diploma-programs":"Diploma Programs","menu-ect---computer-engineering-":"ECT - Computer Engineering Technology","menu-een---electronics-engineeri":"EEN - Electronics Engineering Technician","menu-eet---electronics-engineeri":"EET - Electronics Engineering Technology","menu-elcb---electronics-engineer":"ELCB - Electronics Engineering Technician - Broadband Cable","menu-elcc---electronics-engineer":"ELCC - Electronics Engineering Technician - Computers","menu-elcm---electronics-engineer":"ELCM - Electronics Engineering Technician - Communications","menu-elm---electronics-engineeri":"ELM - Electronics Engineering Technology - Communications","menu-eln---electronics-engineeri":"ELN - Electronics Engineering Technology - Control Systems","menu-faculty-menu":"Faculty Menu","menu-former-electronics-engineer":"Former Electronics Engineering Technician Programs","menu-former-electronics-eng-tech":"Former Electronics Engineering Technology Programs","menu-future-students-menu":"Future Students Menu","menu-graduate-certificates":"Graduate Certificates","menu-ifs---bachelor-of-technolog":"IFS - Bachelor of Technology - Informatics and Security","menu-informatics-and-security":"Informatics and Security","menu-main-menu---tb":"Main Menu","menu-main-menu---login":"Main Menu","main-menu":"Main menu","management":"Management","navigation":"Navigation","menu-newnham-resources":"Newnham Resources","menu-pcb-lab":"PCB Lab","menu-pmc---project-management---":"PMC - Project Management - Information Technology","menu-resources-and-services-test":"Resources and Services","menu-student-resources":"Resources for Students","menu-sys366":"SYS366","menu-school-of-ict":"School of ICT","menu-academic-policy":"School of ICT Policies","menu-site-administration-":"Site Administration ","menu-software-developer":"Software Developer","user-menu":"User menu"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-544 node-type-ict-basic-page" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <header>
+	<a href="https://ict.senecacollege.ca" title="School of Information and Communications Technology" id="logo-hyperlink">
+		<div class="logo-container">
+			<img src="https://ict.senecacollege.ca/sites/all/themes/seneca_bootstrap/logo.png" alt="Home">
+		</div>
+	</a>
+</header>
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      <div class="region region-header">
+    <section id="block-responsive-dropdown-menus-menu-main-menu-login" class="block block-responsive-dropdown-menus clearfix">
+
+      
+  <ul id="menu-main-menu---login" class="menu-main-menu---login responsive-menu links"><li id="menu-item-1717" class="menu-item menu-parent menu-item-primary first"><nolink title="School of ICT" class="nolink">School of ICT</nolink><ul class="sub-menu tier-two"><li id="menu-item-1722" class="menu-item menu-item-secondary first"><a href="https://ict.senecacollege.ca/home" title="Home">Home</a></li>
+<li id="menu-item-1724" class="menu-item menu-item-secondary"><a href="https://ict.senecacollege.ca/staff-listing" title="Faculty &amp; staff">Faculty &amp; staff</a></li>
+<li id="menu-item-1725" class="menu-item menu-item-secondary last"><a href="https://ict.senecacollege.ca/contact-us" title="Contact us">Contact us</a></li>
+</ul></li>
+<li id="menu-item-1718" class="menu-item menu-parent menu-item-primary"><a href="https://ict.senecacollege.ca/programs" title="Programs">Programs</a><ul class="sub-menu tier-two"><li id="menu-item-1979" class="menu-item menu-parent menu-item-secondary first"><a href="https://ict.senecacollege.ca/programs/degrees" title="Degree">Degree</a><ul class="sub-menu tier-three"><li id="menu-item-1981" class="menu-item menu-item-tertiary first"><a href="https://ict.senecacollege.ca/program/bsd/overview" title="BSD - Software Development">BSD - Software Development</a></li>
+<li id="menu-item-1983" class="menu-item menu-item-tertiary last"><a href="https://ict.senecacollege.ca/program/ifs/overview" title="IFS - Informatics and Security">IFS - Informatics and Security</a></li>
+</ul></li>
+<li id="menu-item-1996" class="menu-item menu-parent menu-item-secondary"><a href="https://ict.senecacollege.ca/programs/diplomas" title="Diploma">Diploma</a><ul class="sub-menu tier-three"><li id="menu-item-2008" class="menu-item menu-item-tertiary first"><a href="https://ict.senecacollege.ca/program/cns/overview" title="CNS - Computer Networking and Technical Support">CNS - Computer Networking and Technical Support</a></li>
+<li id="menu-item-2009" class="menu-item menu-item-tertiary"><a href="https://ict.senecacollege.ca/program/cpa/overview" title="CPA - Computer Programming and Analysis">CPA - Computer Programming and Analysis</a></li>
+<li id="menu-item-2012" class="menu-item menu-item-tertiary"><a href="https://ict.senecacollege.ca/program/cpd/overview" title="CPD - Computer Programmer">CPD - Computer Programmer</a></li>
+<li id="menu-item-2013" class="menu-item menu-item-tertiary last"><a href="https://ict.senecacollege.ca/program/cty/overview" title="CTY - Computer Systems Technology">CTY - Computer Systems Technology</a></li>
+</ul></li>
+<li id="menu-item-1985" class="menu-item menu-parent menu-item-secondary"><a href="https://ict.senecacollege.ca/programs/certificates/" title="Certificates">Certificates</a><ul class="sub-menu tier-three"><li id="menu-item-1991" class="menu-item menu-item-tertiary first"><a href="https://ict.senecacollege.ca/program/dad/overview" title="DAD - Database Application Developer">DAD - Database Application Developer</a></li>
+<li id="menu-item-1993" class="menu-item menu-item-tertiary last"><a href="https://ict.senecacollege.ca/program/pmc/overview" title="PMC - Project Management">PMC - Project Management</a></li>
+</ul></li>
+<li id="menu-item-1997" class="menu-item menu-parent menu-item-secondary"><a href="https://ict.senecacollege.ca/programs/software/" title="Computer Programming">Computer Programming</a><ul class="sub-menu tier-three"><li id="menu-item-2021" class="menu-item menu-item-tertiary first"><a href="https://ict.senecacollege.ca/program/bsd/overview" title="BSD - Software Development">BSD - Software Development</a></li>
+<li id="menu-item-2024" class="menu-item menu-item-tertiary"><a href="https://ict.senecacollege.ca/program/cpa/overview" title="CPA - Computer Programming and Analysis">CPA - Computer Programming and Analysis</a></li>
+<li id="menu-item-2025" class="menu-item menu-item-tertiary"><a href="https://ict.senecacollege.ca/program/cpd/overview" title="CPD - Computer Programmer">CPD - Computer Programmer</a></li>
+<li id="menu-item-2027" class="menu-item menu-item-tertiary last"><a href="https://ict.senecacollege.ca/program/dad/overview" title="DAD - Database Application Developer">DAD - Database Application Developer</a></li>
+</ul></li>
+<li id="menu-item-1999" class="menu-item menu-parent menu-item-secondary last"><a href="https://ict.senecacollege.ca/programs/it/" title="Information Technology">Information Technology</a><ul class="sub-menu tier-three"><li id="menu-item-2029" class="menu-item menu-item-tertiary first"><a href="https://ict.senecacollege.ca/program/cns/overview" title="CNS - Computer Networking and Technical Support">CNS - Computer Networking and Technical Support</a></li>
+<li id="menu-item-2032" class="menu-item menu-item-tertiary"><a href="https://ict.senecacollege.ca/program/cty/overview" title="CTY - Computer Systems Technology">CTY - Computer Systems Technology</a></li>
+<li id="menu-item-2034" class="menu-item menu-item-tertiary"><a href="https://ict.senecacollege.ca/program/ifs/overview" title="IFS - Informatics and Security">IFS - Informatics and Security</a></li>
+<li id="menu-item-2035" class="menu-item menu-item-tertiary last"><a href="https://ict.senecacollege.ca/program/pmc/overview" title="PMC - Project Management">PMC - Project Management</a></li>
+</ul></li>
+</ul></li>
+<li id="menu-item-1719" class="menu-item menu-parent menu-item-primary"><a href="https://ict.senecacollege.ca/students/home" title="Students">Students</a><ul class="sub-menu tier-two"><li id="menu-item-1825" class="menu-item menu-item-secondary first"><a href="https://ict.senecacollege.ca/students/home" title="Current Students">Current Students</a></li>
+<li id="menu-item-1826" class="menu-item menu-item-secondary last"><a href="https://ict.senecacollege.ca/students/future-students" title="Future Students">Future Students</a></li>
+</ul></li>
+<li id="menu-item-1720" class="menu-item menu-item-primary"><a href="https://ict.senecacollege.ca/faculty/home" title="Faculty">Faculty</a></li>
+<li id="menu-item-1966" class="menu-item menu-parent menu-item-primary last"><nolink title="Seneca" class="nolink">Seneca</nolink><ul class="sub-menu tier-two"><li id="menu-item-1967" class="menu-item menu-item-secondary first"><a href="https://my.senecacollege.ca" title="My.Seneca (Blackboard) portal" target="_blank">My.Seneca (Blackboard) portal</a></li>
+<li id="menu-item-1968" class="menu-item menu-item-secondary"><a href="https://open.senecac.on.ca" title="Moodle portal" target="_blank">Moodle portal</a></li>
+<li id="menu-item-1978" class="menu-item menu-item-secondary"><a href="https://myseneca.ca" title="Email">Email</a></li>
+<li id="menu-item-1969" class="menu-item menu-item-secondary"><a href="https://studenterp.senecacollege.ca/psp/ps/EMPLOYEE/CAMP/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?null&amp;cmd=login&amp;errorCode=127&amp;languageCd=ENG" title="Student Centre" target="_blank">Student Centre</a></li>
+<li id="menu-item-1970" class="menu-item menu-item-secondary last"><a href="https://senecacollege.ca" title="Seneca public website" target="_blank">Seneca public website</a></li>
+</ul></li>
+</ul>
+</section> <!-- /.block -->
+  </div>
+ 
+	
+	
+	<!------------------------------------------------------>
+	
+		<div class="top-button-bar-logged-out">
+		<div class="top-menu-button">
+			<a href="https://ict.senecacollege.ca/settings">
+				<button>Settings</button>
+			</a>
+		</div>
+	
+		
+		<div class="top-menu-button">
+			<a href="https://ict.senecacollege.ca/user/login">
+				<button>Login</button>
+			</a>
+		</div>
+	
+	</div>
+		
+	<div class="clear-floats"></div>
+	
+	
+	<!------------------------------------------------------>
+	
+  </header> <!-- /#page-header -->
+
+
+  
+  <div class="row">
+
+    
+    <section class="col-sm-9">
+                  <a id="main-content"></a>
+                    <h1 class="page-header">Welcome</h1>
+                                                          <div class="region region-content">
+    <section id="block-views-view-announcement-block-3" class="block block-views clearfix">
+
+      
+  <div class="view view-view-announcement view-id-view_announcement view-display-id-block_3 view-dom-id-a1fb3a0749f42f1a9fd46ea7edb773f5">
+            <div class="view-header">
+      <p class="events-heading">Seneca@York School of ICT Announcements</p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      <table class="views-table cols-3 table" >
+         <thead>
+      <tr>
+                  <th >
+            Announcement          </th>
+                  <th class="views-field views-field-timestamp" >
+            Updated date          </th>
+                  <th class="views-field views-field-view-node" >
+            Link          </th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr class="odd views-row-first">
+                  <td class="announce-border" >
+            ULG 100 Course Information          </td>
+                  <td class="views-field views-field-timestamp" >
+            Thursday August 10, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/ulg-100-course-information">Details</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="announce-border" >
+            Your CPA, CPD &amp; BSD Academic Adviser - Myriam Rodriguez          </td>
+                  <td class="views-field views-field-timestamp" >
+            Friday August 18, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/your-cpa-cpd-bsd-academic-adviser-myriam-rodriguez">Details</a>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="announce-border" >
+            Your CNS, CTY, IFS, DAD &amp; PMC Academic Adviser          </td>
+                  <td class="views-field views-field-timestamp" >
+            Friday August 18, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/your-cns-cty-ifs-dad-pmc-academic-adviser">Details</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="announce-border" >
+            Fall 2017 - WTP100 Classes for Work Integrated Learning Applicants          </td>
+                  <td class="views-field views-field-timestamp" >
+            Friday August 11, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/fall-2017-wtp100-classes-work-integrated-learning-applicants">Details</a>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="announce-border" >
+            Course Add and Drop Tutorials          </td>
+                  <td class="views-field views-field-timestamp" >
+            Tuesday August 1, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/course-add-and-drop-tutorials">Details</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="announce-border" >
+            Fall 2017 - Lab Assistants          </td>
+                  <td class="views-field views-field-timestamp" >
+            Monday July 31, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/fall-2017-lab-assistants">Details</a>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="announce-border" >
+            Fall-term enrolment, and important dates          </td>
+                  <td class="views-field views-field-timestamp" >
+            Wednesday July 5, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/fall-term-enrolment">Details</a>          </td>
+              </tr>
+          <tr class="even views-row-last">
+                  <td class="announce-border" >
+            My Planet Fellowship Opportunity for Students          </td>
+                  <td class="views-field views-field-timestamp" >
+            Thursday March 30, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/my-planet-fellowship-opportunity-students">Details</a>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section> <!-- /.block -->
+<section id="block-views-view-announcement-block-2" class="block block-views clearfix">
+
+      
+  <div class="view view-view-announcement view-id-view_announcement view-display-id-block_2 view-dom-id-914bc29bb3d398e99882d5375f3607af">
+            <div class="view-header">
+      <p class="events-heading">School of ICT Announcements</p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      <table class="views-table cols-3 table" >
+         <thead>
+      <tr>
+                  <th >
+            Announcement          </th>
+                  <th class="views-field views-field-timestamp" >
+            Date Posted or Revised          </th>
+                  <th class="views-field views-field-view-node" >
+            Link          </th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr class="odd views-row-first">
+                  <td class="announce-border" >
+            ULG 100 Course Information          </td>
+                  <td class="views-field views-field-timestamp" >
+            Thursday August 10, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/ulg-100-course-information">Details</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="announce-border" >
+            Your CPA, CPD &amp; BSD Academic Adviser - Myriam Rodriguez          </td>
+                  <td class="views-field views-field-timestamp" >
+            Friday August 18, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/your-cpa-cpd-bsd-academic-adviser-myriam-rodriguez">Details</a>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="announce-border" >
+            Your CNS, CTY, IFS, DAD &amp; PMC Academic Adviser          </td>
+                  <td class="views-field views-field-timestamp" >
+            Friday August 18, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/your-cns-cty-ifs-dad-pmc-academic-adviser">Details</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="announce-border" >
+            Fall 2017 - WTP100 Classes for Work Integrated Learning Applicants          </td>
+                  <td class="views-field views-field-timestamp" >
+            Friday August 11, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/fall-2017-wtp100-classes-work-integrated-learning-applicants">Details</a>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="announce-border" >
+            Course Add and Drop Tutorials          </td>
+                  <td class="views-field views-field-timestamp" >
+            Tuesday August 1, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/course-add-and-drop-tutorials">Details</a>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="announce-border" >
+            Fall 2017 - Lab Assistants          </td>
+                  <td class="views-field views-field-timestamp" >
+            Monday July 31, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/fall-2017-lab-assistants">Details</a>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="announce-border" >
+            Fall-term enrolment, and important dates          </td>
+                  <td class="views-field views-field-timestamp" >
+            Wednesday July 5, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/fall-term-enrolment">Details</a>          </td>
+              </tr>
+          <tr class="even views-row-last">
+                  <td class="announce-border" >
+            My Planet Fellowship Opportunity for Students          </td>
+                  <td class="views-field views-field-timestamp" >
+            Thursday March 30, 2017          </td>
+                  <td class="views-field views-field-view-node" >
+            <a href="/?q=content/my-planet-fellowship-opportunity-students">Details</a>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section> <!-- /.block -->
+<section id="block-block-32" class="block block-block clearfix">
+
+      
+  <p class="events-heading">Recent Class Cancellations</p>
+
+<div id="class-cancellations">&nbsp;</div>
+
+</section> <!-- /.block -->
+<section id="block-block-27" class="block block-block clearfix">
+
+      
+  <p class="events-heading">School of ICT Event Calendar</p>
+
+<div id="calendar">&nbsp;</div>
+
+</section> <!-- /.block -->
+<section id="block-system-main" class="block block-system clearfix">
+
+      
+                        <span property="dc:title" content="Welcome" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content node-ict-basic-page">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="container">
+<div class="row">
+<div class="col-lg-5 hidden-sm hidden-md lead">
+<p>Seneca's School of Information and Communications Technology is a recognized leader in developing and delivering high-quality and relevant academic programs in these study areas:</p>
+<ul><li>Computer programming</li>
+<li>Information technology administration</li>
+<li>Electronics engineering technology</li>
+</ul></div>
+<div class="hidden-lg hidden-xl lead" style="width: 75%">
+<p>Seneca's School of Information and Communications Technology is a recognized leader in developing and delivering high-quality and relevant academic programs in these study areas:</p>
+<ul><li>Computer programming</li>
+<li>Information technology administration</li>
+<li>Electronics engineering technology</li>
+</ul></div>
+<div class="carousel slide col-md-4" data-ride="carousel" id="program-types">
+<div class="carousel-inner" role="listbox">
+<div class="item active"><img alt="Programming" src="/sites/default/files/public_files/ict-software-400.jpg" /></div>
+<div class="item"><img alt="IT Admin" src="/sites/default/files/public_files/ict-itadmin-400.jpg" /></div>
+<div class="item"><img alt="Electronics" src="/sites/default/files/public_files/ict-electronics-400.jpg" /></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<h2>Program credentials</h2>
+<p>The School offers a range of programs - the most in Ontario - leading to different types of credentials:</p>
+<ul><li>Bachelor's degree</li>
+<li>Diploma</li>
+<li>Certificate</li>
+</ul><p><a href="programs">Learn more about our programs</a></p>
+<h2>Faculty and staff</h2>
+<p>Our programs are delivered by over 100 qualified and experienced faculty, and supported by in-class and administrative staff.</p>
+<p>Ontario College faculty, as a group, bring years of industry experience into the classroom. Many of our faculty members have earned teaching awards, while others are involved in leading-edge applied research, supported by senior students in our programs.</p>
+<h2>Campus</h2>
+<p>The <strong>Seneca @ York campus</strong> - on the York University Keele campus - is home to our <em>computer programming</em> and <em>information technology administration</em> programs.</p>
+<!--<p>Seneca&#39;s main <strong>Newnham campus</strong> is home to our <em>electronics and computer engineering technology</em>&nbsp;programs.</p>--></div>
+<div class="col-md-4">
+<h2>Program benefits</h2>
+<p>Our programs offer these benefits:</p>
+<ul><li>Faculty with industry expertise</li>
+<li>Modern and continually evolving curriculum</li>
+<li>Accredited programs</li>
+<li>Program transfer opportunities, including diploma-to-degree</li>
+<li>Modern well-equipped facilities</li>
+<li>Paid co-op work placements in most programs</li>
+<li>Excellent reputation with employers</li>
+<li>High graduate placement rates</li>
+</ul><h2>Careers</h2>
+<p>Our programs lead to dynamic and challenging professions with countless rewards and many opportunities in Canada, the United States and abroad. They offer highly competitive salaries, flexible full-time or part-time, contract and consultant work schedules and a variety of career possibilities.</p>
+</div>
+<div class="col-md-4">
+<h2>Applied research</h2>
+<p>Seneca's world-renowned Centre for Development of Open Technology (CDOT) - established by the School of ICT in 2003 - provides an opportunity for you to contribute to a greater body of knowledge through your work. </p>
+<p><a href="http://cdot.senecacollege.ca" target="_blank">Learn more about CDOT</a></p>
+<h2>Open source</h2>
+<p>The School of ICT is recognized worldwide as a leader in open source education. The School was an early adopter of open source technology in the classroom and has since established innovative relationships with world class open source projects, such as Mozilla’s Firefox web browser. Seneca students have the opportunity to work with developers around the globe, contributing to software used by millions of people.</p>
+<p>Since 2002, the School has run the Free Software and Open Source Symposium (FSOSS), regarded by many as the premiere open source event in North America.</p>
+<p><a href="http://fsoss.ca" target="_blank">Learn more about FSOSS</a></p>
+</div>
+</div>
+<div class="container">
+<div class="row lead">
+<p> </p>
+<p>Create the game-changing innovations that will fuel Canada's digital future.<br />
+				Whether your focus is software, infrastructure, or electronics, we'll get you career-ready.</p>
+</div>
+</div>
+</div>
+</div></div></div>  </div>
+
+      <footer>
+          </footer>
+  
+  
+</section> <!-- /.block -->
+  </div>
+	  
+	  
+
+	  
+    </section>
+
+          <aside class="col-sm-3" role="complementary">
+          <div class="region region-sidebar-second">
+    <section id="block-custom-search-blocks-4" class="block block-custom-search-blocks clearfix">
+
+        <h2 class="block-title">Search this web site</h2>
+    
+  <form class="search-form" role="search" action="/" method="post" id="custom-search-blocks-form-4" accept-charset="UTF-8"><div><div class="form-type-textfield form-item-custom-search-blocks-form-4 form-item form-group">
+  <label class="element-invisible" for="edit-custom-search-blocks-form-4--2">Search this site </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-control form-text" placeholder="" type="text" id="edit-custom-search-blocks-form-4--2" name="custom_search_blocks_form_4" value="" size="15" maxlength="50" />
+</div>
+<button class="btn btn-primary form-submit" id="edit-submit" name="op" value="Search" type="submit">Search</button>
+<input type="hidden" name="delta" value="4" />
+<input type="hidden" name="form_build_id" value="form-HQpX4mywKcSg_FbTJSLmUVM0lNuf-58zetdy-z7vJ3E" />
+<input type="hidden" name="form_id" value="custom_search_blocks_form_4" />
+<input type="hidden" name="custom_search_paths" value="search/node/[key]" />
+</div></form>
+</section> <!-- /.block -->
+  </div>
+      </aside>  <!-- /#sidebar-second -->
+    
+  </div>
+</div>
+<footer class="footer container">
+    <div class="region region-footer">
+    <section id="block-block-1" class="block block-block clearfix">
+
+      
+  <p>School of ICT | Faculty of Applied Science and Engineering Technology | Seneca College | Toronto, Canada<br /><a href="/contact-us">Questions? Click here to contact us.</a></p>
+
+</section> <!-- /.block -->
+  </div>
+</footer>
+  <script src="//ict.senecacollege.ca/sites/default/files/public_files/advagg_js/js__i11V-7AETPhfL9YzRpXBpECwVkYyQ_ahu2eHxES_mK0__Tgy2Gm7LmUJY8GXZeWxVbS51f3txED35LX1ul4UiOfk__wTFB7oqRI9plmqzTHohaf0cp34LSVimp29dS48vpVW4.js"></script>
+</body>
+</html>
