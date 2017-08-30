@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week6-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 6 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 6 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week6-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=347">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek6-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek6-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-347 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week6-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week6-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 6 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 6 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 6 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-347" class="post-347 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Review: Communicating to the Client</h3>
+<p>Express.js is a powerful library for helping us create web servers in Node.js.  In very few lines of code we can send / receive data in a way that is very straightforward and easy to understand.  Recall our first example, where we were able to create two routes: “/” and “/about”, each corresponding to a specific response from our server:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
+
+<span class="hljs-keyword">var</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+<span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// setup a 'route' to listen on the default url path (http://localhost)</span>
+app.get(<span class="hljs-string">"/"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+  res.send(<span class="hljs-string">"Hello World&lt;br /&gt;&lt;a href='/about'&gt;Go to the about page&lt;/a&gt;"</span>);
+});
+
+<span class="hljs-comment">// setup another route to listen on /about</span>
+app.get(<span class="hljs-string">"/about"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+  res.sendFile(path.join(__dirname + <span class="hljs-string">"/week2-assets/about.html"</span>));
+});
+
+<span class="hljs-comment">// setup http server to listen on HTTP_PORT</span>
+app.listen(HTTP_PORT, onHttpStart);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>In the above example, we make use of the <strong>get</strong> method of the app object to define a route and a callback function that’s executed when the route is encountered.  We can leverage the 2nd parameter “res” to send either an HTML formatted string (for route “/”), or a static html page (for route “/about”).</p>
+<p>If we wanted to send (JSON formatted) data only, we can use the following route (/getData):<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs">app.get(<span class="hljs-string">"/getData"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+  
+  <span class="hljs-keyword">var</span> someData = {
+    name: <span class="hljs-string">"John"</span>,
+    age: <span class="hljs-number">23</span>,
+    occupation: <span class="hljs-string">"developer"</span>,
+    company: <span class="hljs-string">"Scotiabank"</span>
+  };
+
+  res.json(someData);
+});
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>
+</p><p>This will return the JSON-formatted string:</p>
+<pre>{"name":"John","age":23,"occupation":"developer","company":"Scotiabank"}</pre>
+<p>We will find this useful later on when we discuss AJAX &amp; RESTful API’s.
+</p>
+<p>The important thing to notice here is that our server can return HTML formatted strings, static HTML (.html) files, and JSON data.  However, what if we want to return a valid HTML5 page to the client that actually references some data stored on the server?  One solution would be to build out a string that contains both <strong>HTML code</strong> and <strong>values</strong>, ie:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs">app.get(<span class="hljs-string">"/viewData"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+
+    <span class="hljs-keyword">var</span> someData = {
+        name: <span class="hljs-string">"John"</span>,
+        age: <span class="hljs-number">23</span>,
+        occupation: <span class="hljs-string">"developer"</span>,
+        company: <span class="hljs-string">"Scotiabank"</span>
+    };
+
+    <span class="hljs-keyword">var</span> htmlString = <span class="hljs-string">"&lt;!doctype html&gt;"</span> + 
+                    <span class="hljs-string">"&lt;html&gt;"</span> +
+                        <span class="hljs-string">"&lt;head&gt;"</span> + 
+                            <span class="hljs-string">"&lt;title&gt;"</span> + <span class="hljs-string">"View Data"</span> + <span class="hljs-string">"&lt;/title&gt;"</span> +
+                        <span class="hljs-string">"&lt;/head&gt;"</span> +
+                        <span class="hljs-string">"&lt;body&gt;"</span> + 
+                            <span class="hljs-string">"&lt;table border='1'&gt;"</span> + 
+                                <span class="hljs-string">"&lt;tr&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;th&gt;"</span> + <span class="hljs-string">"Name"</span> + <span class="hljs-string">"&lt;/th&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;th&gt;"</span> + <span class="hljs-string">"Age"</span> + <span class="hljs-string">"&lt;/th&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;th&gt;"</span> + <span class="hljs-string">"Occupation"</span> + <span class="hljs-string">"&lt;/th&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;th&gt;"</span> + <span class="hljs-string">"Company"</span> + <span class="hljs-string">"&lt;/th&gt;"</span> + 
+                                <span class="hljs-string">"&lt;/tr&gt;"</span> + 
+                                <span class="hljs-string">"&lt;tr&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;td&gt;"</span> + someData.name + <span class="hljs-string">"&lt;/td&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;td&gt;"</span> + someData.age + <span class="hljs-string">"&lt;/td&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;td&gt;"</span> + someData.occupation + <span class="hljs-string">"&lt;/td&gt;"</span> + 
+                                    <span class="hljs-string">"&lt;td&gt;"</span> + someData.company + <span class="hljs-string">"&lt;/td&gt;"</span> + 
+                                <span class="hljs-string">"&lt;/tr&gt;"</span> + 
+                            <span class="hljs-string">"&lt;/table&gt;"</span> + 
+                        <span class="hljs-string">"&lt;/body&gt;"</span> + 
+                    <span class="hljs-string">"&lt;/html&gt;"</span>;
+
+    res.send(htmlString);
+});
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>While this will work to send a valid HTML5 page containing our data back to the client, it’s clearly not the best way to approach this problem. What if we had a complex page that contains data in different places throughout the layout?  We would be building out an enormous string containing normal, static html and in a few places, inserting a reference to our data (someData object). Wouldn’t it be great if we could just write a normal HTML document that <strong>references</strong> the data, instead of having to build one huge string for the whole page?</p>
+<h3 class="lined">Template Engine – Handlebars.js</h3>
+<p>Fortunately, we can leverage <a href="https://expressjs.com/en/guide/using-template-engines.html" target="_blank">“template engines” with express</a> to solve this exact problem. From the express.js documentation: </p>
+<blockquote><p>
+A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. This approach makes it easier to design an HTML page.
+</p></blockquote>
+<p>This sounds like exactly what we need, however there are <a href="https://strongloop.com/strongblog/compare-javascript-templates-jade-mustache-dust/" target="_blank">many different template engines</a> that we can choose from.  Given that we are all strong HTML developers from our experience in WEB222, why not use a template engine that leverages this experience and works with regular HTML, rather than <a href="https://www.npmjs.com/package/jade" target="_blank">describing html</a>.</p>
+<h5 class="lined">Introducing Handlebars</h5>
+<p>
+<a href="http://handlebarsjs.com/" target="_blank">Handlebars</a> does just that, plus many other features that will help us generate HTML that renders complex data.  For example, consider the problem with our “/viewData” route from above; we can leverage the Handlebars template engine to write a simple (separate) HTML5 document that references the data using “handlebars” – ie curly braces {{&nbsp;&nbsp;}}.</p>
+<p>To begin, create the following file in your “views” directory and name it “viewData.hbs”:</p>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>View Data<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">border</span>=<span class="hljs-string">'1'</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Age<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Occupation<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Company<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.name}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.age}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.occupation}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.company}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>This is a much cleaner approach.  We no longer have to generate the full page as a string within our “/viewData” route and most importantly, all of the <strong>view</strong> logic (HTML) is separate from our <strong>control</strong> logic (routing).</p>
+<p>In order to set this up correctly and get express to understand the file above, we need to modify our server code slightly:</p>
+<ol>
+<li>
+<p>The first thing that we need to do is download / install the Handlebars.js package using NPM.  Open a terminal in Visual Studio Code (ctrl + ` or View -&gt; Integrated Terminal) and make sure that your working directory is somewhere within your project and run the command
+</p><pre>npm install --save express-handlebars</pre>
+<p>This will install the “handlebars” package in the same way that we installed the “express” package and update the dependencies in our package.json file:</p>
+<pre><code class="json hljs"><span class="hljs-string">"dependencies"</span>: {
+    <span class="hljs-attr">"express"</span>: <span class="hljs-string">"^4.14.0"</span>,
+    <span class="hljs-attr">"express-handlebars"</span>: <span class="hljs-string">"^3.0.0"</span>
+  }</code></pre>
+</li>
+<li>
+<p>Next, we need to update our server.js file to use our newly installed Handlebars.js module, by adding the line:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> exphbs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-handlebars'</span>);</code></pre>
+<p>at the top of our server file.</p>
+</li>
+<li>
+<p>Our server needs to know how to handle HTML files that are formatted using handlebars, so near the top of our code (after we define our “app”), add the lines:</p>
+<pre><code class="javascript hljs">app.engine(<span class="hljs-string">'.hbs'</span>, exphbs({ extname: <span class="hljs-string">'.hbs'</span> }));
+app.set(<span class="hljs-string">'view engine'</span>, <span class="hljs-string">'.hbs'</span>);
+</code></pre>
+<p>This will tell our server that any file with the “.hbs” extension (instead of “.html”) will use the handlebars “engine” (template engine).</p>
+</li>
+<li>
+<p>The next step involves updating our “/viewData” route to “render” our handlebars file with the data:</p>
+<pre><code class="javascript hljs">app.get(<span class="hljs-string">"/viewData"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+
+    <span class="hljs-keyword">var</span> someData = {
+        name: <span class="hljs-string">"John"</span>,
+        age: <span class="hljs-number">23</span>,
+        occupation: <span class="hljs-string">"developer"</span>,
+        company: <span class="hljs-string">"Scotiabank"</span>
+    };
+
+    res.render(<span class="hljs-string">'viewData'</span>, {
+        data: someData
+    });
+    
+});</code></pre>
+<p>Now, the route no longer returns a string consisting of our HTML + data using res.send(), but instead invokes the <a href="http://expressjs.com/en/api.html#res.render" target="_blank">render</a> method on the <a href="http://expressjs.com/en/api.html#res" target="_blank">response</a> object (res). We pass the name of our new file without the extension (ie: “viewData” instead of “viewData.hbs”), and “data” object to hold all of our data (someData).
+</p></li>
+</ol>
+<p>If you have followed all of the steps above, your server.js should look something like this:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// setup our requires</span>
+<span class="hljs-keyword">const</span> HTTP_PORT = <span class="hljs-number">8080</span>;
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> exphbs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express-handlebars"</span>);
+
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// Register handlebars as the rendering engine for views</span>
+app.engine(<span class="hljs-string">".hbs"</span>, exphbs({ extname: <span class="hljs-string">".hbs"</span> }));
+app.set(<span class="hljs-string">"view engine"</span>, <span class="hljs-string">".hbs"</span>);
+
+app.get(<span class="hljs-string">"/viewData"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+
+    <span class="hljs-keyword">var</span> someData = {
+        name: <span class="hljs-string">"John"</span>,
+        age: <span class="hljs-number">23</span>,
+        occupation: <span class="hljs-string">"developer"</span>,
+        company: <span class="hljs-string">"Scotiabank"</span>
+    };
+
+    res.render(<span class="hljs-string">'viewData'</span>, {
+        data: someData
+    });
+
+});
+
+<span class="hljs-comment">// start the server to listen on HTTP_PORT</span>
+app.listen(HTTP_PORT, onHttpStart);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>You should also have a “viewData.hbs” file in your “views” directory.</p>
+<p>Now, when you navigate to the <strong>/viewData</strong> route, you should see an HTML table rendered with all of your data!</p>
+<h3 class="lined">Adding Logic to Templates</h3>
+<p>Handlebars not only provides us with a mechanism to serve static HTML files with data from the server; it also has a number of <a href="http://handlebarsjs.com/builtin_helpers.html" target="_blank">Built-In Helpers</a> that we can use within our templates to help render the data.  Helpers in Handlebars use the following pattern:</p>
+<pre>{{#helperName context}} block {{/helperName}}</pre>
+<p>where <strong>helperName</strong> represents the name of the helper (built-in or custom), <strong>context</strong> represents a (optional) variable passed in to the helper and <strong>block</strong> is the block of HTML / Handlebars logic affected by the helper.
+</p>
+<h5 class="lined">“if” Helper</h5>
+<p>The “if” helper is used when we wish to conditionally render a block of HTML.  It works by looking at the variable passed into its “context” argument and if it holds <strong>true</strong>, render the block.  It also has the notion of an {{else}} clause which will cause a separate block of HTML to render if the argument holds false.  It is important to note that comparison operators cannot be used here and code like {{#if data.name == “Joe”}} will not work.  This is designed to take a variable and check for true / false.  For example, say we wish to conditionally show our developer “John”:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> someData = {
+   name: <span class="hljs-string">"John"</span>,
+   age: <span class="hljs-number">23</span>,
+   occupation: <span class="hljs-string">"developer"</span>,
+   company: <span class="hljs-string">"Scotiabank"</span>,
+   visible: <span class="hljs-literal">true</span>
+};
+</code></pre>
+<p>Notice, we have added a “visible” property that we can reference before we render “someData” in our view.  Using the {{#if variable}} … {{else}} … {{/if}} construct, we can easily hide or show rows in the table:</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">border</span>=<span class="hljs-string">'1'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Age<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Occupation<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Company<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    {{#if data.visible}}
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.name}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.age}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.occupation}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{data.company}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    {{else}}
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>User: '{{data.name}}' has hidden their information<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    {{/if}}
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+<h5 class="lined">“unless” Helper</h5>
+<p>The “unless” helper functions in the same way as the “if” helper, only it renders the block if the “context” variable holds <strong>false</strong> instead of true. For example, say we add another property to our “someData” object; in this case, we wish to store whether or not “John” is a contract employee:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> someData = {
+    name: <span class="hljs-string">"John"</span>,
+    age: <span class="hljs-number">23</span>,
+    occupation: <span class="hljs-string">"developer"</span>,
+    company: <span class="hljs-string">"Scotiabank"</span>,
+    visible: <span class="hljs-literal">true</span>,
+    contract: <span class="hljs-literal">false</span>
+};</code></pre>
+<p>We can add the {{#unless}} helper to only show the “Full-Time employee” table row if the “contract” property is explicitly set to <strong>false</strong>.  So, instead of needing true to show the block (like the “if” helper), we must have a <strong>false</strong> value to show the block.</p>
+<pre><code class="html hljs xml">{{#unless data.contract}}
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>Full-Time employee<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+{{/unless}}</code></pre>
+<h5 class="lined">“each” Helper</h5>
+<p>The “each” helper is one of the most useful built-in helpers available to us in Handlebars.  It is often the case that the data we wish to render belongs to a collection / array, rather than a single object.  The “each” helper automatically repeats a block for every element in the collection (specified by the “context” variable) and gives us a mechanism to render the values in the current iteration.  For example, any variables (properties) referenced within the #each block will automatically use the current iteration as the working object.</p>
+<p>Additionally, we can specify an {{else}} clause that will render it’s block if the specified “context” variable does not contain any elements (ie, the list is empty).</p>
+<p>To see how this works in practice, let’s make someData an array of objects:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> someData = [{
+    name: <span class="hljs-string">"John"</span>,
+    age: <span class="hljs-number">23</span>,
+    occupation: <span class="hljs-string">"developer"</span>,
+    company: <span class="hljs-string">"Scotiabank"</span>
+},
+{
+    name: <span class="hljs-string">"Sarah"</span>,
+    age: <span class="hljs-number">32</span>,
+    occupation: <span class="hljs-string">"manager"</span>,
+    company: <span class="hljs-string">"TD"</span>
+}];</code></pre>
+<p>In order for us to reference each object in the array, we need to use the #each helper to iterate over each element.  We can create a &lt;tr&gt; element that will repeat for every element in the “data” collection and reference each property we want to show within a &lt;td&gt;:</p>
+<pre><code class="html hljs xml">{{#each data}}
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{name}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{age}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{occupation}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{company}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+{{else}}
+     <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>No Data Available<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+{{/each}}</code></pre>
+<p>In our case, this will cause the rendered table to contain two &lt;tr&gt; elements, each containing 4 columns with our corresponding data!  If for some reason the “data” collection is empty, the {{else}} clause will be used and a single row containing the message “No Data Available” will be rendered.  This is preferable to simply showing an empty table, as users will immediately think that something went wrong and/or the page is broken.</p>
+<p>Note: if you wish to access a specific element, you can use the syntax data.[1].name – which in this case, will output “Sarah”</p>
+<p>The “each” helper also exposes an “@index” variable that allows us to reference the current iteration index (ie, 0, 1, 2, 3, etc.), for example:</p>
+<pre><code class="html hljs xml">{{#each data}}
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{@index}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{name}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{age}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{occupation}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{company}}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+{{else}}
+     <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"5"</span>&gt;</span>No Data Available<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+{{/each}}</code></pre>
+<p></p>
+<h3 class="lined">Writing Custom Helpers</h3>
+<p>While the built-in helpers mentioned above simplify working with data in our HTML (.hbs) files, there are many situations where it is preferable to code our <em>own</em> helpers.  For example, maybe we wish to define a container that always uses the same html pattern, such as the <a href="https://getbootstrap.com/components/#alerts-dismissible" target="_blank">“Warning” alert</a> used in the Bootstrap framework:<br>
+<code class="html">
+</code></p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-warning alert-dismissible"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    ... Some Warning Text ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><code class="html">
+</code><p><code class="html"></code>Rather than writing out this same block of code every time we wish to create a dismissible warning, it would be much easier to create a helper to do it for us:</p>
+<p><code class="html">
+</code></p><pre><code class="html hljs xml">{{#warning}}... Some Warning Text ...{{/warning}}</code></pre><code class="html">
+</code><p><code class="html"></code>
+</p><p>To define this and other custom helpers, we need to add a “helpers” property to the Express Handlebars configuration object:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs">app.engine(<span class="hljs-string">'.hbs'</span>, exphbs({ 
+    extname: <span class="hljs-string">'.hbs'</span>,
+    helpers: { 
+        helper1: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">options</span>)</span>{
+            <span class="hljs-comment">// helper without "context", ie {{#helper}} ... {{/helper}}</span>
+        },
+        helper2: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, options</span>)</span>{
+            <span class="hljs-comment">// helper with "context", ie {{#helper context}} ... {{/helper}}</span>
+        }
+    }
+ }));</code></pre><code class="javascript">
+</code><p><code class="javascript"></code> The name of each property belonging to the “helpers” object corresponds to the name of the helper (ie, “helper1” and “helper2”).  The helpers themselves are defined as a function with either 1 or 2 parameters:</p>
+<ul>
+<li>
+<strong>helper1: function(options)</strong>
+<p>Helpers with only the “options” parameter are used to define helpers in the pattern {{#helperName}} … {{/helperName}}.  These types of helpers are generally used to solve the problem outlined above (ie, wrapping content in HTML).  The “options” parameter contains a property named fn, which is a method used to reference the content within the helper.  By invoking the method with the “this” keyword, we ensure that the context is correctly set for any other helpers that are nested inside this one.  This ensures that “options.fn() will return the correct content.</p>
+<p>In short, referencing “options.fn(this)” allows us to build a string containing new data/html in addition to the existing content within the helper.  If we return this new string from the function, Handlebars will use this string in place of the helper in our view!</p>
+<p>For example, consider the following helper that wraps text in a “&lt;strong&gt;” element:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs">strong: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">options</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'&lt;strong&gt;'</span> + options.fn(<span class="hljs-keyword">this</span>) + <span class="hljs-string">'&lt;/strong&gt;'</span>;
+}</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>
+</p><p>To use this helper within our .hbs files, we use the syntax:</p>
+<pre><code class="html hljs xml">name: {{#strong}}{{data.name}}{{/strong}}</code></pre>
+</li>
+<li>
+<strong>helper2: function(context, options)</strong>
+<p>Helpers with both the “context” and “options” parameters are used to define helpers in the pattern {{#helperName context}} … {{/helperName}}.  These types of helpers are generally used to create “iterative” helpers that work with collections of data, much like the built-in “each” helper.  The “context” parameter refers to the object passed into the helper as the “context” variable (ie: {{#helperName <strong>context</strong>}}).  When building our new string to return from the function, we can use the context variable with the options.fn() function to set the correct context for the current iteration within the helper (in the same way that we used “this” in the previous example).</p>
+<p>For example, consider the following helper that works to create an unordered list:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs">list: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, options</span>) </span>{
+    <span class="hljs-keyword">var</span> ret = <span class="hljs-string">"&lt;ul&gt;"</span>;
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; context.length; i++) {
+        ret = ret + <span class="hljs-string">"&lt;li&gt;"</span> + options.fn(context[i]) + <span class="hljs-string">"&lt;/li&gt;"</span>;
+    }
+
+    <span class="hljs-keyword">return</span> ret + <span class="hljs-string">"&lt;/ul&gt;"</span>;
+}</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>
+</p><p>To use this helper within our .hbs files, we use the syntax:</p>
+<pre><code class="html hljs xml">{{#list data}}
+    Name: {{name}} Age: {{age}} Occupation: {{occupation}} Company: {{company}}
+{{/list}}</code></pre>
+<p>This will result in two list items nested within an unordered list.</p>
+</li>
+</ul>
+<h3 class="lined">“Partial” Templates</h3>
+<p>As we have seen, built-in &amp; custom helpers are great for helping us create reusable chunks (blocks) of code that work with data.  This can simplify the development of our “views” (.hbs files) and make them easier to maintain.  However, what if we have a larger block of HTML code that we know will be repeated more than once in your app or website?  Maybe you want to divide your view into multiple files so that it’s easier to maintain (ie, the “marketing” section should be separate from the “sales” section, etc). Fortunately, Handlebars comes to the rescue again by providing us with the notion of <strong>“Partial” Templates</strong>.</p>
+<p>Partial Templates are separate .hbs files that are included dynamically within your working view.  By default, these files are located in a directory called “partials” within your “views” directory.  If we place our partial templates within this directory, or server will have no problem locating them and we don’t have to explicitly state where they are located.  If we do decide to store them in a different directory however, we must set the “partialsDir” property in the Express Handlebars configuration object (the same place where we specified our helpers) using the syntax: partialsDir: “some/path/to/partials”.</p>
+<p>Since we will just be using the standard locations for our files in the server, we must first create the partials directory (“views/partials”) before adding files to it.  Once this is done, we will add the file “welcome.hbs” to this directory, which contains some simple html:<br>
+<code class="html">
+</code></p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Welcome!<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><code class="html">
+</code><p><code class="html"></code>Now, if we want to use this partial in our viewData.hbs view, we simply need to include it with the following syntax:<br><strong>{{&gt; partialfilename }}</strong>.  In our case, we wish to include our newly created “welcome.hbs” template, which can be done using the following line of code:</p>
+<pre><code class="html hljs xml">{{&gt; welcome }}</code></pre>
+<p>This will dynamically pick up the content from our “welcome.hbs” template and insert it in place!</p>
+<h5 class="lined">Passing Data to “Partial” Templates</h5>
+<p>Partial templates are great for reusing large chunks of html or logically dividing up our views into multiple sections.  However, we are missing one key piece – adding data to our partial templates.  The main reason that we wish to use a view engine like handlebars is to be able to render data seamlessly in our views and it only makes sense that we would want to do this in our “partial views” as well. Again, this turns out to be a simple task and leverages the same idea of “context” from our helpers.  That is, to pass data to our views we simply use the “context” variable, ie: <strong>{{&gt; partialfilename context }}</strong>.</p>
+<p>Recall, we were working with the “someData” variable in our viewData.hbs view:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> someData = {
+    name: <span class="hljs-string">"John"</span>,
+    age: <span class="hljs-number">23</span>,
+    occupation: <span class="hljs-string">"developer"</span>,
+    company: <span class="hljs-string">"Scotiabank"</span>
+};
+
+res.render(<span class="hljs-string">'viewData'</span>, {
+    data: someData
+});</code></pre>
+<p>So, if we update our “welcome.hbs” file to use the “name” property:</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Welcome <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>{{name}}!<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p>We can pass the partial view the “context” (so that {{name}} makes sense) by passing “data” as the “context variable:<br>
+<code class="html">
+</code></p><pre><code class="html hljs xml">{{&gt; welcome data }}</code></pre><code class="html">
+</code><p><code class="html"></code>
+</p><p>Essentially this tells our “welcome” partial view to access any properties on the “data” object, so {{name}} is really {{data.name}}.  </p>
+<h3 class="lined">Layouts / Default Layout</h3>
+<p>One of the most convenient features that express handlebars provides in terms of partials &amp; view organization, is the notion of “layouts” and more specifically a “Master” or “Default” layout.  Layouts are essentially the <em>opposite</em> of “partial” views, containing a full html page with a place to render your view, rather than a smaller block that’s rendered in your view.</p>
+<p>Layouts are specified using the “.hbs” extension and are located by default in a directory called “layouts” within your “views” directory.  If we place our layouts within this directory, or server will have no problem locating them. Once again, if we decide to store them in a different directory, we must set the “layoutsDir” property in the Express Handlebars configuration object (the same place where we specified our helpers) using the syntax: layoutsDir: “some/path/to/layouts”.</p>
+<p>As before, we will be using the standard locations for our files in the server, so we must first create the layouts directory (“views/layouts”) before adding files to it. Once this is done, we will add the file “main.hbs” to this directory, which contains the bulk of the html for our page, plus a {{{body}}} placeholder:</p>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>View Data<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Top Menu --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>This is the Default Layout!<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            {{{body}}}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- footer --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>It is within this {{{body}}} placeholder that our view (.hbs) files (from our “views” directory) will actually be rendered!  No longer do we have to place the same common html elements, header, navigation menu, body container, footer etc. on every single page.  Now, we can specify them once in our “default” layout and render all of our views in a common location within the layout.  Every view will be rendered with the same header, footer, etc. </p>
+<p>To set this up correctly and ensure that our new “main.hbs” file is the “default” layout, we need to make a simple addition to our familiar express handlebars configuration object.</p>
+<pre><code class="javascript hljs">app.engine(<span class="hljs-string">'.hbs'</span>, exphbs({ 
+    <span class="hljs-comment">//...</span>
+    defaultLayout: <span class="hljs-string">'main'</span>
+    <span class="hljs-comment">//...</span>
+}));</code></pre>
+<p>By setting the “defaultLayout” property to our “main.hbs” layout, we can ensure that every time we “render” our .hbs files, the result will be placed within the {{{body}}} placeholder of our “main” layout.</p>
+<p>If we don’t wish to use the default layout for a particular view, we must explicitly set “layout: false” when we invoke the “render” function:</p>
+<pre><code class="javascript hljs">res.render(<span class="hljs-string">'viewData'</span>, {
+    data: someData,
+    layout: <span class="hljs-literal">false</span> <span class="hljs-comment">// do not use the default Layout (main.hbs)</span>
+});</code></pre>
+<p>Similairly, we can use a different layout by specifying it in the “layout” property, ie:</p>
+<pre><code class="javascript hljs">res.render(<span class="hljs-string">'viewData'</span>, {
+    data: someData,
+    layout: <span class="hljs-string">"otherLayout"</span> <span class="hljs-comment">// use "otherLayout.hbs" as a layout</span>
+});</code></pre>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 6 Next Week</li>
+</ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="http://handlebarsjs.com/" target="_blank">http://handlebarsjs.com</a></li>
+<li><a href="http://expressjs.com/en/guide/using-template-engines.html" target="_blank">http://expressjs.com/en/guide/using-template-engines.html</a></li>
+<li><a href="https://www.npmjs.com/package/express-handlebars" target="_blank">https://www.npmjs.com/package/express-handlebars</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 6 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 6 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

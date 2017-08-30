@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week8-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 8 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 8 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week8-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=351">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek8-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek8-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-351 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week8-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week8-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 8 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 8 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 8 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-351" class="post-351 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Week 8 - MongoDB</h3><br>
+<h4>Introduction to MongoDB </h4>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/MongoDB-Logo.svg_-300x82.png" alt="MongoDB-Logo.svg" width="200" class="alignnone size-medium wp-image-733" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/MongoDB-Logo.svg_-300x82.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/MongoDB-Logo.svg_.png 640w" sizes="(max-width: 300px) 100vw, 300px"><br><br>
+<h5 class="lined">What is MongoDB?</h5>
+<p>MongoDB is an open source database that stores its data in JSON like format (technically it's stored as BSON data but you will interact with its data in JSON format). MongoDB is classified as a NoSQL database. NoSQL is quickly becoming a popular alternative to traditional Relational Databases (RDBMS). The term NoSQL comes from "Not only SQL" and is intended to mean that it is a type of database system that can store data in non traditional tabular and relational format. This is why MongoDB is considered a NoSQL database. It stores its data using object notation.</p>
+<h6>How does it relate (no pun intended) to Traditional SQL systems?</h6>
+<p>When you think of how a traditional relational database system works you have tables and records, primary and foreign keys, and joins between tables when writing queries.</p>
+<p>MongoDB has similar functionality with a few major differences.</p>
+<p>Let's look at a comparison table of features so we can become familiar with the terminology of the MongoDB world and NoSQL databases.</p>
+<table class="table-bordered table-condensed" style="width:100%;">
+  <thead>
+    <tr><td><strong>RDBMS term</strong></td><td style="width:89%;"><strong>MongoDB term</strong></td></tr>
+  </thead>
+  <tbody>
+    <tr><td>Table</td><td>Collection</td></tr>
+    <tr><td>Record</td><td>Document</td></tr>
+    <tr><td>Column</td><td>Field</td></tr>
+    <tr><td>Joins</td><td>Embed data or link to another collection</td></tr>
+  </tbody>
+</table>
+<br>
+<a href="https://www.mongodb.com/compare/mongodb-mysql" target="_blank">This page compares MySQL to MongoDB and explains when it makes sense to use one or the other or both!</a>
+<br><br><p>Queries are still queries, and primary/foreign keys can still be called the same but are implemented via schema and indexes. (more on that part later)</p>
+<h5 class="lined">Installing MongoDB locally</h5>
+<p>Lets get MongoDB installed locally. It should take about 5-10 minutes.
+
+
+</p><div class="b-tabs">
+    <ul class="tabs-nav">
+		<li class="active"><span>OSX</span></li><li><span>Windows</span></li>	
+    </ul>
+    <div class="tabs-content">
+<div class="tab active">
+               <ul><li><a href="https://www.mongodb.com/download-center#community" target="_blank">Download the latest version of MongoDB for OSX. Get the 64 bit community version with SSL support.</a></li>
+<li>Extract the .tgz file</li>
+<li>Copy the extracted folder (mongodb-osx-x86_64-x.x.x) into your Applications folder</li>
+<li>Create a .bash_profile file (note: the version of mongoDB maybe different (ie: change x86_64-x.x.x to whatever version you are using):<br><br>
+<pre><code class="hljs ruby">$ cd ~
+$ pwd
+/Users/userName
+$ touch .bash_profile
+$ open -a TextEdit .bash_profile
+
+export PATH=<span class="hljs-string">"/Applications/mongodb-osx-x86_64-x.x.x/bin:$PATH"</span>
+
+<span class="hljs-comment">##restart terminal</span>
+
+$ mongo -version
+MongoDB shell <span class="hljs-symbol">version:</span> x.x.x</code></pre>
+</li>
+</ul>
+<p>MongoDB should now be installed!</p>
+          </div>   
+         <div class="tab">
+              <ul><li><a href="https://www.mongodb.com/download-center#community" target="_blank">Download the latest version of MongoDB for Windows. Get the 64 bit community version with SSL support.</a></li>
+<li>Run the installer</li>
+<li>Agree to the terms and click next</li>
+<li>Choose 'Custom' for the setup type<br><br><img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/Screenshot-2016-12-06-22.55.29.png" alt="Screenshot 2016-12-06 22.55.29" width="495" height="387" class="alignleft size-full wp-image-734" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-06-22.55.29-300x235.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-06-22.55.29.png 495w" sizes="(max-width: 495px) 100vw, 495px"><br><br></li>
+<li>Change the install path for windows to C:\MongoDB\Server\3.4 (or whatever version you are installing, ie C:\MongoDB\Server\x.x<br><br>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/Screenshot-2016-12-06-22.56.55.png" alt="Screenshot 2016-12-06 22.56.55" width="495" height="387" class="alignleft size-full wp-image-736" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-06-22.56.55-300x235.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-06-22.56.55.png 495w" sizes="(max-width: 495px) 100vw, 495px"><br><br></li>
+<li>You can install MongoDB in the default directory but we recommend installing it in the path mentioned above if on windows.</li>
+<li>Lastly, ensure that the \bin directory (ie: C:\MongoDB\Server\x.x\bin [where x.x is the version installed] is <a href="https://www.computerhope.com/issues/ch000549.htm" target="_blank">added to your PATH</a></li>
+</ul>
+<p>MongoDB should now be installed!</p>
+         </div>
+           
+     </div>
+</div>
+
+
+
+
+
+<h5 class="lined">Running the MongoDB Server</h5>
+<p>Now we want to try running the server and issuing commands in the shell.</p>
+<ul>
+<li>Create a new directory for your mongoDB database (called db) - this can be anywhere: why don't we use the Desktop?</li>
+
+<li>Open a terminal window and enter the command:<br><br> <pre>mongod --dbpath ~/Desktop/db</pre>(or if you're on Windows, provide the absolute path (ie: <strong>mongod --dbpath C:\users\username\Desktop\db)</strong><br><br></li>
+<li>This will get the "mongoDB" database engine running</li>
+</ul>
+
+
+<!--<ul><li>Create a data folder where your database documents will be stored. I recommend c:\data\db</li>
+<li>Create a plain text file called config.cfg with the following contents in your data dir (EX: c:\data\config.cfg)
+<pre>
+bind_ip = localhost
+port = 27017
+dbpath = c:\data\db
+storageEngine = wiredTiger
+</pre></li>
+<li>Navigate to your install location for MongoDB and look in the bin folder. If you installed MongoDB in the location recommended above, the path will be C:\MongoDB\Server\3.4\bin (3.4 represents the version number. It may be different when you download the latest version.)</li>
+<li>There are several binary files we can run here. We are only interested in a few of them for this course:
+<table class="table-bordered table-condensed table-striped">
+  <thead>
+    <tr><td><strong>File</strong></td><td><strong>Description</strong></td></tr>
+  </thead>
+  <tbody>
+    <tr><td>mongo</td><td>This will run the MongoDB shell to issue the db commands from a command prompt.
+    <tr><td>mongod</td><td>This is the MongoDB database server program. (daemon)</td></tr></td></tr>
+    <tr><td>mongodump</td><td>This will dump the contents of the db to a series of files.</td></tr>
+    <tr><td>mongorestore</td><td>This will restore a dump of files back into the db.</td></tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<p>Open a command prompt at this location. (SHORTCUT: You can hold down shift in File Explorer with no files selected and right click and you will see an option to you will see an option to "Open command window here") Let's run mongod.exe from the bin folder with the following command:
+<pre>
+mongod --config c:\data\config.cfg
+</pre>
+<img src="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-07-20.09.08.png" alt="Opening a command prompt" width="271" height="354" class="alignleft size-full wp-image-738" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-07-20.09.08-230x300.png 230w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-07-20.09.08.png 271w" sizes="(max-width: 271px) 100vw, 271px" />
+
+<img src="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.18.png" alt="Running mongod.exe" width="769" height="342" class="alignleft size-full wp-image-742" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.18-300x133.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.18-768x342.png 768w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.18.png 769w" sizes="(max-width: 769px) 100vw, 769px" />
+This will run MongoDB using the config file for the settings that we created above. The server will be running on your computer on localhost, port 27017 (the default), and it will connect to the database file located at c:\data\db and initialize it if it does not exist. The last setting in the config specifies to use the 'wiredtiger' storage engine. That's out of scope for this class.
+</p>-->
+
+
+
+
+<br>
+<h5 class="lined">Connecting to the MongoDB shell</h5>
+<p>Now that we know how to run MongoDB at anytime, we will learn how to connect to the db through the shell and see how we can issue commands. We will create a web322 database, add collections for companies and users, and insert one company and one user into the collections.</p>
+<p>With mongod running, we will now run "mongo" to connect to the running server process.<br><br>Open a new terminal and execute the command:</p>
+<pre>mongo
+</pre>
+<p>Once connected to the db with the shell, your window will look like this:</p>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/Screenshot-2016-12-07-20.06.53.png" alt="Mongo shell" width="769" height="342" class="alignleft size-full wp-image-740" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.53-300x133.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.53-768x342.png 768w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/12/Screenshot-2016-12-07-20.06.53.png 769w" sizes="(max-width: 769px) 100vw, 769px"><br><br>
+
+<h5 class="lined">Databases, Collections, and Documents</h5>
+<p>Now that we are connected to the shell, we can start working with some commands and data. For this example you will see in the shell console that it says:
+</p><pre>WARNING: Access control is not enabled for the database.</pre>
+This is letting you know you have not setup any user credentials to log in to the db with. This is OK for now, your database server is running locally on your computer. No one will be able to connect to your database outside your computer yet. In a real production or development environment, we would enable authentication to the database. This is outside the scope of this course.<p></p>
+<p>Now it's time to try out some commands.<br><br>
+Let's show the databases currently on the server
+</p><pre>show dbs</pre>
+<p>We can see that there are 2 databases built in and available from a fresh install: admin and local. We won't be using either of these databases in this course.<br><br>
+When we want to create a new database we just have to simply tell the shell we want to use that database and it will automatically create it if it doesn't exist. Try this command out.
+</p>
+<pre>use web322</pre>
+<p>Now we can run show dbs again and you will see it still doesn't exist. This is because mongodb will only actually create the db and any collections required once you start inserting data. So let's insert a company to a web322_companies collection!<br><br>
+Let's decide on what a company JSON object would look like to decide what fields we want for the document we are about to insert. Some obvious ones we might want are a company name, phone number, address, and country. Let's start with that.</p>
+<pre><code class="javascript hljs">{
+  companyName: <span class="hljs-string">"The Leftorium"</span>,
+  phone: <span class="hljs-string">"416-555-2424"</span>,
+  address: <span class="hljs-string">"80 The Pond Rd, Toronto, ON"</span>,
+  country: <span class="hljs-string">"Canada"</span>
+}</code></pre>
+<p>Ok, we've decided on what a company record will look like for now. Let's go ahead and insert this company into the web322_companies collection...
+</p>
+<pre><code class="javascript hljs">db.web322_companies.insert({
+   companyName: <span class="hljs-string">"The Leftorium"</span>,
+   phone: <span class="hljs-string">"416-555-2424"</span>,
+   address: <span class="hljs-string">"80 The Pond Rd, Toronto, ON"</span>,
+   country: <span class="hljs-string">"Canada"</span>
+ })</code></pre>
+<p>You should get a result like the following:<br><br>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/Screenshot-2016-12-13-22.58.36.png" alt="Insert result" width="769" height="266" class="alignleft size-full wp-image-747" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-13-22.58.36-300x104.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-13-22.58.36-768x266.png 768w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/Screenshot-2016-12-13-22.58.36.png 769w" sizes="(max-width: 769px) 100vw, 769px"><br><br>
+You should see the result WriteResult({ "nInserted" : 1 }). This means a write succeeded and the number of documents inserted (nInserted) was 1.<br><br>
+We can do a quick query to look at the record from the shell with the following command:
+</p><pre>db.web322_companies.find()
+</pre>
+You'll get a result like:<br><br>
+<pre>{ "_id" : ObjectId("5850c358dbf675a87f27a456"), "companyName" : "The Leftorium",
+  "phone" : "416-555-2424", "address" : "80 The Pond Rd, Toronto, ON", "country" : "Canada" }
+</pre>
+You'll notice it's the same as the document you inserted with the added field of "_id". Every document in MongoDB gets an _id property by default. These are <strong>globally unique</strong> to the entire database and probably even the world! So no need to worry about _id conflicts anytime you do a find by the _id!<br><br>
+Now let's take a look at the data in the database using a GUI tool.<p></p>
+<h5 class="lined">Tools</h5>
+<p><!--There are two major GUI tools that work well with MongoDB for inspecting database contents and working with the shell to do different database management operations: Studio 3T and RoboMongo (Robo 3T).<br /><br />
+<strong>Studio 3T </strong>is free to use forever, <strong>for non-commercial use</strong> with the community version of MongoDB. So you can use it for this class to learn about MongoDB. <a href="https://studio3t.com/" target="_blank">It is available to download for Windows, Mac, and Linux here</a>.<br/><br />
+--><strong>RoboMongo (Robo 3T </strong>is an open source project that is free to use and <a href="https://robomongo.org/download" target="_blank">available to download for Windows, Mac, and Linux</a>.
+</p><p>install Robo 3T and connect to the DB with host: localhost, and port: 27017 to inspect our inserted document.<br><br>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/robo3t-1.png" alt="Connect with Robo 3T" class="alignleft size-full wp-image-748"><br><br>
+Once connected to the server, click on the web322 database to see the collections inside it. There is currently just one collection, web322_companies. to view the documents inside this collection just double click on it and a window will open in table view with the contents. You should see your document as a row in the table with all it's properties.<br><br>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/robo3t-2.png" alt="Screenshot 2016-12-13 23.35.04" class="alignleft size-full wp-image-749">
+</p>
+<p>Now let's setup an online account with MLAB and create our own mongodb in the cloud for use with Heroku.</p>
+<h5>Setting up an MLAB account</h5>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/mlab_logo.png" alt="mlab_logo" width="170" height="75" class="alignleft size-full wp-image-821"><br><br>
+<p>Mlab is an online service that hosts MongoDB in the cloud. You can sign up for a free account to use in this course with your Heroku account.</p>
+<p>To get started signup for an account at <a href="https://www.mlab.com/" target="_blank">www.mlab.com</a></p>
+<p>Once your account is setup and you have verified it you can login and create a new deployment. Choose any option that is free. Amazon Web Services has a single node deployment in US EAST region that is free with 500mb of space to use. This is plenty for this course. Name your database web322_week8.</p>
+<p>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/create-free-mlab-database.png" alt="create free mlab database" width="695" height="593" class="alignleft size-full wp-image-820" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/create-free-mlab-database-300x256.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/create-free-mlab-database.png 695w" sizes="(max-width: 695px) 100vw, 695px">
+</p>Once your deployment is setup you will need to add a user to that database<p></p>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/mlba-database-users.png" alt="mlab database users" width="1118" height="232" class="alignleft size-full wp-image-822" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/mlba-database-users-300x62.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/mlba-database-users-768x159.png 768w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/mlba-database-users-1024x212.png 1024w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/mlba-database-users.png 1118w" sizes="(max-width: 1118px) 100vw, 1118px"><br><br>
+<h6>The MongoDB connection string format</h6>
+<p>Create a user, choose a password, and then after your user is created look just above the users table on the mlab website for the connection string for your db. It will have the following format:
+</p><pre>mongodb://&lt;dbuser&gt;:&lt;dbpassword&gt;@&lt;subdomain&gt;.mlab.com:&lt;port&gt;/web322_week8</pre>
+The &lt;dbuser&gt; is your db user name, the &lt;dbpassword&gt; is your users password, the &lt;subdomain&gt; will be given to you as well as the &lt;port&gt; and it will end with /web322_week8 which is the database name.<p></p>
+<p>This is the standard notation for a connection URI to connect to a MongoDB database. For a local install it has no user or password by default and simply follows this format:</p>
+<pre>mongodb://localhost:27017/web322_week8</pre>
+<p>The default port for a local install is 27017.</p>
+<p>You can connect to your mlab database server using the Robo 3T tool to test the connection.  Enter the following details for a "new" connection 
+</p><ul><li>Connection Tab - Address: dsxxxxxx.mlab.com (where xxxxxx will be specific to your own mLab Database</li>
+<li>Connection Tab - Port: 27892 (or whatever was provided by mLab)</li>
+<li>Authentication Tab - Database: Your mLab database name</li>
+<li>Authentication Tab - User Name: Your user for your new mLab database</li>
+<li>Authentication Tab - Password: Your password for your new mLab database user</li>
+<li>Authentication Tab - Auth Mechanism: (leave this at the default - SCRAM-SHA-1)</li>
+</ul>
+
+<br>
+Once you are able to connect to your Mlab DB from Robo 3T you can save this connection info for later to use with the week 8 example to connect your Heroku build of week 8 to your Mlab db and test out the photo uploader album online!<p></p>
+<p>For now, keep track of your database username and password for later and remember your database name as well (web322_week8 if you followed the instructions above). If you save the connection details in to Robo 3T you can look at them later if you forget so it's a good idea to do this now.</p>
+<p>Now it's time to work with MongoDB in a node.js app.</p>
+<h5 class="lined">Mongoose.js</h5>
+<p>When we work with MongoDB in node, we won't work directly with the MongoDB driver. Instead we will use a popular open source module that wraps up the Mongo driver and provides extra functionality for declaring schemas/models, validating documents on save, having virtual properties on a model, and instance and static methods on a model object.<br><br>
+Installing mongoose is easy when you have node installed. Just use npm install to grab it.
+</p><pre>npm install mongoose --save</pre>
+This will save it to your package.json file and allow you to require it and start building model files and working with documents.<p></p>
+<h5 class="lined">MongoDB cheat sheet</h5>
+<p>There is a very detailed MongoDB cheat sheet available for download as a PDF that you can use as a reference for looking up commands and features for the MongoDB shell. Each command links directly to the official documentation for more information. <a href="https://dhodgin.wordpress.com/2016/11/20/mongodb-shell-cheat-sheet-for-v3-4/" target="_blank">The cheat sheet is available here</a>.
+</p>
+<h5 class="lined">Querying MongoDB with Mongoose in Node.js</h5>
+<p>Now that we have mongoose installed we can start looking at how the basic CRUD operations work (note: the examples in this lecture are based on Mongoose version 4).</p>
+<p>Let's start with an example app that will make use of at least one route for each of the main CRUD operations: Create, Read, Update, Delete. In the Mongo shell and in Mongoose we use the functions: insert(), find(), update(), and remove().<br><br>
+Let's define a simple schema for the two types of objects mentioned earlier in the lecture: companies and users.
+</p>
+<h5 class="lined">Setting up a schema</h5>
+<h6>Company schema</h6>
+<p>For our company we will want at a minimum a company name, address, phone number, employee count, and country, to match the structure of the company object we have already inserted. MongoDB will automatically include the _id field, so we don't need it in our schema (all documents inserted get an _id field by default). The previous document did not have an employee count so we will make sure the default for the count is 0 if this field does not exist on a document. The next time a document is saved which has missing fields that the schema supports, any defaults will be applied.</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">"mongoose"</span>);
+<span class="hljs-keyword">var</span> Schema = mongoose.Schema;
+<span class="hljs-keyword">var</span> companySchema = <span class="hljs-keyword">new</span> Schema({
+  <span class="hljs-string">"companyName"</span>:  <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"address"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"phone"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"employeeCount"</span>: {
+    <span class="hljs-string">"type"</span>: <span class="hljs-built_in">Number</span>,
+    <span class="hljs-string">"default"</span>: <span class="hljs-number">0</span>
+  },
+  <span class="hljs-string">"country"</span>: <span class="hljs-built_in">String</span>  
+});
+
+<span class="hljs-keyword">var</span> Company = mongoose.model(<span class="hljs-string">"web322_companies"</span>, companySchema);
+</code></pre>
+<p>A schema is like a blueprint for a document that will be saved in the DB. It's somewhat like a class or struct definition in other languages you are used to. We are defining the fields that can exist on a document for this collection, and setting their expected <a href="http://mongoosejs.com/docs/api.html#schema_Schema.Types" target="_blank">types</a>, default values, and sometimes if they are required, or have an index on them.<br><br>
+In the above, we have defined a Company schema, with 5 properties as discussed, and set their <a href="http://mongoosejs.com/docs/api.html#schema_Schema.Types" target="_blank">types</a> appropriately. The employee count is not just a simple number, we also want to include a default value of 0 of the count field is not supplied. Using defaults where it makes sense to have them is good practice.<br><br>
+The last line of code tells mongoose to register this schema (companySchema) as a model and connect it to the web322_companies collection (Note: the "web322_companies" collection will be automatically created if it doesn't exist yet). We can then use the Company variable to make queries against this collection and insert, update, or remove documents from the Company model.</p>
+<p>Now let's add a second company to the database using mongoose in node.js instead of the mongo shell.<br><br>
+Here is a simple app you can run with node.js and it will insert another company to the db.</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// require mongoose and setup the Schema</span>
+<span class="hljs-keyword">var</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">"mongoose"</span>);
+<span class="hljs-keyword">var</span> Schema = mongoose.Schema;
+
+<span class="hljs-comment">// connect to the localhost mongo running on default port 27017</span>
+mongoose.connect(<span class="hljs-string">"mongodb://localhost/web322"</span>);
+
+<span class="hljs-comment">// define the company schema</span>
+<span class="hljs-keyword">var</span> companySchema = <span class="hljs-keyword">new</span> Schema({
+  <span class="hljs-string">"companyName"</span>:  <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"address"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"phone"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"employeeCount"</span>: {
+    <span class="hljs-string">"type"</span>: <span class="hljs-built_in">Number</span>,
+    <span class="hljs-string">"default"</span>: <span class="hljs-number">0</span>
+  },
+  <span class="hljs-string">"country"</span>: <span class="hljs-built_in">String</span>
+});
+<span class="hljs-comment">// register the Company model using the companySchema</span>
+<span class="hljs-comment">// use the web322_companies collection in the db to store documents</span>
+<span class="hljs-keyword">var</span> Company = mongoose.model(<span class="hljs-string">"web322_companies"</span>, companySchema);
+
+<span class="hljs-comment">// create a new company</span>
+<span class="hljs-keyword">var</span> kwikEMart = <span class="hljs-keyword">new</span> Company({
+  companyName: <span class="hljs-string">"The Kwik-E-Mart"</span>,
+  address: <span class="hljs-string">"Springfield"</span>,
+  phone: <span class="hljs-string">"212-842-4923"</span>,
+  employeeCount: <span class="hljs-number">3</span>,
+  country: <span class="hljs-string">"U.S.A"</span>
+});
+
+<span class="hljs-comment">// save the company</span>
+kwikEMart.save((err) =&gt; {
+  <span class="hljs-keyword">if</span>(err) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"There was an error saving the Kwik-E-Mart company"</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The Kwik-E-Mart company was saved to the web322_companies collection"</span>);
+  }
+  <span class="hljs-comment">// exit the program after saving</span>
+  process.exit();
+});
+</code></pre>
+<p>Now we can add a findOne() call to find this company using mongoose. Modify the save call in the code above to look like this:<br>
+</p><pre><code class="javascript hljs"><span class="hljs-comment">// save the company</span>
+kwikEMart.save((err) =&gt; {
+  <span class="hljs-keyword">if</span>(err) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"There was an error saving the Kwik-E-Mart company"</span>);
+  }
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The Kwik-E-Mart company was saved to the web322_companies collection"</span>);
+  Company.findOne({ companyName: <span class="hljs-string">"The Kwik-E-Mart"</span> })
+  .exec()
+  .then((company) =&gt; {
+    <span class="hljs-keyword">if</span>(!company) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"No company could be found"</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">console</span>.log(company);
+    }
+    <span class="hljs-comment">// exit the program after saving and finding</span>
+    process.exit();
+  })
+  .catch((err) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'There was an error: ${err}'</span>);
+  });
+});
+</code></pre>
+<p></p>
+<p>A couple of new things are used above. Let's go over them briefly.
+</p><h6>.exec()</h6>
+The .exec() call is added after a mongoose query to tell mongoose to return a promise. If you leave out the .exec(), mongoose will still work with .then() calls but the object returned will not be a proper promise. It is good practice to always use .exec() after your query has been setup and before the .then() method is invoked.<br><br>
+<h6>.then() and .catch()</h6>
+The .then() function is chained after the exec() and it will receive the results of the query that was run. For example, if the query is finding a document, you will receive the document as an argument to the then() function. .then() can take 2 functions, the first is the callback function that receives the results of the query, the second function is an error handling function. You can also use a .catch() after a .then() instead to catch an error as shown above.<br><br>
+<pre>.then((result) =&gt; {
+  // use result
+})
+.catch((error) =&gt; {
+  // use the error
+})
+
+OR
+
+.then((result) =&gt; {
+  // use the result
+}, (error) =&gt; {
+  // use the error
+})
+</pre>
+Notice the first method is .then(function).catch(function) and the second method is .then(function1, function2)<br><br>
+Most people agree the second method is harder to read but there are some cases where you might need to use this format. Typically it is better to use the .then().catch() format because if an error occurs either before the .then() (in the query for example), or inside the .then() function the .catch() can handle it. When you use .then(onSuccess, onError) the problem is that if onSuccess generates an error, onError won't catch it. onError will only handle errors from the promise call before the .then(). Using .catch() can handle errors in both places. This is why it is the generally preferred pattern.<br><br>
+<h6>.catch() is just a .then()</h6>
+Behind the scenes, .catch() is just a wrapper around .then() which only handles error functions. It is identical to using .then(null, function).
+You can consider the following code identical:<br><br>
+<pre><code class="javascript hljs">myPromise
+.then(onSuccess)
+.then(<span class="hljs-literal">null</span>, onError)
+</code></pre>
+<pre><code class="javascript hljs">myPromise
+.then(onSuccess)
+.catch(onError)
+</code></pre>
+In both cases an error from the initial myPromise or an error from onSuccess will call the error handling function onError
+<p></p>
+<h5>Quick Note: Multiple Connections</h5>
+<p>Using Mongoose, it is also possible to have multiple connections configured for your application, ie: <strong>"mongodb://user:pass@ds000001.mlab.com:54321/db1"</strong> and <strong>"mongodb://user:pass@ds000002.mlab.com:65432/db2"</strong>.  If this is the case, we just have to make a few small changes on how we <strong>connect</strong> to each DB, and how we define our models:
+</p><pre><code class="javascript hljs"><span class="hljs-comment">// ...</span>
+
+<span class="hljs-keyword">let</span> db1 = mongoose.createConnection(<span class="hljs-string">"mongodb://user:pass@ds000001.mlab.com:54321/db1"</span>);
+
+<span class="hljs-comment">// verify the db1 connection</span>
+
+db1.on(<span class="hljs-string">'error'</span>, (err)=&gt;{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"db1 error!"</span>);
+});
+
+db1.once(<span class="hljs-string">'open'</span>, ()=&gt;{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"db1 success!"</span>);
+});
+
+<span class="hljs-comment">// ...</span>
+
+<span class="hljs-keyword">let</span> db2 = mongoose.createConnection(<span class="hljs-string">"mongodb://user:pass@ds000002.mlab.com:65432/db2"</span>);
+
+<span class="hljs-comment">// ...</span>
+
+<span class="hljs-keyword">var</span> model1 = db1.model(<span class="hljs-string">"model1"</span>, model1Schema); <span class="hljs-comment">// predefined "model1Schema" used to create "model1" on db1</span>
+
+<span class="hljs-keyword">var</span> model2 = db2.model(<span class="hljs-string">"model2"</span>, model2Schema); <span class="hljs-comment">// predefined "model2Schema" used to create "model2" on db2</span>
+
+<span class="hljs-comment">// ...</span>
+</code></pre>Instead of using <strong>"connect"</strong>, we instead use <strong>"createConnection"</strong> and save the result as a reference to the connection (ie: <strong>"db1"</strong> and <strong>"db2"</strong> from above).  We can then use <strong>db1</strong> or <strong>db2</strong> to create models on each database separately.  Additionally, if we want to <em>test</em> the connection, we can use the <strong>.on()</strong> and <strong>.once()</strong> methods of each connection.<p></p>
+<h5>The rest of the CRUD</h5>
+<p>Now that we've discussed find, let's talk about the other functions used with mongoose to do the rest of the CRUD functionality. Here are some examples of other find methods, inserting, updating, and removing documents.
+</p><h6>find()</h6>
+<pre><code class="javascript hljs">Company.find({ companyName: <span class="hljs-string">"The Leftorium"</span>})
+<span class="hljs-comment">//.sort({}) //optional "sort" - </span><a href="https://docs.mongodb.com/manual/reference/operator/aggregation/sort/" target="_blank"><span class="hljs-comment">https://docs.mongodb.com/manual/reference/operator/aggregation/sort/</span></a><span class="hljs-comment"> </span>
+.exec()
+.then((companies) =&gt; {
+  <span class="hljs-comment">// companies will be an array of objects.</span>
+  <span class="hljs-comment">// Each object will represent a document that matched the query</span>
+});
+</code></pre>
+<h6>inserting a new document</h6>
+First we create the document in code using a reference to the schema object we want. Then we can call a built in method, .save() on the model object to save it.<br><br>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> leftorium = <span class="hljs-keyword">new</span> Company({ ... });
+
+leftorium.save((err) =&gt; {
+  <span class="hljs-keyword">if</span>(err) {
+    <span class="hljs-comment">// there was an error</span>
+    <span class="hljs-built_in">console</span>.log(err);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// everything good</span>
+    <span class="hljs-built_in">console</span>.log(leftorium);
+  }
+});
+</code></pre>
+<h6>update()</h6>
+We use the schema object to update vs an instance of a model like we did with save(). update() takes 3 arguments: the query to select which documents to update, the fields to set for the documents that match the query (see <a href="https://docs.mongodb.com/manual/reference/operator/update/" target="_blank">update operators</a>, ie: <a href="https://docs.mongodb.com/manual/reference/operator/update/set/" target="_blank">$set</a>, <a href="https://docs.mongodb.com/manual/reference/operator/update/push/" target="_blank">$push</a> and <a href="https://docs.mongodb.com/manual/reference/operator/update/addToSet/" target="_blank">$addToSet</a> ), and an option for if you want to update multiple matching documents or only the first match.<br><br>
+<pre><code class="javascript hljs">Company.update(
+{ ... query ... },
+{ $set { ... fields to set ... } },
+{ multi: <span class="hljs-literal">true</span>|<span class="hljs-literal">false</span> })
+.exec();
+
+Example:
+Company.update({ companyName: <span class="hljs-string">"The Leftorium"</span>},
+{ $set: { employeeCount: <span class="hljs-number">4</span> } },
+{ multi: <span class="hljs-literal">false</span> })
+.exec();
+</code></pre>
+<h6>remove()</h6>
+<pre><code class="javascript hljs">Company.remove({ ... query ... })
+.exec()
+.then();
+
+Example:
+Company.remove({ companyName: <span class="hljs-string">"The Leftorium"</span> })
+.then(() =&gt; {
+  <span class="hljs-comment">// removed company</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"removed company"</span>);
+})
+.catch((err) =&gt; {
+  <span class="hljs-built_in">console</span>.log(err);
+});
+</code></pre>
+<p></p>
+<h5 class="lined">Indexes</h5>
+<p>Indexes are a large enough topic on their own for an entire week of lecture. For the scope of this course we will talk about the most common type of index used in MongoDB that you will need for every collection.
+</p><h6>Unique indexes</h6>
+<p>A unique index is applied at the database level and can be attached to one or more fields of a document. The first example of a unique index would be on the _id field of all documents that MongoDB adds automatically. As mentioned above every document gets an _id field added to it by default and that _id value is globally unique across the DB. MongoDB automatically adds the _id field to your documents but it also adds a unique index to the _id field for the schema. Mongoose schemas can be customized to add your own additional unique index constraints to other fields as needed. Mongoose will add the indexes, if they don't exist, to the collections in your db when your app starts up and initializes.</p>
+<p></p>The most common use for this is when you want to enforce a unique value across all documents in a collection on a certain field. A perfect use case for this would be on the companyName for our company schema above. It wouldn't make sense to have multiple companies with the same name in the system.
+To add a unique index in to the companyName field, we just have to add unique:true to the schema declaration from before.<p></p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// define the company schema</span>
+<span class="hljs-keyword">var</span> companySchema = <span class="hljs-keyword">new</span> Schema({
+  <span class="hljs-string">"companyName"</span>:  {
+    <span class="hljs-string">"type"</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-string">"unique"</span>: <span class="hljs-literal">true</span>
+  },
+  <span class="hljs-string">"address"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"phone"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"employeeCount"</span>: {
+    <span class="hljs-string">"type"</span>: <span class="hljs-built_in">Number</span>,
+    <span class="hljs-string">"default"</span>: <span class="hljs-number">0</span>
+  },
+  <span class="hljs-string">"country"</span>: <span class="hljs-built_in">String</span>
+});
+</code></pre>
+Remember: Your indexes are stored <strong>in MongoDB</strong> and will be enforced by the database. You can view your indexes that exist with Robo 3T.<br><br>
+<img src="./WEB322 – Week 8 – Class 1 – Web Programming_files/robo3t-indexes.png" alt="Unique Index" class="alignleft size-full wp-image-761"><br><br>
+Let's look at the finalized code and what happens when we try to insert a company with a companyName that already exists when the companyName has a unique index.<br><br>
+<pre><code class="javascript hljs"><span class="hljs-comment">// require mongoose and setup the Schema</span>
+<span class="hljs-keyword">var</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">"mongoose"</span>);
+<span class="hljs-keyword">var</span> Schema = mongoose.Schema;
+
+<span class="hljs-comment">// connect to the localhost mongo running on default port 27017</span>
+mongoose.connect(<span class="hljs-string">"mongodb://localhost/web322"</span>);
+
+<span class="hljs-comment">// define the company schema</span>
+<span class="hljs-keyword">var</span> companySchema = <span class="hljs-keyword">new</span> Schema({
+  <span class="hljs-string">"companyName"</span>: {
+    type: <span class="hljs-built_in">String</span>,
+    unique: <span class="hljs-literal">true</span>
+  },
+  <span class="hljs-string">"address"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"phone"</span>: <span class="hljs-built_in">String</span>,
+  <span class="hljs-string">"employeeCount"</span>: {
+    <span class="hljs-string">"type"</span>: <span class="hljs-built_in">Number</span>,
+    <span class="hljs-string">"default"</span>: <span class="hljs-number">0</span>
+  },
+  <span class="hljs-string">"country"</span>: <span class="hljs-built_in">String</span>
+});
+<span class="hljs-keyword">var</span> Company = mongoose.model(<span class="hljs-string">"web322_companies"</span>, companySchema);
+
+<span class="hljs-comment">// create a new company</span>
+<span class="hljs-keyword">var</span> kwikEMart = <span class="hljs-keyword">new</span> Company({
+  companyName: <span class="hljs-string">"The Kwik-E-Mart"</span>,
+  address: <span class="hljs-string">"Springfield"</span>,
+  phone: <span class="hljs-string">"212-842-4923"</span>,
+  employeeCount: <span class="hljs-number">3</span>,
+  country: <span class="hljs-string">"U.S.A"</span>
+});
+
+<span class="hljs-comment">// save the company</span>
+kwikEMart.save((err) =&gt; {
+  <span class="hljs-keyword">if</span>(err) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'There was an error saving the Kwik-E-Mart company: ${err}'</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The Kwik-E-Mart company was saved to the web322_companies collection"</span>);
+  }
+  Company.find({ companyName: <span class="hljs-string">"The Kwik-E-Mart"</span> })
+  .exec()
+  .then((company) =&gt; {
+    <span class="hljs-keyword">if</span>(!company) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"No company could be found"</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">console</span>.log(company);
+    }
+    <span class="hljs-comment">// exit the program after saving</span>
+    process.exit();
+  })
+  .catch((err) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'There was an error: ${err}'</span>);
+  });
+});
+</code></pre>
+Running it a second time:<br><br>
+<pre><code class="javascript hljs">$ node week8
+There was an error saving the Kwik-E-Mart company: WriteError({<span class="hljs-string">"code"</span>:<span class="hljs-number">11000</span>,<span class="hljs-string">"index"</span>:<span class="hljs-number">0</span>,
+<span class="hljs-string">"errmsg"</span>:<span class="hljs-string">"E11000 duplicate key error collection: web322.web322_companies index: 
+companyName_1 dup key: { : \"The Kwik-E-Mart\" }"</span>,<span class="hljs-string">"op"</span>:{<span class="hljs-string">"companyName"</span>:<span class="hljs-string">"The Kwik-E-
+Mart"</span>,<span class="hljs-string">"address"</span>:<span class="hljs-string">"Springfield"</span>,<span class="hljs-string">"phone"</span>:<span class="hljs-string">"212-842-4923"</span>,<span class="hljs-string">"country"</span>:<span class="hljs-string">"U.S.A"</span>,<span class="hljs-string">"_id"</span>:<span class="hljs-string">"5864148f8e6a802830973e76"</span>,<span class="hljs-string">"employeeCount
+"</span>:<span class="hljs-number">3</span>,<span class="hljs-string">"__v"</span>:<span class="hljs-number">0</span>}})
+[ { _id: <span class="hljs-number">586412</span>c78b50ee22cc9691d6,
+    companyName: <span class="hljs-string">'The Kwik-E-Mart'</span>,
+    address: <span class="hljs-string">'Springfield'</span>,
+    phone: <span class="hljs-string">'212-842-4923'</span>,
+    country: <span class="hljs-string">'U.S.A'</span>,
+    __v: <span class="hljs-number">0</span>,
+    employeeCount: <span class="hljs-number">3</span> } ]
+</code></pre>
+As you can see MongoDB threw back an error (E11000 duplicate key error). This is the most common form of error you'll encounter on saving a document to the database. You can handle it and act according to what your application should do. 
+<p></p>
+<h5>Week 8 example</h5>
+<p>The week 8 example explores connecting to a mongoDB database and saving records for metadata about a photo upload. It allows the owner to upload a photo, add a name, email, and caption to the photo, and save it. The photo itself will be written to the file system and the supporting data about the photo will be saved in a document in the web322_week8_photos collection. Try it out with a local install of MongoDB, inspect the data with Robo 3T, and then try creating a Mlab account and connecting your Mlab db to your week8 example running on Heroku.</p>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+
+<ul><li>Test 8 Next Week</li>
+<li>Assignment 5 Due this Friday at 11:59pm</li></ul>
+
+<h3 class="lined">Sources</h3>
+<ul>
+  <li><a href="https://docs.mongodb.com/manual/" target="_blank">MongoDB official documentation</a></li>
+  <li><a href="https://robomongo.org/download" target="_blank">RoboMongo (Robo 3T) download</a></li>
+  <li><a href="http://mongoosejs.com/docs/guide.html" target="_blank">Mongoose documentation</a></li>
+  <li><a href="https://dhodgin.wordpress.com/2016/11/20/mongodb-shell-cheat-sheet-for-v3-4/" target="_blank">MongoDB Cheat Sheet</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 8 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 8 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

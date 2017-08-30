@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week5-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 5 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 5 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week5-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=345">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek5-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek5-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-345 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week5-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week5-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 5 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 5 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 5 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-345" class="post-345 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Processing Forms with Express.js</h3>
+<p>In this week’s lecture, we are going to learn about processing forms on a web page using Express.js. Now that you have a basic understanding of creating server side routes to handle requests from the client, we can build on that and look at a basic form that is sent to the server, processed, and a response is returned.
+</p>
+<h5>HTML Forms Review</h5>
+<p>Let’s review the typical HTML elements used in an HTML form and look at some of the newer input types that work in HTML5 websites. There are really just a few core html elements that you need to know to build forms on the web: form, label, input, textarea, and button. &lt;input&gt; however, has many different types that can be used for the ‘type’ attribute. A summary is provided below in a nice table for reference.</p>
+<p></p><p></p><table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_form.asp" target="_blank">&lt;form&gt;</a></td>
+<td>
+<p>The form element is the main container to hold your form and all of its inputs and a submit button. The form element has several attributes that control it’s behavior. The most common 3 are ‘enctype’, ‘method’, and ‘name’. The enctype is the encoding type. Setting this to ‘multipart/form-data’ is important if you are working with forms that have file uploads that go with the form data. The ‘method’ specifies which HTTP verb to use when making the submission request (GET or POST). Finally, the ‘name’ attribute is typically used by your view or client side code to validate the form. For more information see the link.</p>
+</td>
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_label.asp" target="_blank">&lt;label&gt;</a></td>
+<td>
+<p>The label element is used to provide a label for input boxes. You can use the label’s ‘for’ attribute to make the label clickable to focus its associated input. This adds a nice touch of usability to forms and can make it easier to focus on input areas associated with a label.</p></td>
+
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_input.asp" target="_blank">&lt;input&gt;</a></td>
+<td>
+<p>The input element has many different values that can be used for it’s ‘type’ attribute. The most common are: button, checkbox, date, file, password, radio, and text. Each type determines how the input will appear in the browser to the user. The full documentation about each type of input element is specified in the link for input’s.</p></td>
+
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_textarea.asp" target="_blank">&lt;textarea&gt;</a></td>
+<td>
+<p>textarea is much like an &lt;input type=’text’&gt; input, except it allows multiple lines of text. Basically, it is a text box that has space to add a lot of text instead of 1 line of text in a regular text input element. The textarea is useful for capturing user input that would typically be long and detailed or several sentences long.</p>
+<p><textarea style="width: 100%; height:50px;">This is what a textarea looks like. Type something in!</textarea></p>
+</td>
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_button.asp" target="_blank">&lt;button&gt;</a></td>
+<td>The button element can be used in place of an input with type submit. A button element can be used the same way as an input to reset the form or submit the form. The biggest advantage to using a button element instead of an input element to submit a form, is that the button element can have HTML content inside it. You can include images or other content that will render inside the button, whereas input elements just allow text in their “value” attribute. </td>
+</tr>
+</tbody>
+</table>
+<h5>Creating a form in HTML</h5>
+<p>Let’s make a small form right here on this page that “submits” the data and writes to the console after attempting to submit. Our form will be responsible for creating a new user for a site that asks for a username to use, email address, name, password, and a radio button that asks if they would like to be subscribed to a monthly newsletter.</p>
+<form onsubmit="console.log(&#39;form Submitted&#39;); return false;">
+<table style="border: 1px dashed #cdcdcd;padding:6px;">
+<tbody>
+<tr>
+<td><label for="username">Choose a username:</label></td>
+<td><input id="username" type="text" placeholder="A Username you&#39;d like to use"></td>
+</tr>
+<tr>
+<td><label for="email">Your Email:</label></td>
+<td><input id="email" type="text" placeholder="Email address"><p></p>
+</td></tr><tr>
+<td><label for="name">Your Name:</label></td>
+<td><input id="name" type="text" placeholder="Your name"></td>
+</tr>
+<tr>
+<td><label for="password">Your Password:</label></td>
+<td><input id="password" type="password"></td>
+</tr>
+<tr>
+<td><label for="passwordconfirm">Confirm Password:</label></td>
+<td><input id="passwordconfirm" type="password"></td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>Would you like to subscribe to our monthly newsletter?</em><br>
+<input id="yes" type="radio" name="newsletter" value="yes"><label for="yes">Yes</label><br>
+<input id="no" type="radio" name="newsletter" value="no"><label for="no">No</label>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value="Submit">&nbsp;(using a regular input element to submit)</td>
+</tr>
+<tr>
+<td colspan="2"><button type="submit">Submit</button>&nbsp;(using a button element to submit)</td>
+</tr>
+</tbody>
+</table>
+</form>
+<p></p>
+<p>The code for this form looks like this:</p>
+<pre><code class="javascript hljs">&lt;form onsubmit=<span class="hljs-string">"console.log('form Submitted'); return false;"</span>&gt;
+  &lt;table style="border: 1px dashed #cdcdcd;padding:6px;"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;label for="username"&gt;Choose a username:&lt;/label&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input id="username" type="text" placeholder="A Username you'd like to use" /&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;label for="email"&gt;Your Email:&lt;/label&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;input id="email" type="text" placeholder="Email address" /&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;label for="name"&gt;Your Name:&lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input id="name" type="text" placeholder="Your name" /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;label for="password"&gt;Your Password:&lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input id="password" type="password" /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;label for="passwordconfirm"&gt;Confirm Password:&lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input id="passwordconfirm" type="password" /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+              &lt;p&gt;&lt;em&gt;Would you like to subscribe to our monthly newsletter?&lt;/em&gt;&lt;br /&gt;
+                &lt;input id="yes" type="radio" name="newsletter" value="yes" /&gt;&lt;label for="yes"&gt;Yes&lt;/label&gt;&lt;br/&gt;
+                &lt;input id="no" type="radio" name="newsletter" value="no" /&gt;&lt;label for="no"&gt;No&lt;/label&gt;
+              &lt;/p&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td colspan="2"&gt;&lt;input type="submit" value="Submit" /&gt;&nbsp;(using a regular input element to submit)&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td colspan="2"&gt;&lt;button type="submit"&gt;Submit&lt;/button&gt;&nbsp;(using a button element to submit)&lt;/td&gt;
+          &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Now that we’ve had a quick refresher on forms and how to build one in HTML let’s look at how we can process the form on the server side with Express.js. The first thing you should know is that there are 2 types of form submissions that take place on a website: a regular text based form with normal inputs, and a form that accepts file uploads using the &lt;input type=”file”&gt; element. A form that supports file uploading requires the enctype attribute to be set to enctype=”multipart/form-data”. <a href="https://www.w3schools.com/jsref/prop_form_enctype.asp" target="_blank">More information on options for the ‘enctype’ attribute are available here</a></p>
+<h5>Processing Forms in Express.js</h5>
+<p>Sending data from a form to the Express.js server is not all that complicated. It’s really just a few steps:</p>
+<ol>
+<li>Create your form in HTML</li>
+<li>Set the ‘action’ attribute of the form to a url where you want the form to be submitted</li>
+<li>Set the method attribute of the form to ‘GET’ or ‘POST’ depending on how your server expects the request to come in. typically you want to use POST.</li>
+<li>Choose a correct enctype for the form based on the forms contents you’ll be sending to the server</li>
+<li>Add some middleware to the express server that can parse out the contents of the form into the body of the request object so you can gain access to the data in the request object in Express (req.body)</li>
+<li>Create a route in Express to receive the POST data from the form submission request and work with the data.</li>
+<li>(Optional) Respond back to the client with the status of the submission if desired.</li>
+</ol>
+<p>Let’s do a complete example following those steps, from start to finish, for a simple form that let’s you register a name, username, email, password, and a photo id. The form will upload the photo file and all the text contents of the form to the site, the site will save the photo to a folder, return the data back with a success message and the photo url, or if it fails, an error message.</p>
+<h6>Step 1: (Client) Create the form in HTML</h6>
+<p>The first thing that we need is an html page with a form on it that we can submit to the server. Let’s call it “registerUser.html” and place it in a “views” folder within the following project structure:</p>
+<ul>
+<li>/public
+<ul>
+<li>/photos</li>
+</ul>
+</li>
+<li>/views
+<ul>
+<li>registerUser.html</li>
+</ul>
+</li>
+<li>server.js</li>
+</ul>
+<p>The photos that are uploaded will be saved in the /public/photos folder. registerUser.html is our form page and server.js is our server file.</p>
+<p>The HTML page can look something like this:</p>
+<pre><code class="javascript hljs">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      input {
+        margin: 4px;
+        width: 250px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Week 5 example&lt;/h1&gt;
+    &lt;p&gt;Register a new user:&lt;/p&gt;
+    &lt;div style="text-align:right;width:400px;border:1px dashed #6495de;padding:16px;"&gt;
+      &lt;form&gt;
+        &lt;label for="name"&gt;Name&lt;/label&gt;
+        &lt;input id="name" type="text" name="name"/&gt;&lt;br /&gt;
+        &lt;label for="username"&gt;Username&lt;/label&gt;
+        &lt;input id="username" type="text" name="username"/&gt;&lt;br /&gt;
+        &lt;label for="email"&gt;Email&lt;/label&gt;
+        &lt;input id="email" type="email" name="email"/&gt;&lt;br /&gt;
+        &lt;label for="password"&gt;Password&lt;/label&gt;
+        &lt;input id="password" type="password" name="password"/&gt;&lt;br /&gt;
+        &lt;label for="photo"&gt;Photo ID&lt;/label&gt;
+        &lt;input id="photo" type="file" name="photo"/&gt;&lt;br /&gt;
+        &lt;input type="submit" value="Submit File" /&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p></p>
+<p>
+Now that we have the basic form laid out we are ready to set it up for submitting…
+</p>
+<h6>Step 2: (Client) Set the ‘action’ attribute on the form</h6>
+<p>The action attribute controls where the form will submit to. The value for the action is a url that you want the submission to go to. For this example we will use the route /register-user.</p>
+<p>Update the form element to look like this:</p>
+<pre>&lt;form action="/register-user"&gt;</pre>
+<p></p>
+<h6>Step 3: (Client) Set the proper value for the method attribute on the form</h6>
+<p>The method attribute on the form control which HTTP verb it will use when submitting to the action route. For this example, and almost always, you’ll want to POST. Set the method attribute to POST.</p>
+<pre>&lt;form action="/register-user" method="POST"&gt;</pre>
+<p></p>
+<h6>Step 4: (Client) Set the proper value for the enctype attribute on the form</h6>
+<p>Now we just have to make sure that when the form is submitted the server can know that we are including multipart data (The photo). When you are just submitting text on a form the default is to submit as regular text. The enctype does not need to be set if you are just sending regular text.</p>
+<p>Set the enctype to multipart/form-data to support the photo upload. If you do not do this the server side can not receive and process the photo.</p>
+<pre>&lt;form action="/register-user" method="POST" enctype="multipart/form-data"&gt;</pre>
+<p></p>
+<h6>Step 5: (Server) Setup some middleware to parse the form contents</h6>
+<p><a href="https://github.com/expressjs/multer" target="_blank">We will use the library ‘multer’ to parse the multipart form data</a> (The photo image). Multer requires a few options to be setup to be able to name and save the files to the file system when they are uploaded. Then we need to add a multer middleware function to the chain of functions that are called when a route matches. In express when a route handler matches a route, all the functions provided after the route string are called successively. IE: app.get(“/”, foo(), bar(), baz()); foo() will be called, then bar(), then baz(). So we will add a multer function in front of the main route handler function to process the file upload and add it to the req object. The data will be on req.body and the file on req.file</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// setup our requires</span>
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+<span class="hljs-keyword">const</span> multer = <span class="hljs-built_in">require</span>(<span class="hljs-string">"multer"</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+<span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// multer requires a few options to be setup to store files with file extensions</span>
+<span class="hljs-comment">// by default it won't store extensions for security reasons</span>
+<span class="hljs-keyword">const</span> storage = multer.diskStorage({
+  destination: <span class="hljs-string">"./public/photos/"</span>,
+  filename: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, file, cb</span>) </span>{
+    <span class="hljs-comment">// we write the filename as the current date down to the millisecond</span>
+    <span class="hljs-comment">// in a large web service this would possibly cause a problem if two people</span>
+    <span class="hljs-comment">// uploaded an image at the exact same time. A better way would be to use GUID's for filenames.</span>
+    <span class="hljs-comment">// this is a simple example.</span>
+    cb(<span class="hljs-literal">null</span>, <span class="hljs-built_in">Date</span>.now() + path.extname(file.originalname));
+  }
+});
+
+<span class="hljs-comment">// tell multer to use the diskStorage function for naming files instead of the default.</span>
+<span class="hljs-keyword">const</span> upload = multer({ storage: storage });
+</code></pre>
+<h6>Step 6: (Server) Create a route in Express to handle the form data on the ‘req’ object</h6>
+<p>Now we need to setup a static folder to serve the photos from when the browser requests them, setup a get and post route, and tell the app to listen for requests</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// setup the static folder that static resources can load from</span>
+<span class="hljs-comment">// we need this so that the photo can be loaded from the server</span>
+<span class="hljs-comment">// by the browser after sending it</span>
+app.use(express.static(<span class="hljs-string">"./public/"</span>));
+
+<span class="hljs-comment">// setup a route on the 'root' of the url that has our form</span>
+<span class="hljs-comment">// IE: http://localhost/</span>
+app.get(<span class="hljs-string">"/"</span>, (req, res) =&gt; {
+  <span class="hljs-comment">// send the html view with our form to the client</span>
+  res.sendFile(path.join(__dirname, <span class="hljs-string">"/views/registerUser.html"</span>));
+});
+
+<span class="hljs-comment">// now add a route that we can POST the form data to</span>
+<span class="hljs-comment">// IE: http://localhost/register-user</span>
+<span class="hljs-comment">// add the middleware function (upload.single("photo")) for multer to process the file upload in the form</span>
+<span class="hljs-comment">// the string you pass the single() function is the value of the</span>
+<span class="hljs-comment">// 'name' attribute on the form for the file input element</span>
+app.post(<span class="hljs-string">"/register-user"</span>, upload.single(<span class="hljs-string">"photo"</span>), (req, res) =&gt; {
+  res.send(<span class="hljs-string">"register"</span>);
+});
+
+app.listen(HTTP_PORT, onHttpStart);
+</code></pre>
+<h6>Step 7: (Server) Respond to the client with data</h6>
+<p>Now that the server is setup we can tailor the response that we send back after posting the form data to the route. We will send back the json structure of the form data and the form file as well as display the image that was uploaded and saved.</p>
+<p>Modify the register-user route handler code to now look like this:</p>
+<pre><code class="javascript hljs">app.post(<span class="hljs-string">"/register-user"</span>, upload.single(<span class="hljs-string">"photo"</span>), (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> formData = req.body;
+  <span class="hljs-keyword">const</span> formFile = req.file;
+
+  <span class="hljs-keyword">const</span> dataReceived = <span class="hljs-string">"Your submission was received:&lt;br/&gt;&lt;br/&gt;"</span> +
+    <span class="hljs-string">"Your form data was:&lt;br/&gt;"</span> + <span class="hljs-built_in">JSON</span>.stringify(formData) + <span class="hljs-string">"&lt;br/&gt;&lt;br/&gt;"</span> +
+    <span class="hljs-string">"Your File data was:&lt;br/&gt;"</span> + <span class="hljs-built_in">JSON</span>.stringify(formFile) +
+    <span class="hljs-string">"&lt;br/&gt;&lt;p&gt;This is the image you sent:&lt;br/&gt;&lt;img src='/photos/"</span> + formFile.filename + <span class="hljs-string">"'/&gt;"</span>;
+  res.send(dataReceived);
+});
+</code></pre>
+<h6>Final notes</h6>
+<p><a href="https://github.com/expressjs/multer" target="_blank">The multer library</a> is only needed when you are dealing with file uploads and multipart/form-data. If you are simply using text form data you can use the body-parser library to handle regular text submissions and access the data on req.body. You’ll need to add the body-parser middleware with an app.use() call to allow it to grab the data on the request and stick it onto the req.body property so it’s available to the route handler function.  To set this up properly, we must:</p>
+<ol>
+<li>Download the “body-parser” module via npm:
+<pre style="margin-top:10px;">npm install body-parser --save</pre>
+</li>
+<li>Add the “body-parser” dependency using the require() function:
+<pre style="margin-top:10px;"><code class="javascript hljs"><span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'body-parser'</span>);</code></pre>
+</li>
+<li>Near the top of your server code, make a call to app.use() to set the middleware for “urlencoded” form data (normal HTTP Post data):
+<pre style="margin-top:10px;"><code class="javascript hljs">app.use(bodyParser.urlencoded({ extended: <span class="hljs-literal">true</span> }));</code></pre>
+</li>
+</ol>
+<p>Anytime you have a client side form that send back data and/or file contents, you should always validate both client side <strong>AND</strong> server side:  For example, it is important to validate the form on the client side so you can create a better user experience and inform the user if something is missing or a wrong filetype is provided right away. If a field is missing or an incorrect data type is provided, you can let the user know before you submit the form and wipe out the user’s progress.</p>
+<p>On the server side it is even <strong>more</strong> important to validate everything the client has sent. A malicious user can use a command line utility like cUrl to make api requests to your server and send anything they want, even if your client side code validates the data before it’s sent. Another method is to use the developer tools in the browser to remove the client side validation and then submit anything to your server. Therefore, it is extremely important to validate data on the server side before working with it – especially in a production environment.</p>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 5 Next Week</li>
+<li>Assignment 3 Due this Friday at 11:59pm</li>
+</ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="https://github.com/expressjs/multer" target="_blank">Multer Library</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 5 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 5 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

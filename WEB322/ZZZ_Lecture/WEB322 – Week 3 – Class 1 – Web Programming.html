@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week3-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 3 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 3 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week3-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=340">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek3-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek3-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-340 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week3-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week3-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 3 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 3 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 3 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-340" class="post-340 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Object-Oriented JavaScript Review</h3>
+<p> Now that we have our development environment all set up and are comfortable making a simple web server (with <a href="https://nodejs.org/en/" target="_blank">Node.js</a> &amp; <a href="http://expressjs.com/" target="_blank">Express.js</a>), we can start making some real progress with our web applications.  However, before we can dive into the deeper topics, we need to review some of the advanced Object-oriented JavaScript topics that we first discussed in WEB222.</p>
+<h3 class="lined">Creating Objects (Object Literal)</h3>
+<p>The most simple and straight-forward way to create an object in JavaScript is to use “Object Literal Notation” (sometimes referred to as “object initializer” notation).  The syntax for creating an object using this notation is as follows:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> obj = { property_1:   value_1,   
+            property_2:   value_2,   
+            <span class="hljs-comment">// ...,</span>
+            <span class="hljs-string">"property n"</span>: value_n }; <span class="hljs-comment">// properties can also be defined as a string</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<p>So, if we wanted to create an object with the following properties: </p>
+<ul>
+<li><strong>name</strong> (string)</li>
+<li><strong>age</strong> (number)</li>
+<li><strong>occupation</strong> (string)</li>
+</ul>
+<p>and methods…</p>
+<ul>
+<li><strong>setAge</strong> (simple “setter” to set a new value for the “age” property)</li>
+<li><strong>setName</strong> (simple “setter” to set a new value for the “name” property)</li>
+</ul>
+<p>using “Object Literal” notation, we would write the code:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> architect = {name: <span class="hljs-string">"Joe"</span>,
+                  age: <span class="hljs-number">34</span>,
+                  occupation: <span class="hljs-string">"Architect"</span>,
+                  setAge: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newAge</span>)</span>{<span class="hljs-keyword">this</span>.age = newAge},
+                  setName: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newName</span>)</span>{<span class="hljs-keyword">this</span>.name = newName}
+                 };
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>which creates a simple “architect” objet.  Recall that we must use the <strong>“this”</strong> keyword whenever we refer to one of the properties of the object inside one of it’s methods.  This is due to the fact that when a method is executed, “age” (for example) might already exist in the global scope, or within the scope of the function as a local variable.  To be absolutely sure that we are referring to the correct “age” property of the current object, we must refer to the “execution context” – ie: the object that is actually making a call to this method.  We know the object has an “age” property, so in order to be more specific about <em>which</em> age variable that we want to change, we leverage the keyword <strong>this</strong>.  “this” will refer to the “execution context”, ie: the object that called the function!  So, <strong>“this.age”</strong> can be read literally as <strong>“the age property on this object”</strong>, which is exactly the property that we wish to edit.
+</p>
+<p>Now, if we want to create more objects with these same properties &amp; methods, we can leverage JavaScripts native <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create" garget="_blank">Object.create()</a> method:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-built_in">Object</span>.create(proto[, propertiesObject])
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<p>This method will create a brand new object and use an existing object as it’s <strong>prototype</strong> (explained further down).  In practice, this will give the new object all of the properties, methods and values of the existing object while still being it’s own, new instance.  For example, if we wish to create two new <em>architect</em> objects, we can simply call <strong>Object.create()</strong> with our previous <strong>architect</strong> object as the first parameter:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> architect1 = <span class="hljs-built_in">Object</span>.create(architect);
+<span class="hljs-keyword">var</span> architect2 = <span class="hljs-built_in">Object</span>.create(architect);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<p>Now both <strong>architect1</strong> and <strong>architect2</strong> are new objects that have the same properties, methods and values as the original <strong>architect</strong> object.  However, because they are each their own instance, we can change their properties and manipulate their data as single entities:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs">architect2.setName(<span class="hljs-string">"Mary"</span>);
+
+<span class="hljs-built_in">console</span>.log(architect1.name); <span class="hljs-comment">// "Joe"</span>
+<span class="hljs-built_in">console</span>.log(architect2.name); <span class="hljs-comment">// "Mary"</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<h3 class="lined">Creating Objects (Function Closures)</h3>
+<p>Before we move on to one of the more powerful ways of creating objects in JavaScript (ie: Function Constructors), let’s discuss a practical application of the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Closures" target="_blank"><strong>closure</strong></a> design pattern in JavaScript.  Recall, that a <strong>closure</strong> is created whenever a function returns another function, or an object containing functions.  This creates an interesting situation when executing the returned function – JavaScript actually executes it within the scope of the containing function, which means that the returned function has access to the local variables of the function in which it was defined.  To see this in action, consider the following simple example:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">counter</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> localCounter = <span class="hljs-number">0</span>; <span class="hljs-comment">// declare "localCounter" within the "counter()" function scope</span>
+  
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-comment">// return a new function that references "localCounter"</span>
+    localCounter++; <span class="hljs-comment">// increment it by 1</span>
+    <span class="hljs-keyword">return</span> localCounter; <span class="hljs-comment">// return the value of "localcounter"</span>
+  };
+  
+}
+
+<span class="hljs-comment">// call the counter() function and get a reference to the new function</span>
+<span class="hljs-keyword">var</span> count = counter();
+
+<span class="hljs-comment">// call the new function</span>
+<span class="hljs-built_in">console</span>.log(count()); <span class="hljs-comment">// outputs: 1</span>
+<span class="hljs-built_in">console</span>.log(count()); <span class="hljs-comment">// outputs: 2</span>
+<span class="hljs-built_in">console</span>.log(count()); <span class="hljs-comment">// outputs: 3</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<p>In this example, we declare a function <strong>counter()</strong> which serves no purpose except to declare a local variable <strong>“localCounter”</strong> (<em>Recall</em>: whenever a variable is declared using the <strong>var</strong> keyword, it exists on the global scope, <strong>unless</strong> it is declared within a function, in which case it is “private” and exists within the function’s scope).  The counter() function also defines a new (anonymous) function that increments the value of localCounter and returns it’s value.  The counter() function returns this function, just like it would return any other value.  The catch is that when the returned function is invoked later, it is actually executed in the scope of the parent “counter()” function and therefore has access to localCounter, even though the function was invoked from a different scope.  In terms of Object Oriented programming, this is an approximation of the concept of <a href="https://developer.mozilla.org/en-US/docs/Glossary/Encapsulation" target="_blank">Encapsulation</a>.</p>
+<p>
+Why don’t we try to recreate our <strong>architect</strong> object using this idea:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">architect</span>(<span class="hljs-params">setName, setAge</span>)</span>{
+  <span class="hljs-keyword">var</span> name = setName;
+  <span class="hljs-keyword">var</span> age = setAge;
+  <span class="hljs-keyword">var</span> occupation = <span class="hljs-string">"architect"</span>;
+  <span class="hljs-keyword">return</span> {
+    setName: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newName</span>)</span>{name = newName},
+    setAge: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newAge</span>)</span>{age = newAge},
+    getName: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> name},
+    getAge: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> age}
+  }
+}
+
+<span class="hljs-keyword">var</span> architect1 = architect(<span class="hljs-string">"Joe"</span>, <span class="hljs-number">34</span>);
+<span class="hljs-keyword">var</span> architect2 = architect(<span class="hljs-string">"Mary"</span>, <span class="hljs-number">49</span>);
+
+<span class="hljs-built_in">console</span>.log(architect1.name); <span class="hljs-comment">// undefined</span>
+
+<span class="hljs-built_in">console</span>.log(architect1.getName()); <span class="hljs-comment">// "Joe"</span>
+<span class="hljs-built_in">console</span>.log(architect2.getName()); <span class="hljs-comment">// "Mary"</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>In this case, we create 3 “local” variables: <strong>name</strong>, <strong>age</strong> and <strong>occupation</strong>.  Since we’re using a function to do the work of ensuring encapsulation, we are able to initialize some of the local variables by passing their value into the function when it is first invoked (this can be thought of as a <strong>constructor</strong> for our “object”).  Also, instead of returning a single function that has access to the local variables, why don’t we return a simple object that consists of <strong>multiple</strong> functions that have access to the variables?  This gives us more freedom to work with the private data in different ways.</p>
+<p>Now, to create our <strong>“architect1”</strong> / <strong>“architect2”</strong> objects, we call the <strong>architect()</strong> function and pass in a couple of values as initializers for our private variables.  Once the <strong>architect()</strong> function executes, we will have a new object with 4 functions that have access to our hidden properties!  To illustrate this point, if we try to access the “name” property directly, we are given a value of “undefined” because it doesn’t exist on the <strong>architect1</strong> object.  However the <strong>architect1</strong> object does have access to it through the <strong>getName()</strong> function, because it exists in a closure and therefore is executed in the <strong>architect</strong> scope.
+</p>
+<p>While this does a pretty tidy job of enforcing the idea of encapsulation and protecting our data from being accessed directly, it does pose a significant problem from an Object-Oriented perspective.  The “architect1” and “architect2” objects do not actually hold any data themselves!  The are just simple objects, each containing 4 functions that happen to be executed within a scope that has access to some hidden data.  So, while they are indeed objects, they are not objects in the sense that they hold both <strong>data</strong> <em>and</em> <strong>functions</strong> in a single component (object).</p>
+<h3 class="lined">Creating Objects (Function Constructor)</h3>
+<p>One of the more advanced &amp; powerful ways of creating complex objects in JavaScript is by using <strong>“Function Constructors”</strong> and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" target="_blank">“new” operator</a>.  Essentially, we can specify how instances of each “new” object will be created by writing a function that follows a specific pattern – for example:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// Declare a function to initialize our "new" object with</span>
+<span class="hljs-comment">// properties (ie: "objectProperty")</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myObjectInitializer</span>(<span class="hljs-params">initialVal</span>)</span>{
+  <span class="hljs-keyword">this</span>.objectProperty = initialVal;
+}
+
+<span class="hljs-comment">// add methods (ie: "objectMethod") to the myObjectInitializer function prototype</span>
+myObjectInitializer.prototype.objectMethod = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.objectProperty };
+
+<span class="hljs-comment">// create a new object and initialize the objectProperty with the value "Hello"</span>
+<span class="hljs-keyword">var</span> myObject = <span class="hljs-keyword">new</span> myObjectInitializer(<span class="hljs-string">"Hello"</span>);
+
+<span class="hljs-comment">// execute the "objectMethod" on the new object</span>
+<span class="hljs-built_in">console</span>.log(myObject.objectMethod()); <span class="hljs-comment">// "Hello"</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>In the above example,  we are using a function to define all of the properties of the object (later created using the “new” operator), in the same way that we declare properties in a “class” in C++.  These properties (declared using the “this” keyword) will get added to the new object once the “new” operator is used to create a new “instance”.  Additionally, because we are using a function to define the new object, we can leverage the function properties to initialize the new object with some values – in this case, we set “objectProperty” to “Hello”.</p>
+<p>We can define the methods of the new object in either the function (using this.functionName = function(){};) or on the prototype of the function (as in the above example).  It is generally preferred to add the methods to the function prototype, since all new objects created using this function constructor (ie: myObjectInitializer) will have access to it’s prototype once they are created (using “new”).  A second added benefit is if we were to change this function later in the code, all of our objects would be updated to use the new code (since they’re all referring to the method in the prototype).
+</p>
+<p>To illustrate this concept, why don’t we recreate our “architect” object using this method:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">architect</span>(<span class="hljs-params">setName, setAge</span>)</span>{
+  <span class="hljs-keyword">this</span>.name = setName;
+  <span class="hljs-keyword">this</span>.age = setAge;
+  <span class="hljs-keyword">this</span>.occupation = <span class="hljs-string">"architect"</span>;
+}
+
+architect.prototype.setName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newName</span>)</span>{<span class="hljs-keyword">this</span>.name = newName};
+architect.prototype.setAge = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newAge</span>)</span>{<span class="hljs-keyword">this</span>.age = newAge};
+architect.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name};
+architect.prototype.getAge = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.age};
+
+<span class="hljs-keyword">var</span> architect1 = <span class="hljs-keyword">new</span> architect(<span class="hljs-string">"Joe"</span>, <span class="hljs-number">34</span>);
+<span class="hljs-keyword">var</span> architect2 = <span class="hljs-keyword">new</span> architect(<span class="hljs-string">"Mary"</span>, <span class="hljs-number">49</span>);
+
+<span class="hljs-built_in">console</span>.log(architect1.name); <span class="hljs-comment">// "Joe"</span>
+
+<span class="hljs-built_in">console</span>.log(architect1.getName()); <span class="hljs-comment">// "Joe"</span>
+<span class="hljs-built_in">console</span>.log(architect2.getName()); <span class="hljs-comment">// "Mary"</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>This looks very similar to how we created our architects using the closure pattern, doesn’t it?  However, there’s few key differences:</p>
+<ul>
+<li>New “architect” objects (ie: “architect1” &amp; “architect2”) have their own <strong>name</strong>, <strong>age</strong>, &amp; <strong>occupation</strong> properties</li>
+<li>New “architect” objects do not have any methods directly, however they all refer to the same prototype (architect.prototype) which contains all of the methods.  These methods can work with the correct data for each new architect object, because they are utilizing the “this” keyword.
+</li>
+</ul>
+<h3 class="lined">“this” keyword</h3>
+<p>As we have seen, both primary ways of creating objects in JavaScript (“Object Literal” &amp; “Function Constructor”) make regular use of the “this” keyword. This is an important concept in JavaScript, so before we move on to Prototypal Inheritance, let’s just do a quick review:</p>
+<p><strong>
+</strong></p><pre><strong>"this" always holds a reference to the "context" of the function (ie: the object actually invoking the function).</strong></pre><strong>
+</strong><p><strong></strong></p>
+<p>So, when we declare an object with methods, we always make sure that each method refers to the properties in the object with the “this” keyword.  This is because we wish to be specific about which property that we wish to reference and “this” always points to the object invoking the method.  So, the <strong>architect1.setName()</strong> method will always work with the <strong>architect1.name</strong> property and similarly, the <strong>architect2.setName()</strong> method will always work with the <strog>architect2.name
+</strog></p><p>While “this” allows us to be specific with which <strong>properties</strong> that we refer to in our <strong>methods</strong>, it can lead to some confusing scenarios. For example, what if we added a new “outputNameDelay()” method to our architect object that writes the architect’s name to the console after 1 second (1000 milliseconds):
+</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// ...</span>
+architect.prototype.outputNameDelay = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);
+  },<span class="hljs-number">1000</span>);
+}
+<span class="hljs-comment">// ...</span>
+architect2.outputNameDelay(); <span class="hljs-comment">// outputs undefined</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<p>Everything looks correct and we have made proper use of the “this”, however because the setTimeout function is not executed as a method of our architect object, we end up with “undefined” being output to the console.  There are a number of fixes for this issue (most noteworthy is the new “arrow function” syntax – discussed below), however one common way is to introduce a local variable (often named “that”) into the current scope that <strong>holds a reference to “this”</strong><br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// ...</span>
+architect.prototype.outputNameDelay = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(that.name);
+  },<span class="hljs-number">1000</span>);
+};
+<span class="hljs-comment">// ...</span>
+architect2.outputNameDelay(); <span class="hljs-comment">// outputs "Mary"</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Now, we aren’t using the “this” keyword from within the setTimeout() function, but rather “that” from our outputNameDelay function and everything works as it should! (ie, “that” points to architect2, since it was the architect2 that invoked the outputNameDelay method).</p>
+<h3 class="lined">Prototypal Inheritance</h3>
+<p>Prototypal Inheritance is a very interesting and complex topic in JavaScript.  There’s a lot to learn about how it is implemented in the language, however for our purposes we will primarily concentrate on how it impacts our objects / object creation when using the Function Constructor notation.  For a full treatment of Objects &amp; Prototypal inheritence, see: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank">Introducing JavaScript objects</a> from MDN’s “Learn web development” series.</p>
+<p>So far, we have seen how to create our “architect” object using this notation.  We actually made use of the “Prototype” property of the “architect” function to define the methods of our new architect objects (see above).  Essentially, what is happening here is that when we refer to a Constructor Function’s prototype (ie “architect.prototype”), we are really referring to another, separate object that all future instances of “architect” (ie: “architect1” and “architect2”) will reference via their own internal property “__proto__” (or “[[prototype]]”).</p>
+<p>So, why is so important for us?  Well, when you make a call to a method or reference a property on any object, the JavaScript runtime will actually check for their existence on the object’s prototype as well as the object itself.  Therefore, it can be said that “architect1” and “architect2” <strong>inherit</strong> getName(), setName(), getAge() and setAge() from their prototype and any future properties or methods declared on the prototype will be automatically picked up by each new / existing instance!  This is easy to verify using the built in Object.getPrototypeof() function, for example:</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// ...</span>
+<span class="hljs-built_in">console</span>.log(architect2); <span class="hljs-comment">// outputs: { name: 'Mary', age: 49, occupation: 'architect' }</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.getPrototypeOf(architect2)); <span class="hljs-comment">// outputs: { setName: [Function], </span>
+                                                <span class="hljs-comment">//            setAge: [Function],</span>
+                                                <span class="hljs-comment">//            getName: [Function],</span>
+                                                <span class="hljs-comment">//            getAge: [Function] }</span>
+<span class="hljs-comment">// ...</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>From the above code, it is clear that the “architect2” instance does not actually have it’s <strong>own</strong> methods, but we can invoke them on the architect2 object and the JavaScript runtime will check its prototype for their existence and execute them as though they were.  This actually happens often in JavaScript and is the reason that when we create a String (for example), we have access to properties like .length or methods like .split(), .slice(), .substr(), etc. (see: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype" target="_blank">String.prototype on MDN</a>).  We didn’t have to specify each of those properties / methods, however we automatically <strong>inherited them</strong> from the global String Object’s prototype.</p>
+<p>To see why this concept is so powerful, why don’t we add a new method to the architect prototype <strong>after</strong> we create our architect1 &amp; architect2 instances:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">architect</span>(<span class="hljs-params">setName, setAge</span>)</span>{
+  <span class="hljs-keyword">this</span>.name = setName;
+  <span class="hljs-keyword">this</span>.age = setAge;
+  <span class="hljs-keyword">this</span>.occupation = <span class="hljs-string">"architect"</span>;
+}
+
+architect.prototype.setName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newName</span>)</span>{<span class="hljs-keyword">this</span>.name = newName},
+architect.prototype.setAge = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newAge</span>)</span>{<span class="hljs-keyword">this</span>.age = newAge},
+architect.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name},
+architect.prototype.getAge = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.age}
+
+<span class="hljs-keyword">var</span> architect1 = <span class="hljs-keyword">new</span> architect(<span class="hljs-string">"Joe"</span>, <span class="hljs-number">34</span>);
+<span class="hljs-keyword">var</span> architect2 = <span class="hljs-keyword">new</span> architect(<span class="hljs-string">"Mary"</span>, <span class="hljs-number">49</span>);
+
+architect.prototype.newMethod = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ 
+  <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello: "</span> + <span class="hljs-keyword">this</span>.name; 
+};
+
+<span class="hljs-built_in">console</span>.log(architect2.newMethod()); <span class="hljs-comment">// outputs: "Hello: Mary"</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>As you can see from above, we are able to add a new method (newMethod) to the architect prototype at any time and because all architect instances (ie: architect2) use that prototype, they automatically get access to the method!</p>
+<h3 class="lined">Advanced JavaScript / ES6 Features</h3>
+<p>So far, we have learned quite a bit about JavaScript; from how it handles simple and complex custom / built-in Objects to design patterns like closures, modules, callback functions, etc.  However, for us to properly understand some of the examples in the upcoming weeks, we need to discuss a few advanced techniques as well as new syntax / methods from the new ES6 (ECMAScript 6) standard.  An important thing to note however, is that <strong>ES6</strong> is <strong>still being implemented</strong> across desktop &amp; mobile browsers as well as JavaScript runtimes.  Most of what we will discuss will be understood by modern browsers and 100% of the topics below will be understood by Node.js.  However, it is a good idea to reference the following<a href="https://kangax.github.io/compat-table/es6/" target="_blank"> ES6 Compatibility Table</a> if you are unsure whether your target browser will fully understand the feature that you wish to use.</p>
+<h3 class="lined">“var” vs “let” vs “const”</h3>
+<p>As we know, JavaScript is a <strong>dynamically typed language</strong> and we declare our variables using the keyword <strong>var</strong>.  However, when we use the “var” keyword, we’re actually creating our variables on the <strong>global scope</strong>. As we have seen, there’s no way to prevent this except to use “var” within the <strong>scope of a function</strong>.  This is why certain design patterns like IIFE (Immediately-Invoked Function Expression) are often used to prevent variables from becoming global, ie:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// declare an anonymous function &amp; immediately invoke it</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>
+  <span class="hljs-built_in">console</span>.log(x) <span class="hljs-comment">// 5</span>
+})();
+
+<span class="hljs-built_in">console</span>.log(x) <span class="hljs-comment">// undefined</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>This is fairly concise and works well, but wouldn’t it be better if we had more control over the variables without introducing additional programming constructs?  Fortunately ES6 has introduced the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let" target="_blank">let</a> &amp; <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const" target="_blank">const</a> keywords to solve this problem.  See the below table for a comparison of <strong>var</strong>,<strong>let</strong> &amp; <strong>const</strong></p>
+<table class="table-bordered table-condensed">
+<tbody><tr>
+<td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var" target="_blank">&nbsp;&nbsp;var&nbsp;&nbsp;</a></strong></td>
+<td>
+<ul>
+<li>Declares a variable, optionally initializing it to a value.</li>
+<li>The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global.</li>
+</ul>
+<p><code class="javascript">
+</code></p><pre style="margin-left:20px; margin-right:20px;"><code class="javascript hljs"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i =<span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++){
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-built_in">console</span>.log(i); <span class="hljs-comment">// 5</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p></td>
+</tr>
+<tr>
+<td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let" target="_blank">&nbsp;&nbsp;let&nbsp;&nbsp;</a></strong></td>
+<td>
+<ul>
+<li>Declares a block scope local variable, optionally initializing it to a value.</li>
+<li>The scope of a variable declared with "let" is limited to the block, statement, or expression on which it is used.</li>
+</ul>
+<p><code class="javascript">
+</code></p><pre style="margin-left:20px; margin-right:20px;"><code class="javascript hljs"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>; j &lt; <span class="hljs-number">5</span>; j++){
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-built_in">console</span>.log(j); <span class="hljs-comment">// ReferenceError: j is not defined</span>
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p></td>
+</tr>
+<tr>
+<td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const" target="_blank">&nbsp;&nbsp;const&nbsp;&nbsp;</a></strong></td>
+<td>
+<ul>
+<li>Declares an immutable block scope local variable, optionally initializing it to a value.</li>
+<li>The scope of a variable declared with "const" is limited to the block, statement, or expression on which it is used. However, the value of a variable declared with "const" cannot change through re-assignment and cannot be redeclared. </li>
+</ul>
+<p><code class="javascript">
+</code></p><pre style="margin-left:20px; margin-right:20px;"><code class="javascript hljs"><span class="hljs-keyword">for</span>(<span class="hljs-keyword">const</span> k=<span class="hljs-number">0</span>; k &lt; <span class="hljs-number">5</span>; k++){ <span class="hljs-comment">// TypeError: Assignment to constant variable.</span>
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-built_in">console</span>.log(k); 
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p></td>
+</tr>
+</tbody></table>
+<p></p>
+<p>As we can see from the above examples, <strong>let</strong> &amp; <strong>const</strong> behave more like variable declarations in C / C++.  While still being dynamically typed, they will respect the scope in which they are declared and cannot be referenced before they are declared.  </p>
+<h3 class="lined">Error / Exception handling</h3>
+<p>One of the most important aspects of writing any program is elegantly handling errors.  It is important to never let your program suddenly crash or enter an unknown state due to an unanticipated error.  Up until now we have seen numerous mechanisms in JavaScript to handle certain types of logical errors; for example the global <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/isNaN" target="_blank">isNaN()</a> function is a way to elegantly respond to a situation in which a number was expected, but not returned:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">let</span> x = <span class="hljs-string">"twenty"</span>;
+
+<span class="hljs-keyword">let</span> y = <span class="hljs-built_in">parseInt</span>(x);
+
+<span class="hljs-keyword">if</span>(<span class="hljs-built_in">isNaN</span>(y)){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"x cannot be converted to a number"</span>);
+}<span class="hljs-keyword">else</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"success! the numeric value of x is: "</span> + y);
+}
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Similarly, we can use the global <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/isFinite" target="_blank">isFinite()</a> function to handle a situation where division by zero has occurred:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">let</span> x = <span class="hljs-number">30</span>, y = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">let</span> z = x / y;
+
+<span class="hljs-keyword">if</span>(<span class="hljs-built_in">isFinite</span>(z)){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"success! "</span> + x + <span class="hljs-string">"/"</span> + y + <span class="hljs-string">"="</span> + z);
+}<span class="hljs-keyword">else</span>{
+  <span class="hljs-built_in">console</span>.log(x + <span class="hljs-string">" is not divisible by "</span> + y);
+}
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>However, while these functions are extremely useful for handling logical errors, they are not sophisticated enough to handle a situation that would completely break your code and cause the program to fail.  For example, consider the following example that uses our new "const" keyword:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.14159</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"trying to change PI!"</span>);
+
+PI = <span class="hljs-number">99</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Haha! PI is now: "</span> + PI );
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Here, we are trying to change the value of a constant: PI.  If we try to run this short program in Node.js, the program will crash before we get a chance to see the string "Haha! PI is now: 99", or even "Haha! PI is now: 3.14159".  There is no elegant recovery and we do not get to exit the program gracefully.  This can be a huge problem if, for example we were working with a live connection to a service and an unexpected error occurred.  Our program would crash and we would not be able to respond to the error by alerting the user and properly closing the connection.  Fortunately, before our program crashes in such a way, Node.js will <strong>"throw"</strong> an <strong><a href="https://nodejs.org/dist/latest-v6.x/docs/api/errors.html#errors_class_error" target="_blank">"Error"</a></strong> object that we can intercept using the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" target="_blank">"try...catch"</a></strong> statement:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.14159</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"trying to change PI!"</span>);
+
+<span class="hljs-keyword">try</span>{
+  PI = <span class="hljs-number">99</span>;
+}<span class="hljs-keyword">catch</span>(ex){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"uh oh, an error occurred!"</span>);
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Alas, it cannot be done, PI remains: "</span> + PI);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>If we execute the above code in Node.js we will find that our program doesn't crash and that our string: "Alas, it cannot be done, PI remains: 3.14159" gets correctly logged to the terminal!  Additionally, we can execute a specific block of code right when the error is encountered; in this case we output "uh oh, an error occurred!".  This is not very useful to help us debug the error, but it better than having the program crash and at least we know that an error did indeed occur.  If we wish to obtain additional information about the error, we can make use of some of the properties / methods of the <strong><a href="https://nodejs.org/dist/latest-v6.x/docs/api/errors.html#errors_class_error" target="_blank">Error</a></strong> object that was thrown as an exception and caught in our "catch" block.  For example, we can alter the code to use the "message" property of the caught exception (ex) to display a more helpful error:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.14159</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"trying to change PI!"</span>);
+
+<span class="hljs-keyword">try</span>{
+  PI = <span class="hljs-number">99</span>;
+}<span class="hljs-keyword">catch</span>(ex){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"uh oh, an error occurred: "</span> + ex.message); 
+  <span class="hljs-comment">// outputs: uh oh, an error occurred: Assignment to constant variable.</span>
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Alas, it cannot be done, PI remains: "</span> + PI);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>By utilizing properties such as <a href="https://nodejs.org/dist/latest-v6.x/docs/api/errors.html#errors_error_message" target="_blank">Error.message</a> &amp; <a href="https://nodejs.org/dist/latest-v6.x/docs/api/errors.html#errors_error_stack" target="_blank">Error.stack</a>, we can gain further insight to exactly what went wrong and we can either refactor our code to remedy the error, or acknowledge that the error will happen and handle it gracefully.</p>
+<p>Lastly, if we have some code that we would like to execute regardless of whether or not the code in our "try" block is successful, we can use a "finally" block:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.14159</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"trying to change PI!"</span>);
+
+<span class="hljs-keyword">try</span>{
+  PI = <span class="hljs-number">99</span>;
+}<span class="hljs-keyword">catch</span>(ex){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"uh oh, an error occurred: "</span> + ex.message); 
+  <span class="hljs-comment">// outputs: uh oh, an error occurred: Assignment to constant variable.</span>
+}<span class="hljs-keyword">finally</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"always execute code in this block"</span>);
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Alas, it cannot be done, PI remains: "</span> + PI);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code></p>
+<h5 class="lined">Throwing Errors</h5>
+<p>Now that we know how to correctly handle errors that have been thrown by the Node.js runtime environment or by other code / modules included in our solutions, why don't we try throwing our <strong>own exceptions</strong>?  This is very straightforward and only requires the use of the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw" target="_blank">"throw"</a></strong> keyword and (typically) an <strong><a href="https://nodejs.org/dist/latest-v6.x/docs/api/errors.html#errors_class_error" target="_blank">Error</a></strong> Object:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">divide</span>(<span class="hljs-params">x,y</span>)</span>{
+  <span class="hljs-keyword">if</span>(y == <span class="hljs-number">0</span>){
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">"Division by Zero!"</span>);
+  }
+  <span class="hljs-keyword">return</span> x / y;
+}
+
+<span class="hljs-keyword">let</span> a = <span class="hljs-number">3</span>, b = <span class="hljs-number">0</span>, c;
+
+<span class="hljs-keyword">try</span>{
+  c = divide(a,b);
+}<span class="hljs-keyword">catch</span>(ex){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"uh oh, an error occurred: "</span> + ex.message); 
+  <span class="hljs-comment">// outputs: uh oh, an error occurred: Division by Zero!</span>
+  c = <span class="hljs-literal">NaN</span>;
+}
+
+<span class="hljs-built_in">console</span>.log(a + <span class="hljs-string">" / "</span> + b + <span class="hljs-string">" = "</span> + c); <span class="hljs-comment">// 3 / 0 = NaN</span>
+
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Notice how the code below the "throw" statement does not get executed, and the flow of execution goes directly into the catch block.  This prevents the error from propagating and ensures that it is handled immediately.  As you can see, we can throw a new error whenever we detect that an error <em>may</em> occur anywhere in our code.  In the above example, we check if our second parameter (y) is zero (0) and rather than trying to do the division, we immediately throw a custom error with the message "Division by Zero!".  If the function call exists in a "try" block ( as above ), the execution of the code will immediately continue in the "catch" block and we mitigate the error by setting "c" to NaN.</p>
+<h3 class="lined">Promises</h3>
+<p>So far, while learning JavaScript, we have seen a number of circumstances where <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous" target="_blank">"asynchronous"</a> code is used.  That is, once the code has been invoked, it does not block the main thread of execution while it's working.  Once it's complete, an event is triggered (at an undetermined time) and we can write code to work with the result of the asynchronous operation. A classic example of this is a simple AJAX request using the <a href="https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest" target="_blank">HXMLHttpRequest</a> object from the client side (web browser). Once we <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send" target="_blank">send()</a> the request, code is executed that works outside of our main sequence of execution to establish the connection, make a request, etc. If we assign a function to the value of the XMLHttpRequest object's <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/onreadystatechange" target="_blank"> onreadystatechange</a> property, we can execute some code at a later, undetermined time (maybe the request is to a particularly slow server) and handle the updated status of the request.  The important thing to understand is that we can still execute code in a sequential fashion <strong>after</strong> we initiate the request!</p>
+<p>To see this in action, we can invoke the global <a href="https://nodejs.org/api/timers.html#timers_settimeout_callback_delay_args" target="_blank">setTimeout</a> function (as we did in our architect.prototype.outputNameDelay function) to create a situation in which the execution of code takes some time to complete, ie:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// output "A" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputA</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"A"</span>);
+    },randomTime);
+}
+
+<span class="hljs-comment">// output "B" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputB</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"B"</span>);
+    },randomTime);
+}
+
+<span class="hljs-comment">// output "C" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputC</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"C"</span>);
+    },randomTime);
+}
+
+<span class="hljs-comment">// invoke the functions in order</span>
+
+outputA();
+outputB();
+outputC();
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>In the above example, we can invoke the outputA() function (which will output the character "A" after a random delay between 0 &amp; 3 seconds) and then immediately invoke the following "outputB()" and "outputC()" functions in order.  Each function is said to be "non-blocking" because even though it will take some time to perform it's function (ie: output a letter to the browser), it does not stop the main flow of execution when it is invoked.  Essentially, what we are doing is kickstarting 3 separate functions that will each output their value to the console after a random amount of time.  When this example is executed, there is absolutely no way to know what order the functions will output their content to the browser - ie it could be "ACB", "BCA", "CAB", etc. However, what if that order was important?  For example, what if one of the functions relies on the output from one of the other functions?  If this were the case they would have to be executed in a specific order.</p>
+<h5 class="lined">Resolve &amp; Then</h5>
+<p>Fortunately, JavaScript has the notion of the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">"Promise"</a></strong> that can help us solve this type of situation.  Put simply, a Promise object is used for asynchronous computations (like the situation in the example above) and represents a value which may be available now, or in the future, or never.  Basically, what this means is that we can place our asynchronous code inside a Promise object as a function with specific parameters ("resolve" and "reject").  When our code is complete, we invoke the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve" target="_blank">"resolve" function</a> and if our code encounters an error, we can invoke the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject" target="_blank">"reject" function</a>.  We can handle both of these situations later with the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" target="_blank">.then()</a> method or (in the case of an error that we wish to handle) the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch" target="_blank">.catch()</a> method. To see how this concept is implemented in practice, consider the following addition to the outputA() method from above:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// output "A" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputA</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{ <span class="hljs-comment">// place our code inside a "Promise" function</span>
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"A"</span>);
+            resolve(); <span class="hljs-comment">// call "resolve" because we have completed the function successfully</span>
+        },randomTime);
+    });   
+}
+
+<span class="hljs-comment">// call the outputA function and when it is "resolved", output a confirmation to the console</span>
+
+outputA().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"outputA resolved!"</span>);
+});
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Our "outputA()" function still behaves as it did before (outputs "A" to the console after a random period of time). However, our outputA() function now additionally returns a <strong>new Promise</strong> object that contains all of our asynchronous logic and its status.  The container function for our logic always uses the two parameters mentioned above, ie: <strong>resolve</strong> and <strong>reject</strong>.  By invoking the <strong>resolve</strong> method we are setting the promise into the fulfilled state, meaning that the operation completed successfully and the character "A" was successfully output to the browser.  We can respond to this situation using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" target="_blank">"then"</a> function on the returned promise object to execute some code <strong>after</strong> the asynchronous operation is complete!  This gives us a mechanism to react to asynchronous functions that have completed successfully so that we can perform additional tasks.</p>
+<h5 class="lined">Adding Data</h5>
+<p>Now that we have the Promise structure in place and are able to <strong>"resolve"</strong> the Promise when it has completed it's task and <strong>"then"</strong> execute another function using the returned Promise object (as above), we can begin to think about how to pass data from the asynchronous function to the "then" method. Fortunately, it only requires a little tweak to the above the above example to enable this functionality:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// output "A" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputA</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{ <span class="hljs-comment">// place our code inside a "Promise" function</span>
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"A"</span>);
+            resolve(<span class="hljs-string">"outputA resolved!"</span>); <span class="hljs-comment">// call "resolve" because we have completed the function successfully</span>
+        },randomTime);
+    });   
+}
+
+<span class="hljs-comment">// call the outputA function and when it is "resolved", output a confirmation to the console</span>
+
+outputA().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(data);
+});
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Notice how we are able to invoke the <strong>resolve()</strong> function with a single parameter that stores some data (in this case a string with the text "outputA resolved!").  This is typically where we would place our freshly returned data from an asynchronous call to a web service / database, etc.  The reason for this is that we will have access to it as the first parameter to the anonymous function declared inside the <strong>.then</strong> method and this is the perfect place to process the data.
+</p>
+<h5 class="lined">Reject &amp; Catch</h5>
+<p>It is not always safe to assume that our asynchronous calls will complete successfully.  What if we're in the middle of an XHR (XMLHttpRequest) request and our connection is dropped or a database connection fails?  To ensure that we handle this type of scenario gracefully, we can invoke the "reject" method instead of the "resolve" method and provide a reason why our asynchronous operation failed.  This causes the flow of execution to move into the ".catch" function, where we can gracefully handle the error. The typical syntax for handling both "then" and "catch" in a Promise is as follows:<br>
+<code language="javascript">
+</code></p><pre><code language="javascript" class="hljs javascript"><span class="hljs-comment">// output "A" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputA</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{ <span class="hljs-comment">// place our code inside a "Promise" function</span>
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"-"</span>);
+            reject(<span class="hljs-string">"outputA rejected!"</span>); <span class="hljs-comment">// call "reject" because the function encountered an error</span>
+        },randomTime);
+    });   
+}
+
+<span class="hljs-comment">// call the outputA function and when it is "resolved" or "rejected, output a confirmation to the console</span>
+
+outputA()
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(data);
+})
+.catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reason</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(reason);
+});
+</code></pre><code language="javascript">
+</code><p><code language="javascript"></code>
+</p>
+<h5 class="lined">Chaining Promises</h5>
+<p>
+As we have seen, the Promise object and pattern for dealing with asynchronous code (of any kind) is extremely powerful.  We are able to effectively process the result of executing an asynchronous block of code whether it completes successfully (using .resolve &amp; .then) or fails / gives undesired results (using .reject &amp; .catch).  However, there is one last feature that we should discuss before moving on, ie: "chaining" promises.  Recall, when we first began discussing promises we saw an example with 3 asynchronous functions ("outputA()", "outputB()" and "outputC()") that always completed in a different order even though they were always invoked in the same order. This could potentially cause problems if one function depended on another for data.</p>
+<p>With promises, we can reliably detect when an asynchronous block of code completes, so why not use this to invoke a second (dependant) asynchronous function?  This is the notion of "chaining" promises - executing one piece of asynchronous code after another and optionally passing data.  For example, if we wish to ensure that "outputA()", "outputB()" and "outputC()" always execute in the same order, regardless of how long each task takes, we can update the code to use Promises in the following way:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-comment">// output "A" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputA</span>(<span class="hljs-params"></span>)</span>{
+    
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"A"</span>);
+            resolve(<span class="hljs-string">"outputA() complete"</span>);
+        },randomTime);
+    });   
+}
+
+<span class="hljs-comment">// output "B" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputB</span>(<span class="hljs-params">msg</span>)</span>{
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> msg holds the 'resolve' message from the </span>
+    <span class="hljs-comment">// previous function in the chain</span>
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"B"</span>);
+           resolve(<span class="hljs-string">"outputB() complete"</span>);
+        },randomTime);
+    });   
+}
+
+<span class="hljs-comment">// output "C" after a random time between 0 &amp; 3 seconds</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outputC</span>(<span class="hljs-params">msg</span>)</span>{
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> msg holds the 'resolve' message from the </span>
+    <span class="hljs-comment">// previous function in the chain</span>
+    <span class="hljs-keyword">var</span> randomTime = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">3000</span>) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"C"</span>);
+            resolve(<span class="hljs-string">"outputA() complete"</span>);
+        },randomTime);
+    });   
+}
+
+<span class="hljs-comment">// invoke the functions in order</span>
+
+outputA()
+.then(outputB)
+.then(outputC)
+.catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">rejectMsg</span>)</span>{
+    <span class="hljs-comment">// catch any errors here</span>
+    <span class="hljs-built_in">console</span>.log(rejectMsg);
+});
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>Now, all three functions ("outputA()", "outputB()" &amp; outputC()") have been updated to use promises and each return a new Promise object.  Each promise is "resolved" once it's message has been written to the console – ie: "outputA()"'s promise is resolved once "A" is written to the, console, etc.  We don't have to alter the functions to be aware of each other by passing in any related functions / callbacks and each function is treated as it's own isolated "promise" to output it's message to the browser.</p>
+<p>The chaining actually occurs further down in the ".then()" method of each promise.  Recall the ".then()" method of the promise accepts a function that is invoked once the promise is "resolved".  So, we can first invoke the "outputA()" method, "then" when it is resolved, invoke the "outputB()" method.  The trick that makes chaining work is that we must ensure the next function "in the chain", returns it's promise.  We can continue this pattern to execute as many asynchronous functions (Promises) we like and be confident that they will always be executed in the order we invoke them.
+</p>
+<h3 class="lined">Arrow Functions</h3>
+<p>ES6 has introduced many new keywords, constructs, syntax and functionality to the JavaScript language (for a full list, refer back to the <a href="https://kangax.github.io/compat-table/es6/" target="_blank">Compatibility Table</a>).  We cannot possibly discuss it all here, so we must concentrate on new syntax / functionality that is likely to be encountered when learning some of the frameworks in this course (ie: Node.js / Express.js, MongoDB, etc. ).</p>
+<p>One new concept that you will notice right away (or may have already noticed), is that there's a new operator: "=&gt;" that we can use to declare anonymous functions – or "arrow functions":</p>
+<p><code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> outputMessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>)</span>{
+&nbsp; <span class="hljs-built_in">console</span>.log(message);
+};
+
+<span class="hljs-comment">// is the same as:</span>
+
+<span class="hljs-keyword">var</span> outputMessageArrow = message =&gt; <span class="hljs-built_in">console</span>.log(message);
+
+<span class="hljs-comment">// invoke each function to see the result</span>
+
+outputMessage(<span class="hljs-string">"Function Expression"</span>);
+outputMessageArrow(<span class="hljs-string">"Arrow Function"</span>);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>When we use the arrow (=&gt;) syntax to create functions, we no longer need the "function" keyword and simple, one parameter / one line functions or methods can be greatly simplified as:</p>
+<pre>parameter =&gt; logic</pre>
+<p>However, if we have more than one parameter, or more than one line of logic, we can still use arrow functions to simplify the creation of anonymous functions by eliminating the "function" keyword:<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs"><span class="hljs-keyword">var</span> outputMessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message1, message2</span>) </span>{
+&nbsp; &nbsp; <span class="hljs-built_in">console</span>.log(message1);
+&nbsp; &nbsp; <span class="hljs-built_in">console</span>.log(message2);
+};
+
+<span class="hljs-comment">// is the same as:</span>
+
+<span class="hljs-keyword">var</span> outputMessageArrow = (message1, message2) =&gt; {
+&nbsp; &nbsp; <span class="hljs-built_in">console</span>.log(message1);
+&nbsp; &nbsp; <span class="hljs-built_in">console</span>.log(message2);
+};
+
+<span class="hljs-comment">// invoke each function to see the result</span>
+
+outputMessage(<span class="hljs-string">"Function"</span>, <span class="hljs-string">"Expression"</span>);
+outputMessageArrow(<span class="hljs-string">"Arrow"</span>, <span class="hljs-string">"Function"</span>);
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>This still simplifies things from a syntax point of view, however both methods of declaring anonymous functions are still very similar.  The syntax difference is most noticeable when we have simple functions that accept zero (0) parameters and perform a single line of logic, for example:<br>
+<code language="javascript">
+</code></p><pre><code language="javascript" class="hljs javascript"><span class="hljs-keyword">var</span> outputMessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+&nbsp; &nbsp; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello Function Expression"</span>);
+};
+
+<span class="hljs-comment">// is the same as:</span>
+
+<span class="hljs-keyword">var</span> outputMessageArrow = () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello Arrow Function"</span>);
+
+<span class="hljs-comment">// invoke each function to see the result</span>
+
+outputMessage();
+outputMessageArrow();
+</code></pre><code language="javascript">
+</code><p><code language="javascript"></code></p>
+<h5 class="lined">Lexical "this"</h5>
+<p>Arrow functions are great for creating simplified code that is easier to read (sometimes referred to as "syntax sugar"), however there is another very useful and slightly misleading feature that we have yet to discuss: the notion of  a "lexical 'this'".  Recall that when we added the "outputNameDelay" method to the architect prototype, we had to overcome the issue with "this" pointing at the incorrect object by introducing a new local variable, "that":<br>
+<code class="javascript">
+</code></p><pre><code class="javascript hljs">architect.prototype.outputNameDelay = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(that.name);
+  },<span class="hljs-number">1000</span>);
+};
+</code></pre><code class="javascript">
+</code><p><code class="javascript"></code>While this does solve the problem, wouldn't it be better if we didn't have to always create a new local variable to sit in for "this"?  Fortunately, arrow functions actually use a "lexical this" instead of their own value for "this", so functions defined using the arrow notation use the "this" value of their parent scope.  This insures that if an arrow function is invoked in a different context than the one in which it is defined (like the above example), the value of "this" will not change.</p>
+<p>Now, we can re-write the above function using an arrow function to achieve the same result without having to introduce any new variables to handle the "this" issue. Additionally, because it's such a simple function, we can transform it into a single line:<br>
+<code language="javascript">
+</code></p><pre><code language="javascript" class="hljs coffeescript">architect.prototype.outputNameDelay = function(){
+  setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> { <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name); }, <span class="hljs-number">1000</span>);
+};
+</code></pre><code language="javascript">
+</code><p><code language="javascript"></code>This is a typical use of arrow functions, ie to simplify a scenario in which we need to declare a function in place, often as a parameter to other functions.  We don't have to concern ourselves with how "this" will behave in the new context and the added "syntax sugar" makes the operation much simpler to read and shorter to code.</p>
+<h5 class="lined">A Word of Warning</h5>
+<p>Be careful when using arrow functions, as not every situation calls for a "lexical this". For example, when we declare methods on an object, we always want "this" to point to the current object, so "lexical this" doesn't make sense and arrow functions will actually fail to behave as expected:<br>
+<code language="javascript">
+</code></p><pre><code language="javascript" class="hljs javascript"><span class="hljs-keyword">var</span> test1obj = {
+&nbsp; &nbsp; a: <span class="hljs-string">"a"</span>,
+&nbsp; &nbsp; b: () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.a)
+}
+
+test1obj.b(); <span class="hljs-comment">// undefined</span>
+
+<span class="hljs-keyword">var</span> test2obj = {
+&nbsp; &nbsp; a: <span class="hljs-string">"a"</span>,
+&nbsp; &nbsp; b: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.a); }
+}
+
+test2obj.b(); <span class="hljs-comment">// "a"</span>
+</code></pre><code language="javascript">
+</code><p><code language="javascript"></code>In addition, arrow functions <strong>do not</strong> have any notion of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments" target="_blank">arguments</a> object and also <strong>cannot</strong> be used as function constructors and will throw an error when using the new operator (ie: Function is not a constructor).</p>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 3 Next Week</li>
+<li>Assignment 2 Due this Friday at 11:59pm</li>
+</ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank">MDN - Working with Objects</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Prototypal_inheritance" target="_blank">MDN - Prototypal Inheritance</a>
+</li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">JavaScript Reference</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 3 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 3 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

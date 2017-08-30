@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 Course Notes  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 Course Notes – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 Course Notes – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 Course Notes – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 Course Notes – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 Course Notes – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 Course Notes – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 Course Notes – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 Course Notes – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 Course Notes – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 Course Notes – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 Course Notes – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 Course Notes – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=205">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-205 page-parent page-child parent-pageid-200 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="active dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/#" class="dropdown-toggle active">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="active dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 Course Notes</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li class="current_item"></li><li><span property="name">WEB322 Course Notes</span><meta property="position" content="3"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 Course Notes</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-205" class="post-205 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-1_1">
+<h3 class="lined" style="margin-bottom:20px;">Class Notes</h3>
+<p><!--
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week13-class1/">Week 13 - Class 1</a></li>
+
+</ul>
+
+</td>
+
+--><br>
+</p><table class="table-bordered table-condensed table-striped" style="width:100%;">
+<thead>
+<tr>
+<th style="width:25%">Week</th>
+<th style="width:50%">Topics</th>
+<th style="width:25%">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ol start="1">
+<li>Course Introduction</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>Development Environment / Technology / Tools</li>
+<li>Web Servers &amp; HTTP Request / Response Paradigm</li>
+<li>HTTP Protocol Overview
+<ul>
+<li>Verbs</li>
+<li>Status Codes</li>
+<li>Headers</li>
+<li>Request / Response Formats</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week1-class1/">Week 1 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr><td>
+<ol start="2">
+<li>Node.js Introduction</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>What is Node.js / Why use it?</li>
+<li>Modules explained</li>
+<li>NPM – Node Package Manager</li>
+<li>Package.json Explained</li>
+<li>Building a simple web server using Node.js with Express.js
+<ul>
+<li>Files / Directory Structure</li>
+<li>Downloading dependencies (Express.js) with NPM</li>
+<li>Coding a simple server using Express</li>
+<li>Sending Data back from a “get” request</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week2-class1/">Week 2 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="3">
+<li> JavaScript<br>Concept Review</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>Object Oriented JavaScript Review:
+<ul>
+<li>Custom Objects using Object Literal Notation &amp; Function Constructors</li>
+<li>Prototypal Inheritance</li>
+</ul>
+</li>
+<li>Advanced JavaScript / ES6 Features:
+<ul>
+<li>Promises</li>
+<li>Error handling with try / catch / finally &amp; throw</li>
+<li>“var” vs “let” vs “const”</li>
+<li>“this” keyword &amp; arrow functions (lexical “this”)</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week3-class1/">Week 3 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr><td>
+<ol start="4">
+<li>Express.js Introduction</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>What is Express.js?</li>
+<li>Configuration &amp; Settings</li>
+<li>Routing</li>
+<li>Middleware</li>
+<li>Error Handling</li>
+<li>Chrome Dev tools – Network tab, Response data</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week4-class1/">Week 4 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr><td>
+<ol start="5">
+<li>Processing Forms with Express.js</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>HTML Forms Review</li>
+<li>Processing Forms in Express.js
+<ul>
+<li>HTTP Post &amp; Urlencoded data</li>
+<li>Content-Type in POST header &amp; enctype in HTML forms</li>
+<li>body-parser module (urlencoded form data)</li>
+<li>Multer module (multipart form data – file uploads)</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week5-class1/">Week 5 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="6">
+<li>Template Engines – Handlebars.js</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>Template Engines in Express.js
+<ul>
+<li>What is a Template Engine / Why do we need one</li>
+</ul>
+</li>
+<li>Handlebars.js
+<ul>
+<li>Including the express-handlebars module</li>
+<li>Getting Started with Handlebars.js &amp; Samples</li>
+<li>Block Expressions / Helpers</li>
+<li>Built-In Helpers
+<ul>
+<li>if, unless, each</li>
+</ul>
+</li>
+<li>Partials</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week6-class1/">Week 6 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="7">
+<li>Relational Database</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>Setting up a “Postgres” Database</li>
+<li>Downloading the “sequelize” &amp; “pg” modules</li>
+<li>Object-Relational Mapping Explained &amp; Requesting Data</li>
+<li>Returning &amp; Formatting data using Handlebars.js</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week7-class1/">Week 7 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="8">
+<li>MongoDB</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>What is a NoSQL Database? Advances / Disadvantages</li>
+<li>Configuring a NoSQL Database (MongoDB)</li>
+<li>Downloading / installing MongoDB Driver (module) for Node</li>
+<li>Queries</li>
+<li>Tools – Robo 3T (Robomongo) </li>
+<li>Mongoose.js</li>
+<li>Schema, indexes</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week8-class1/">Week 8 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="9">
+<li>AJAX Review / Practical AJAX Programming</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>Review: What is AJAX? Why do we need it?</li>
+<li>Requesting data (JSON) on the Client Side using JavaScript
+<ul>
+<li>XMLHttpRequest Object</li>
+<li>Handling State Changes &amp; Processing the Response</li>
+<li>Updating the DOM</li>
+</ul>
+</li>
+<li>Processing XMLHttpRequest Requests on the server and returning data</li>
+<li>RESTful API Introduction</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week9-class1/">Week 9 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="10">
+<li>Managing State Information</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>Cookies</li>
+<li>Sessions</li>
+<li>Authorization vs. Authentication</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week10-class1/">Week 10 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="11">
+<li>Introduction to jQuery &amp; Bootstrap Frameworks</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>jQuery Introduction
+<ul>
+<li>Selectors, event handlers, AJAX</li>
+</ul>
+</li>
+<li>Introduction to the Bootstrap UI Framework
+<ul>
+<li>Responsive Layouts, HTML / CSS &amp; jQuery Components</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week11-class1/">Week 11 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="12">
+<li>Security Considerations</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>HTTPS</li>
+<li>Letsencypt.org, free https certificates forever</li>
+<li>Password Encryption, bcrypt.js</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week12-class1/">Week 12 – Class 1</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ol start="13">
+<li>Course Review</li>
+</ol>
+</td>
+<td colspan="2">
+<ul>
+<li>Course Review</li>
+<li>Help with any outstanding Projects</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 Course Notes – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 Course Notes – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

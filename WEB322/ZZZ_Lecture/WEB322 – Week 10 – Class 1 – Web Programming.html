@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week10-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 10 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 10 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week10-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=355">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek10-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek10-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-355 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week10-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week10-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 10 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 10 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 10 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-355" class="post-355 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Managing State Information</h3>
+<p>Up to this point in the course, we have been building simple applications as examples of how to use the basic building blocks and concepts of a website. However, one of the core concepts that almost every serious website will use has been missing. This is the concept of <strong>state</strong>. One of the most common uses for state is having users and logins on a website. Adding a login and user accounts to a website is not that difficult and it will enable you to secure certain routes and make sure information is only available to be viewed by the correct audience.
+</p>
+<p>There are 3 core pieces required in your applications to be able to deliver this:</p>
+<ol>
+<li>Cookies</li>
+<li>Sessions</li>
+<li>Encryption</li>
+</ol>
+<p>We are going to cover Cookies and Sessions in this lecture and briefly touch on encryption as it applies to cookies and sessions. In week 12, we will go into more detail on encryption for other purposes.
+</p>
+<h4>Cookies</h4>
+<p>Cookies are pieces of data that are passed back and forth from the browser to the server that hold state information about the current audience interacting with your application.</p>
+<p>Cookies are not set and maintained automatically you have to code this functionality into your application to support it.</p>
+<p>As we have learned; each time a request is made from the browser or a response is sent from the server, there is a set of headers attached to the data payload.  Request headers contain the ‘Cookie’ header and response headers contain the ‘Set-Cookie’ header. These headers are a string of semi colon separated values that you can refer to in server side code through the ‘req’ object. The most common type of data we want to place in the cookie is a session value.</p>
+<p>session contains information about the user, and the session is placed as one of many potential key:value pairs of data in one or more cookies</p>
+<p>Here is an example of what a cookie might look like in the request header when inspecting it in the Chrome dev tools</p>
+<blockquote><p><strong>Cookie:</strong>_gat=4; _ga=GA1.6.14184624.14881926; session=9HQWRacCvAHDw7KTIw.P_aFNgqKkZrcySj7Jk5HFI8e6TNXBpRemrFczm3YiiVOs7gFG7qZ1GFXJ5Uw-tyOrL6VKd-QoDpYl2INZ1SVjPvt36nq3GOq3kTDh2r9lt580UIl0dNb0Wj_b5IjCOaPnrpqPg-SViSpvQXS7TtRhv6T-FO9UrSRiVWXqt-QBFzLxncbkVgwotroHNRPvjLtdG8ReU34OaD1uQyz5odSpmXlyY_kk.1488044367536.1209600000.M-IJbIdxARUmP-5ummaUOIzmxzWYvbPxawLoBz74</p></blockquote>
+<p>And here is an example of the ‘Set-Cookie’ header in a response from the server to update it after a request</p>
+<blockquote><p><strong>Set-Cookie:</strong>session=z80OxktaQTVma-Eclg.QfJOeQ6sTt2g7HfqjpqHlLsuC5ZFYltXmbs_5XuC5Naw-qVuYEItIYXOQZbEwhaEdcR7R35bmnUPLElJuWirq-AUS_K79TO7k9KhXrgUZvQb6gQxa_bcGBoH6onPMhCotDXagGXS2U-MjdsdCo2gtPXpjh0QkPw-oe3-oQr7kj2JidXlSlYweE8sFYsldfBPG3zDMly0MXbhOI4.14880447805.12090000.SRbFKSnQ1-tbEe8NTNxqQHPjnvOhUdC5B4VYs; path=/; expires=Sat, 11 Mar 2017 17:39:28 GMT; secure; httponly</p></blockquote>
+<div id="attachment_801" style="width: 541px" class="wp-caption alignleft"><img src="./WEB322 – Week 10 – Class 1 – Web Programming_files/cookies.png" alt="An example of Cookie and Set-Cookie headers on blackboard" width="531" height="706" class="size-full wp-image-801"><p class="wp-caption-text">An example of Cookie and Set-Cookie headers on blackboard</p></div>
+<p>As you can see, the Cookie header contains the session key and value pair but it can also contain other things as well depending on what the website wants to keep in state between requests from the user. You can also see that its just a jumbled up mess. That’s because this particular example uses an encrypted session. Using encrypted sessions is <strong>EXTREMELY</strong> important in a production environment. If you do not encrypt your sessions and cookies then a user can look at the request and response headers and potentially pull out very sensitive information about the user those cookies are meant for. As a general rule, all sessions that are persistent between the client and server should always be encrypted and also always sent over HTTPS as well. We will cover HTTPS encryption in week 12.</p>
+<p>Let’s move on to talk more about sessions and implementing them.</p>
+<h4>Sessions</h4>
+<p>Implementing sessions is now a fairly simple task in Express.js. The platform has matured and libraries have been tested with thousands of websites and billions of logins. These libraries are easy to use and integrate into your own projects.</p>
+<p>The most popular library for implementing client sessions is Mozilla’s client-sessions node library. This library focuses on keeping sessions between the client and server on the client side. This has several advantages over storing the session on the server side and keeping track of it on the server. For example, if the server restarts and you do not save session information in a persistent storage location, the sessions will be lost and all your users will be logged out anytime the server restarts.</p>
+<p>It is also beneficial to keep your sessions on the client side (and have them continuously sent with each request), because this enables you to host a web site that has multiple web servers and the session will still be maintained regardless of which server is used to process the response. In an environment where sessions are kept track of on the server and you have multiple web servers that are load balanced, you will need to make sure each users’ requests are always sent to the same web server with each request to preserve their session.  Alternatively, you could attempt to replicate server session information between web servers,  however this can be very complex. For these reasons, storing the session on the client makes scaling and session management a lot easier.</p>
+<h4>Authentication vs Authorization</h4>
+<p>Authentication and Authorization mean two entirely different things. It can be easy to confuse them, so let’s discuss them a little bit before we begin to implement sessions and secure endpoints.  This will enable you to be more comfortable explaining and debugging the two different concepts.</p>
+<p>Authentication is the answer to “Who are you?”. It involves supplying credentials to identify yourself to the server and establish a session for your user account.</p>
+<p>Authorization is the answer to “What do you have access to?”. It involves checking your permissions to resources you have requested and acting accordingly. You may be authenticated with the server and have a user session but you might not be authorized to view a certain resource. (No permissions!)</p>
+<p>Here is a great 1 min video that explains it from MongoDB University. MongoDB also has the concept of authentication and authorization.</p>
+<p><iframe width="560" height="380" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/awJHaEKVMKI.html" frameborder="0" allowfullscreen=""></iframe></p>
+<h5>Status codes</h5>
+<p>There are a number of standard http response status codes that can be used by your application to inform the browser of whether a request was rejected because of an authentication problem or an authorization problem.</p>
+<ul>
+<li>401 status code (Unauthorized) Authentication error. The resource exists but it requires the user to be authenticated first to view it. It may also require permissions and be checked again after authenticating for proper authorization.</li>
+<li>403 status code (Forbidden) Authorization error. The resource exists but the user does not have permission to view it.</li>
+<li>404 status code Not Found. The resource that was requested was not found on the server. This is commonly used when a url is requested that just doesn’t exist.</li>
+</ul>
+<h4>Adding sessions to an Express.js application</h4>
+<p>Now that we’ve explained what cookies, sessions, authentication, authorization, and status codes are, we can get to the coding part of the lecture and see how it all comes together.</p>
+<p>We will break down the project to add client sessions handling into 4 parts:</p>
+<ol>
+<li>Add the client-sessions library to the project.</li>
+<li>Create a middleware function to setup the client-sessions configuration.</li>
+<li>Write a login route handler to process a POST to /login and establish <strong>authentication</strong> of a user session.</li>
+<li>Add a middleware function that handles checking for <strong>authorization</strong> of a user for a specific resource.</li>
+</ol>
+<h5>Step 1: Add the client-sessions library to the project.</h5>
+<p>We will need to npm install the client-sessions library and –save it to the package.json file
+</p>
+<pre>npm install client-sessions --save</pre>
+<p>Then we just have to “require” it in our server file.</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">"body-parser"</span>);
+<span class="hljs-keyword">const</span> exphbs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express-handlebars"</span>);
+<span class="hljs-keyword">const</span> clientSessions = <span class="hljs-built_in">require</span>(<span class="hljs-string">"client-sessions"</span>);
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+</code></pre>
+<h5>Step 2: Create a middleware function to setup client-sessions.</h5>
+<p>Now we need to register clientSessions as a middleware and configure it, as well as register handlebars as a view rendering engine and bodyParser to handle our application/x-www-form-urlencoded POST data.</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Register handlerbars as the rendering engine for views</span>
+app.engine(<span class="hljs-string">".hbs"</span>, exphbs({ extname: <span class="hljs-string">".hbs"</span> }));
+app.set(<span class="hljs-string">"view engine"</span>, <span class="hljs-string">".hbs"</span>);
+
+<span class="hljs-comment">// Setup the static folder that static resources can load from</span>
+<span class="hljs-comment">// like images, css files, etc.</span>
+app.use(express.static(<span class="hljs-string">"static"</span>));
+
+<span class="hljs-comment">// Setup client-sessions</span>
+app.use(clientSessions({
+  cookieName: <span class="hljs-string">"session"</span>, <span class="hljs-comment">// this is the object name that will be added to 'req'</span>
+  secret: <span class="hljs-string">"week10example_web322"</span>, <span class="hljs-comment">// this should be a long un-guessable string.</span>
+  duration: <span class="hljs-number">2</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>, <span class="hljs-comment">// duration of the session in milliseconds (2 minutes)</span>
+  activeDuration: <span class="hljs-number">1000</span> * <span class="hljs-number">60</span> <span class="hljs-comment">// the session will be extended by this many ms each request (1 minute)</span>
+}));
+
+<span class="hljs-comment">// Parse application/x-www-form-urlencoded</span>
+app.use(bodyParser.urlencoded({ extended: <span class="hljs-literal">false</span> }));
+</code></pre>
+<h5>Step 3: Write a login route handler</h5>
+<p>Now we need to setup a login route that will check that the username and password match the user who tried to login. We will create login.hbs, and dashboard.hbs templates for the login and dashboard pages.
+</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// A simple user object, hardcoded for this example</span>
+<span class="hljs-keyword">const</span> user = {
+  username: <span class="hljs-string">"sampleuser"</span>,
+  password: <span class="hljs-string">"samplepassword"</span>,
+  email: <span class="hljs-string">"sampleuser@example.com"</span>
+};
+
+<span class="hljs-comment">// Setup a route on the 'root' of the url to redirect to /login</span>
+app.get(<span class="hljs-string">"/"</span>, (req, res) =&gt; {
+  res.redirect(<span class="hljs-string">"/login"</span>);
+});
+
+<span class="hljs-comment">// Display the login html page</span>
+app.get(<span class="hljs-string">"/login"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  res.render(<span class="hljs-string">"login"</span>, { });
+});
+
+<span class="hljs-comment">// The login route that adds the user to the session</span>
+app.post(<span class="hljs-string">"/login"</span>, (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> username = req.body.username;
+  <span class="hljs-keyword">const</span> password = req.body.password;
+
+  <span class="hljs-keyword">if</span>(username === <span class="hljs-string">""</span> || password === <span class="hljs-string">""</span>) {
+    <span class="hljs-comment">// Render 'missing credentials'</span>
+    <span class="hljs-keyword">return</span> res.render(<span class="hljs-string">"login"</span>, { errorMsg: <span class="hljs-string">"Missing credentials."</span> });
+  }
+
+  <span class="hljs-comment">// use sample "user" (declared above)</span>
+  <span class="hljs-keyword">if</span>(username === user.username &amp;&amp; password === user.password){
+    
+    <span class="hljs-comment">// Add the user on the session and redirect them to the dashboard page.</span>
+    req.session.user = {
+      username: user.username,
+      email: user.email
+    };
+    
+    res.redirect(<span class="hljs-string">"/dashboard"</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// render 'invalid username or password'</span>
+    res.render(<span class="hljs-string">"login"</span>, { errorMsg: <span class="hljs-string">"invalid username or password!"</span>});
+  }
+});
+
+<span class="hljs-comment">// Log a user out by destroying their session</span>
+<span class="hljs-comment">// and redirecting them to /login</span>
+app.get(<span class="hljs-string">"/logout"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  req.session.reset();
+  res.redirect(<span class="hljs-string">"/login"</span>);
+});
+
+app.listen(HTTP_PORT, onHttpStart);
+</code></pre>
+<h5>Step 4: Add a middleware function that checks for authorization</h5>
+<p>The last thing we need to do is add the dashboard route and add a middleware function to check for authentication before rendering the dashboard.
+</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// An authenticated route that requires the user to be logged in.</span>
+<span class="hljs-comment">// Notice the middleware 'ensureLogin' that comes before the function</span>
+<span class="hljs-comment">// that renders the dashboard page</span>
+app.get(<span class="hljs-string">"/dashboard"</span>, ensureLogin, (req, res) =&gt; {
+  res.render(<span class="hljs-string">"dashboard"</span>, {user: req.session.user});
+});
+</code></pre>
+<p>At the top of the file just after we declared the static hardcoded user, we can add a ensureLogin function that is called to check if the user is logged in and redirect them to login if they are not, otherwise continue on to the next middleware in the route handler.</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// This is a helper middleware function that checks if a user is logged in</span>
+<span class="hljs-comment">// we can use it in any route that we want to protect against unauthenticated access.</span>
+<span class="hljs-comment">// A more advanced version of this would include checks for authorization as well after</span>
+<span class="hljs-comment">// checking if the user is authenticated</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ensureLogin</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-keyword">if</span> (!req.session.user) {
+    res.redirect(<span class="hljs-string">"/login"</span>);
+  } <span class="hljs-keyword">else</span> {
+    next();
+  }
+}
+</code></pre>
+<p>Now we can create the login.hbs and dashboard.hbs files in the /views folder</p>
+<h5>login.hbs</h5>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Login<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  {{#if errorMsg}}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>{{errorMsg}}&nbsp;<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  {{else}}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Please login below<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  {{/if}}
+  <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/login"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Login<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h5>dashboard.hbs</h5>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Dashboard<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Hello {{user.username}}<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Welcome to your dashboard<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Here is the information we have on file for you:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>username: {{user.username}}<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>email: {{user.email}}<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/logout"</span>&gt;</span>Logout<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 1 Next Week</li>
+<li>Assignment 6 Due this Friday at 11:59pm</li>
+</ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="https://github.com/mozilla/node-client-sessions" target="_blank">Mozilla’s client-sessions library</a></li>
+<li><a href="https://github.com/jaredhanson/passport" target="_blank">passport module</a></li>
+<li><a href="https://hacks.mozilla.org/2012/12/using-secure-client-side-sessions-to-build-simple-and-scalable-node-js-applications-a-node-js-holiday-season-part-3/" target="_blank">Using secure client-side sessions to build simple and scalable node.js applications</a></li>
+<li><a href="https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions" target="_blank">Everything you ever wanted to know about node.js sessions</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 10 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 10 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

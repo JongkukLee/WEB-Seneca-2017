@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week4-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 4 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 4 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week4-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=343">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek4-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek4-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-343 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week4-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week4-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 4 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 4 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 4 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-343" class="post-343 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Introduction to Express.js</h3>
+<h5>What is express.js?</h5>
+<p>Taken directly from the express.js website:</p>
+<p>
+<em>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. </em>
+</p>
+<p>
+What does that mean exactly?
+</p>
+<p>
+Express is a&nbsp;node module&nbsp;that takes a lot of the leg work out of creating a framework to build a website. It is extremely popular in the node.js community with tens of thousands of developers using it to build websites. It is a proven way to build flexible web applications quickly and easily.
+</p>
+<p>The express website has very good documentation and we will refer to it frequently in this week’s notes for examples and documentation.</p>
+<h5>API docs and code examples</h5>
+<p>The current major version of Express is 4.x. <a href="http://expressjs.com/en/4x/api.html">The documentation is available here</a> – they do a great job keeping it up to date and provide  excellent code examples to explain the concepts.
+</p>
+<p>In the lecture for this week we will go over most of the main features of express in the API, which will enable you to setup a basic web server with node and express that can accept requests and send responses from a client for various url ‘routes’. A url route is a piece of the url that comes after the host. For example, in the url http://www.seneca.ca/courses/ the host is www.seneca.ca, the route (in Express terms) is /courses.
+</p>
+<h6><a href="http://expressjs.com/en/4x/api.html#app" target="_blank">The Application object</a></h6>
+<p><a href="http://expressjs.com/en/4x/api.html#app" target="_blank">Taken directly from the Express API documentation</a> ( updated to use ES6 style syntax) – here is a very simple example on how to start a web server on localhost, listening on port 8080 on the main ‘root’ route.</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+
+app.get(<span class="hljs-string">"/"</span>, (req, res) =&gt; {
+  res.send(<span class="hljs-string">"hello world"</span>);
+});
+
+app.listen(<span class="hljs-number">8080</span>);
+</code></pre>
+<p>The app variable in the example above represents the express main application object. It contains several methods for routing requests, setting up middleware, and managing html views or view engines.</p>
+<p>
+In the above example we setup a route on the index of the host to handle GET requests to “/”. This means any requests to localhost:8080/ will be sent to this function. The standard form of a route handler in express is to call the verb method that matches the type of request on the app object and pass it 2 parameters: a string representing the route you want this route to match against, and a callback function to invoke when the route is matched. In the above example we want to handle GET requests (typically requests from the browser to load the page initially). In other words ‘get’ the data for this route and call the provided function when that route is hit with a GET request.
+</p>
+<p>All the other common HTTP verbs are supported as well. POST, PUT, DELETE, etc. You can also use <a href="http://expressjs.com/en/4x/api.html#app.all" target="_blank">app.all()</a> to cover all HTTP verbs with one function.
+</p>
+<p>Here are some of the commonly used application properties and methods you will typically make use of.</p>
+<table class="table-bordered table-condensed table-striped" style="width:100%;">
+<thead>
+<tr>
+<td>property or method</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.locals" target="_blank">app.locals</a></td>
+<td>This property allows you to attach local variables to the application, which persist throughout the life of the app. You can access local variables in templates rendered within the application (discussed in week 6 – “Template Engines – Handlebars.js”).</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.all" target="_blank">app.all()</a></td>
+<td>This method will catch all HTTP requests for all verbs. IE: GET, PUT, POST, DELETE, etc. for a matching path.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.delete.method" target-"_blank"="">app.delete()</a></td>
+<td>Routes a HTTP DELETE request for a matching path to a callback function specified.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.engine" target="_blank">app.engine()</a></td>
+<td>The engine method is used to map a specific view extension to a template engine. For example if you want to map all html view templates to a specific engine you would register it here.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.get" target="_blank">app.get()</a></td>
+<td>Routes a HTTP GET request for a matching path to a callback function specified.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.listen" target="_blank">app.listen()</a></td>
+<td>The function is typically called once to setup a port and optionally a host to listen on for requests. This is the core method on the express application that helps setup a https server and allows it to listen on a specified port. HTTP default port is 80, HTTPS default port is 443.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.post.method" target="_blank">app.post()</a></td>
+<td>Routes a HTTP POST request for a matching path to a callback function specified.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.put.method" target="_blank">app.put()</a></td>
+<td>Routes a HTTP PUT request for a matching path to a callback function specified.</td>
+</tr>
+<tr>
+<td><a href="https://expressjs.com/en/api.html#app.use" target="_blank">app.use()</a></td>
+<td>The <strong>use</strong> method is used to add middleware to your application. Middleware consists of functions (typically placed before the routing methods) that automatically execute either when a specified path is matched or globally before every request. This is very useful when you want to do something with every request like add properties to the request object or check if a user is logged in.</td>
+</tr>
+
+</tbody></table>
+<p></p>
+<h6><a href="http://expressjs.com/en/4x/api.html#req" target="_blank">The Request object</a></h6>
+<p>
+The req object represents the object that contains all the information and metadata for a request to the server. When you see examples of the request object in use it will always typically be referred to as ‘req’ (short for request object).</p>
+<p> There are several ways to send data from the client to the server. Four of the more common ways are: send a POST request with data in the body of the request, send data in cookies, send the data in the url, or send the data in the query string.<br>
+Here is a table of the common properties and methods used on the request object (req).</p>
+<table class="table-bordered table-condensed table-striped" style="width:100%;">
+<thead>
+<tr>
+<td>property or method</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#req.body" target="_blank">req.body</a></td>
+<td>The req.body property contains the data submitted from a request. It requires that you use a body parsing middleware first which will attach the parameters to req.body. If you post data in your request then this is how you access that data. See the example in the docs on how it’s used.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#req.cookies" target="_blank">req.cookies</a></td>
+<td>The second way of sending data is through a cookie. If you are using a cookie and you use cookie parsing middleware, then the cookie data will be available on the req.cookie object.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#req.params" target="_blank">req.params</a></td>
+<td>The third way of sending data is in the url. For example, if you want to have a url in the pattern /user/:name where the :name is dynamic; ie: for ‘Bob’ it’s /user/bob and for ‘Mary’ it’s /user/mary. You can have one route which can accept an infinite number of requests with different user names and dynamically handle / access each differing username through req.params (ie: request.params.user).</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#req.query" target="_blank">req.query</a></td>
+<td>The fourth way of sending data from the client to the server is in the query string. If you send data for a user using a url like /user?user=bob then you can access that username with req.query.user. ‘query’ will be an object with key value pairs matching the key value pairs sent in the query string of the request.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#req.get" target="_blank">req.get()</a></td>
+<td>req.get() is useful for checking what the values are of any of the headers sent with the request. If you need to check the ‘content-type’ for example or the ‘referer’ or ‘user-agent’ headers.</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h6><a href="http://expressjs.com/en/4x/api.html#res" target="_blank">The Response object</a></h6>
+<p>
+The response object represents the object that contains all the information and metadata for a response from the server. When you see examples of the response object in use it will always typically be referred to as ‘res’ (short for response object). The data you send back from the server can one of several different formats -the most common are HTML, JSON, CSS, JS and plain files (.pdf, .txt, etc).</p>
+<p>Here is a table of the common properties and methods used on the response object (res).
+</p>
+<p></p>
+<table class="table-bordered table-condensed table-striped" style="width:100%;">
+<thead>
+<tr>
+<td>property or method</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.cookie" target="_blank">res.cookie()</a></td>
+<td>This allows you to set a cookie on the response with a name = value key pair. You can set the value of the name to a string or an object in JSON notation and it will be attached to the response header of the response.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.download" target="_blank">res.download()</a></td>
+<td>This allows you to send a file back as a response. The user’s browser will display a download prompt and the response will set the Content-Type and Content-Disposition headers for you. Use this to send files back to a user.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.end" target="_blank">res.end()</a></td>
+<td>Use this if you want to end a response immediately and send nothing back. You can also chain .end() off of .status to send a status code and end the response, ie: res.status(400).end();</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.get" target="_blank">res.get()</a></td>
+<td>You can use res.get() to lookup any header that is outgoing on the response. This can be useful to check if certain headers are set to certain values and respond accordingly.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.json" target="_blank">res.json()</a></td>
+<td>You can use res.json() to send back a JSON object with key value pairs of data. The values can be any valid JSON type, even Arrays and other objects.  This method also automatically “stringifies” a JavaScript object, so no conversion is needed before an object is provided. Additionally, The json() method will automatically set the correct Content-Type header.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.redirect" target="_blank">res.redirect()</a></td>
+<td>Use this to perform a redirect to another page on your site, go back to the previous page, or redirect to another domain all together.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.send" target="_blank">res.send()</a></td>
+<td>This is the bread and butter response method to send back a response to the client. You can send a String, an object, an Array, or even a Buffer object back to the client. The send() method will automatically set the Content-Type header for you based on the type of data sent.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/4x/api.html#res.status" target="_blank">res.status()</a></td>
+<td>You can use this to send back a specific status code and appropriate response to go with it. status() is chainable before a send() so you can do operations such as: res.status(404).send(“Page Not Found”); to send a 404 response code for a resource that is not found or invalid.</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h5>Routing, static files</h5>
+<p>Now that we’ve gone over the three core objects related to express let’s show some examples of them in use by writing a few functions and building out a basic web server with a few routes and some statically served files.
+</p>
+<p>Routing is one of the core features of express. <a href="http://expressjs.com/en/guide/routing.html" target="_blank">A detailed guide can be found here in the Express documentation</a>. It is the component that handles setting up routes on your server that can be accessed by the client. A ‘route’, as mentioned before, is a path on your site that can have requests sent to it, and respond from it. Each route gets registered with express ‘routers’ and has callback functions that get called when a request to that route is made.
+</p>
+<p>Requests to routes can also be processed by multiple route definitions if your application requires it. More on that in the middleware section below.</p>
+<p>For now let’s create a simple web server with express that can handle requests to “/”, “/headers”, and anything else will be considered a 404 or page not found.</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+<span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// setup a route on the 'root' of the url</span>
+<span class="hljs-comment">// IE: http://localhost:8080/</span>
+app.get(<span class="hljs-string">"/"</span>, (req, res) =&gt; {
+  res.send(<span class="hljs-string">"&lt;h1&gt;Welcome to my simple website&lt;/h1&gt;&lt;p&gt;Be sure to visit the &lt;a href='/headers'&gt;headers page&lt;/a&gt; to see what headers were sent from your browser to the server!&lt;/p&gt;"</span>);
+});
+
+<span class="hljs-comment">// now add a route for the /headers page</span>
+<span class="hljs-comment">// IE: http://localhost:8080/headers</span>
+app.get(<span class="hljs-string">"/headers"</span>, (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> headers = req.headers;
+  res.send(headers);
+});
+
+<span class="hljs-comment">// This use() will not allow requests to go beyond it</span>
+<span class="hljs-comment">// so we place it at the end of the file, after the other routes.</span>
+<span class="hljs-comment">// This function will catch all other requests that don't match</span>
+<span class="hljs-comment">// any other route handlers declared before it.</span>
+<span class="hljs-comment">// This means we can use it as a sort of 'catch all' when no route match is found.</span>
+<span class="hljs-comment">// We use this function to handle 404 requests to pages that are not found.</span>
+app.use((req, res) =&gt; {
+  res.status(<span class="hljs-number">404</span>).send(<span class="hljs-string">"Page Not Found"</span>);
+});
+
+<span class="hljs-comment">// listen on port 8080. The default port for http is 80, https is 443. We use 8080 here</span>
+<span class="hljs-comment">// because sometimes port 80 is in use by other applications on the machine</span>
+app.listen(HTTP_PORT, onHttpStart);
+</code></pre>
+<p>Try out this code in a new node application and run it from the command line. You will need to have express installed using ‘npm install express’ since we have not created a package.json file for this application.</p>
+<p>Now try visiting <strong>http://localhost:8080</strong> in your browser to view your website. Click on the headers link and you should see a json object that represents the headers object on the request. Have a look at the key ‘user-agent’ and it’s value. Try opening <strong>http://localhost:8080/headers</strong> in another browser and see how it differs.</p>
+<p>Try visiting a route that is not the home route “/” or “/headers”. You should see the 404 Page Not Found message to indicate this route is not valid for this website.</p>
+<p>Now that we have covered handling basic routes for a page and how to accept get requests that can respond with data; the next question is: “how do we respond to requests for things like images, or css files?”</p>
+<h6>Serving static files</h6>
+<p>Static file serving refers to responding back to a client for a request to a static resource. A static resource is a resource (file) that is not going to change and is required as part of the content for the site. Perfect examples are images and css files that need to be requested from the site and loaded on the page. We can’t make a route to handle loading each image for the website -that would be tedious and impossible to maintain. Instead, it would be better to just specify a folder that contains all those static resources and allow express to handle sending those files back to the client when they are requested.</p>
+<p><a href="http://expressjs.com/en/starter/static-files.html" target="_blank">Check out the guide on Serving static files in Express on their website</a> for the full information. We will do a simple example below to add an image to the home page and serve it statically from express</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// setup the static folder that static resources can load from</span>
+<span class="hljs-comment">// like images, css files, etc.</span>
+app.use(express.static(<span class="hljs-string">"static"</span>));
+</code></pre>
+<p>Add this code to the previous example just before the first app.get route handler. The “static” string refers to the name of the directory, relative to where the server is running from, that contains the static content. The “static” string does not become part of the URL in this example, it is just specifying to express where to server static resources from.</p>
+<p>Now we can put images or css files in the /static folder, and link to them from our website. In week 6 we will cover templating and this will come in handy when we start working with html templates.<br>Try adding an image to the static folder, and including it in an &lt;img&gt; element for the main route response.</p>
+<h5>Middleware</h5>
+<p>Middleware in Express refers to functions that can execute in the ‘middle’ of a request/response cycle typically before a matching route function is executed.</p>
+<p><a href="http://expressjs.com/en/guide/writing-middleware.html" target="_blank">Taken directly from the Express documentation:</a></p>
+<blockquote><p>Middleware functions are functions that have access to the request object (req), the response object (res), and the next() function in the application’s request-response cycle. The next() function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.</p></blockquote>
+<p>There are 5 types of middleware:</p>
+<table class="table-bordered table-condensed table-striped" style="width:100%;">
+<thead>
+<tr>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.application" target="_blank">Application middleware</a></td>
+<td>Application level middleware is bound to your entire application and can run when every request comes in or only when it matches a specified route. Examples in the documentation.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.router" target="_blank">Router middleware</a></td>
+<td>Router level middleware works the same way as application middleware but is attached to a separate router instance which means it can be applied only to a subset of all the routes in your application that are under that router.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.error-handling" target="_blank">Error handling middleware</a></td>
+<td>Error handling middleware is defined with 4 parameters in the callback function. (err, req, res, next) is the signature. You must specify all 4 parameters so that express can differentiate it from a regular middleware function in which case next would be undefined. Error handling middleware gets called when a regular middleware function calls next(err) instead of next(). Passing next an error object will invoke the error handlers instead of the next route handlers.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.built-in" target="_blank">Built in middleware</a></td>
+<td>Starting with Expres 4.x there is no more built in middleware except the static middleware for serving static files. we mentioned how to use the express.static() middleware above in the serving static files section.</td>
+</tr>
+<tr>
+<td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.third-party" target="_blank">Third party middleware</a></td>
+<td>With express 4.x, previously included middleware that did common things like handle cookies, parse the body of a form submission, or handle file uploads, have been moved to third party middleware packages. This way you can add them as you need them and reduce bloat in your system. If you’re never going to handle file uploads, why have middleware loaded? <a href="http://expressjs.com/en/resources/middleware.html" target="_blank">A great list of some of the most popular third party middleware is available here.</a></td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<h5>Error Handling</h5>
+<p>Error handling in Express is typically done through middleware. As mentioned above, when you write a middleware function with 4 parameters, it will be interpreted by express as an error handler function. You can write multiple error handlers for handling different states of errors and use them in the same way you use middleware. By calling next(), it will invoke the next error handler in the chain and by sending a response it will terminate the chain. <a href="http://expressjs.com/en/guide/error-handling.html" target="_blank">The error handling page on Express’s website has great examples.</a><br>
+A common errorHandling procedure would be to log the error in the server console or database, return a 500 status code to the client, and send them to a 500 page or something else appropriate for your app.</p>
+<pre><code class="javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleClientError</span>(<span class="hljs-params">err, req, res, next</span>) </span>{
+  <span class="hljs-comment">// log the error to the DB with a utility method to log errors  </span>
+  logError(err);
+
+  <span class="hljs-comment">// if the request was an xhr request respond with a 500 status and JSON message</span>
+  <span class="hljs-comment">// otherwise respond with a string message</span>
+  <span class="hljs-keyword">if</span> (req.xhr) {
+    res.status(<span class="hljs-number">500</span>).send({ message: <span class="hljs-string">'There was an error processing your request'</span> })
+  } <span class="hljs-keyword">else</span> {
+    res.status(<span class="hljs-number">500</span>).send(<span class="hljs-string">'Something went wrong processing your request'</span>)
+  }  
+}
+</code></pre>
+<p></p>
+<h5>Debugging in Visual Studio Code</h5>
+<p>Visual Studio Code has great debugging support for the node.js/express ecosystem. There is a tab on the left side of VS Code to open the debugger panel.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/debug.png" alt="debug" width="51" height="46" class="alignleft size-full wp-image-778"></p>
+<p>Clicking the debug button will open the panel and you will see a bar along the top of the panel for launching the debugger and configuring it.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/launchdebug.png" alt="launchdebug" width="290" height="37" class="alignleft size-full wp-image-779"></p>
+<p>The launcher bar has a green play button to start debugging. However, to use the debugger you will first have to configure the launch.json file by clicking the gear icon and make the <em>program</em> property point to the main file you use to run your application.</p>
+<p>Here is an example of a configuration for the debugger when the main file to run the server is called week4b.js</p>
+<pre>{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/week4b.js"
+        }
+    ]
+}
+</pre>
+<p>In the example setup above the most important settings are the ‘type’ and ‘program’ properties. Using ${workspaceRoot} will reference the root of the folder that you opened in Visual Studio code.</p>
+<p>When the debugger is running you will see an orange bar in the bottom of VS Code and it will output info to the debug console.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/debugrunning.png" alt="debugrunning" width="503" height="221" class="alignleft size-full wp-image-780" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/debugrunning-300x132.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/debugrunning.png 503w" sizes="(max-width: 503px) 100vw, 503px"></p>
+<p>Once running, any breakpoints will be active and as the code executes it will stop on the breakpoints and allow you to inspect variables and state.</p>
+<p>To place a breakpoint click on a line number in a file and a red circle will appear indicating the code execution will stop at this line when the debugger is running.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/breakpoint.png" alt="breakpoint" width="380" height="132" class="alignleft size-full wp-image-781" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/breakpoint-300x104.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/breakpoint.png 380w" sizes="(max-width: 380px) 100vw, 380px"></p>
+<p>When the debugger is run and that line of code is hit, you will be able to inspect the state of your application while execution is paused.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/inspectingdebugger.png" alt="inspectingdebugger" width="559" height="268" class="alignleft size-full wp-image-782" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/inspectingdebugger-300x144.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/inspectingdebugger.png 559w" sizes="(max-width: 559px) 100vw, 559px"></p>
+<p>When you are finished inspecting, you can press play to continue with execution to the next breakpoint, or stop the program with the stop button on the debugger control bar.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/debuggercontrols.png" alt="debuggercontrols" width="211" height="34" class="alignleft size-full wp-image-783">
+</p>
+<h5>The browser network tab</h5>
+<p>Chrome, Firefox, and IE all include developer tool and each of those tools has a network tab. The network tab of the dev tools allows you to see all requests going out from the browser to another server and the responses you get back from them.<br>
+<br>
+In Firefox, you can inspect the headers from the headers tab: </p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/networktab-headers.png" alt="networktab-headers" width="718" height="585" class="alignleft size-full wp-image-785" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/networktab-headers-300x244.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/networktab-headers.png 718w" sizes="(max-width: 718px) 100vw, 718px"><br>
+<br>
+And the response from the server in the response tab. The Google Chrome network tools are slightly different, however all in-browser developer toolbars essentially make the same information available.</p>
+<p><img src="./WEB322 – Week 4 – Class 1 – Web Programming_files/networktab-response.png" alt="networktab-response" width="666" height="511" class="alignleft size-full wp-image-784" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/networktab-response-300x230.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/networktab-response.png 666w" sizes="(max-width: 666px) 100vw, 666px"><br>
+<br>
+The network tab in the dev tools is one of the core tools for debugging on the client side. You can check the returned status code, see all the api requests being made, filter by just XHR requests, examine the cookies involved in the request and response, see request and response headers, and examine the data returned from a request.
+</p>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 4 Next Week</li>
+</ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="http://expressjs.com/" target="_blank">Express JS</a></li>
+<li><a href="http://expressjs.com/en/4x/api.html#req.body" target="_blank">Express 4.x API docs</a></li>
+<li><a href="http://expressjs.com/en/resources/middleware.html" target="_blank">List of common middleware</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 4 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 4 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

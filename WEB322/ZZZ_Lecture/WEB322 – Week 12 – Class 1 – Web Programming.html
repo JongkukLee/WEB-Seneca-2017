@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week12-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 12 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 12 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week12-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=359">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek12-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek12-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-359 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week12-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week12-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 12 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 12 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 12 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-359" class="post-359 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Security Considerations</h3>
+<p>This week we will be covering some of the important items related to the security of websites and web applications. We will cover HTTPS communications at a high level, setting up SSL certificates with node.js, and getting our own free HTTPS SSL certificates from a trusted source. We will also cover how to encrypt and store passwords in mongodb and a common library used to do password encryption with node.js. Lastly, we will cover some additional topics related to accessing resources between domains and security standards in place to protect your website against malicious scripts or documents.</p>
+<h5>HTTPS</h5>
+<p><a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank">HTTPS</a> is HTTP communication between a web browser and a server over a secure, encrypted connection, using TLS <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">(Transport Layer Security)</a>. The primary purpose for using HTTPS is for users to be able to verify that a website that transfers sensitive data, can do so in a secure and safe manner. HTTPS uses SSL/TLS certificates on the server side that are used to encrypt the communication between the client and server so that packets in transmission between the client and server cannot be intercepted and used to either steal or forge information. The concept of capturing packets in the middle of transmission between client and server or vice versa, is called a <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack" target="_blank">man in the middle attack</a>.</p>
+<p>Imagine using your online banking website or logging in to your social media accounts only to have your login credentials stolen while they were in transit between your browser and the server receiving them. Without HTTPS communication the internet simply would not be secure at all.</p>
+<p>Have a look at your favorite websites when you are about to login and look up to the left of the URL bar in your browser for a green lock icon in Chrome or Firefox. Click on it to view info about your connection with this website (screenshot taken in Firefox).</p>
+<p><img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-lock.png" alt="https lock" width="346" height="187" class="alignleft size-full wp-image-830" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-lock-300x162.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-lock.png 346w" sizes="(max-width: 346px) 100vw, 346px"></p>
+<p>Notice how it shows that the site is using a secure connection and that the certificate is verified by Symantec Corporation. This means CIBC is using a TLS certificate for their HTTPS communications that was purchased from Symantec (the makers of Norton Antivirus).</p>
+<p> Click on the ‘More Information’ for info about the certificate and connection. In Firefox you can see a little details pane like this:</p>
+<p><img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-certificate-details.png" alt="https certificate details" width="718" height="133" class="alignleft size-full wp-image-829" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-certificate-details-300x56.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-certificate-details.png 718w" sizes="(max-width: 718px) 100vw, 718px"></p>
+<p>This pane tells us the website is using a 256 bit certificate using TLS 1.2 and that communication was encrypted before being sent over the internet. Sending your login credentials and retrieving back your banking info is all using encrypted packets between your web browser and the server. Anyone who might capture them in transit would not be able to obtain any useful information from the packets.</p>
+<p>Quick note: there are other security measures in place in the OSI stack that also make capturing these packets hard on it’s own as well, but that’s out of scope for this course. Just know that HTTPS encrypted communications is just one level of security implemented in the exchange of data between client and server.
+</p>
+<p>From this pane there is also a View Certificate button. <img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-view-certificate.png" alt="https view certificate" width="102" height="33" class="alignleft size-full wp-image-832"><br>
+<br>
+Clicking this button shows you the full details of the certificate, who it was issued to, who issued it, when it was issued, and when it expires. This information can be very useful for validating if a certificate used on a website is trustworthy and that the site itself uses proper security measures. Some websites will try to use their own ‘Self Signed Certificates’. We will get into that part next.</p>
+<p><img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-certificate-viewer.png" alt="https certificate viewer" width="602" height="649" class="alignleft size-full wp-image-831" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-certificate-viewer-278x300.png 278w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-certificate-viewer.png 602w" sizes="(max-width: 602px) 100vw, 602px"><br>
+</p>
+<h6>Bad HTTPS and self signed certificates</h6>
+<p>SSL/TLS certificates can be created on your own and technically they can be used, however using your own certificates is considered bad practice. The reason why is that using your own certificates will result in a warning from the browser that your website is using an untrusted certificate. The reason it is untrusted is that you created and signed it yourself and it was not generated by one of the well known certificate authorities on the web.</p>
+<p>Large companies like Symantec, Go Daddy, Verisign, Digicert, etc are certificate authorities and they have root certificates that other certificates are generated under. All major browsers have these root certificates already installed in them and can use them to verify that your certificate was generated from a trusted source. The certificate contains information about its issue and expiry dates, the organization the certificate belongs to (Your company), the organizational unit within the company the certificate was generated for (usually IT), and more. Generating your own certificate and trying to use it will result in the following warning in Firefox to warn users that the certificate was self signed.</p>
+<pre>The certificate is not trusted because it is self-signed.</pre>
+<h6>Creating our own self signed certificates for development and test purposes</h6>
+<p>We will generate our own self signed certificate and create a HTTPS server with node shortly that will run on localhost over port 4433, a custom HTTPS port (vs port 8080, our custom HTTP port).
+</p><p>If you have Git installed (and you should by now!) you can create your own certificate with one line using the openssl command.</p>
+<pre>openssl req -new -x509 -nodes -out server.crt -keyout server.key</pre>
+<p>We will get the following prompts for about the organization, etc. the certificate will be issued to. The only important one for now is the Common Name. Make sure it is localhost. This is the domain the certificate will be valid for. We will be testing it on localhost so make sure it’s correct.</p>
+<pre>Generating a 2048 bit RSA private key
+.............................+++
+...+++
+writing new private key to 'server.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CA
+State or Province Name (full name) [Some-State]:ON
+Locality Name (eg, city) []:Toronto
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:ACME Widgets
+Organizational Unit Name (eg, section) []:IT Dept
+Common Name (e.g. server FQDN or YOUR name) []:localhost
+Email Address []:
+</pre>
+<h5>Using SSL certificates in node.js</h5>
+<p>Using our own SSL certificates in node.js is a fairly simple process. We just have to issue the certificates or buy them from a trusted Certificate Authority online, and then point node to them and start up our web server with https as well as http so we can serve traffic on both HTTP and HTTPS connections.</p>
+<h6>Using our self signed certificate in node.js for development</h6>
+<p>Now that we have a server.crt file and a server.key file we can plug these into node and start up a HTTPS server. There will be a warning when we visit the site like we mentioned above because the certificates were generated on our own and not connected to a Certificate Authority.
+</p>
+<p>Let’s take our week 10 example (available on <a href="https://github.com/Seneca-WEB322/examples" target="_blank">GitHub</a>) and add HTTPS to it for logins (NOTE: we will be working from the “examples” folder, so open it in Visual Studio Code once you have cloned it from the repository.  Do not forget to issue the command “npm install” to obtain the required modules). In week10.js, we will need to add a require for fs to read the certificates from the file system, load the files and put them in an options object for the https server, use http and https to start the servers instead of starting it on the express app, and finally update the ports and assets locations.</p>
+<p>Add the following code underneath the “client-sessions” require statement, and before “user” is declared.  We will be overriding the HTTP_PORT and WEEK10ASSETS variables.</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"fs"</span>);
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">"http"</span>);
+<span class="hljs-keyword">const</span> https = <span class="hljs-built_in">require</span>(<span class="hljs-string">"https"</span>);
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+<span class="hljs-keyword">const</span> HTTPS_PORT = <span class="hljs-number">4433</span>;
+<span class="hljs-keyword">const</span> WEEK10ASSETS = <span class="hljs-string">"./week10-assets/"</span>;
+<span class="hljs-keyword">const</span> WEEK12ASSETS = <span class="hljs-string">"./week12-assets/"</span>;
+<span class="hljs-keyword">const</span> SSL_KEY_FILE = WEEK12ASSETS + <span class="hljs-string">"server.key"</span>;
+<span class="hljs-keyword">const</span> SSL_CRT_FILE = WEEK12ASSETS + <span class="hljs-string">"server.crt"</span>;
+
+<span class="hljs-comment">// read in the contents of the HTTPS certificate and key</span>
+<span class="hljs-keyword">const</span> https_options = {
+  key: fs.readFileSync(__dirname + <span class="hljs-string">"/"</span> + SSL_KEY_FILE),
+  cert: fs.readFileSync(__dirname + <span class="hljs-string">"/"</span> + SSL_CRT_FILE)
+};
+</code></pre>
+<p>This takes care of adding the https port for 4433 and reading in the certificates as well as updating the assets folder.</p>
+<p>Next, replace your <strong>app.listen(HTTP_PORT, onHttpStart);</strong> code with the following:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// listen on ports HTTP_PORT and HTTPS_PORT. The default port for http is 80, https is 443. We use 8080 and 4433 here</span>
+<span class="hljs-comment">// because sometimes port 80 is in use by other applications on the machine and using port 443 requires admin access on osx</span>
+http.createServer(app).listen(HTTP_PORT, onHttpStart);
+https.createServer(https_options, app).listen(HTTPS_PORT, onHttpsStart);
+</code></pre>
+<p>We also add a function for when the https server starts as well to print to the console and let us know it’s running just like for http.</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// call this function after the https server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpsStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express https server listening on: "</span> + HTTPS_PORT);
+}
+</code></pre>
+<p>Lastly, be sure to <strong>copy your self signed certificate key and crt files into the week12_assets folder</strong> so that our week10.js server can find them.</p>
+<p>Let’s start it up (using the command: “node week10.js”) and point our browser at <strong>https</strong>://localhost:8080
+</p><p>You’ll notice, depending on your browser that you will get a security warning if everything is working ok. If you get this warning (with “Advanced” selected) everything is working as intended so far.</p>
+<p><em>Warning in Firefox</em></p>
+<p><img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-self-signed-cert.png" alt="https self signed certificate firefox" width="881" height="323" class="alignleft size-full wp-image-837" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-300x110.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-768x282.png 768w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert.png 881w" sizes="(max-width: 881px) 100vw, 881px"></p>
+<p><img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-self-signed-cert-advanced.png" alt="https self signed certificate advanced" width="794" height="185" class="alignleft size-full wp-image-840" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-advanced-300x70.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-advanced-768x179.png 768w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-advanced.png 794w" sizes="(max-width: 794px) 100vw, 794px">
+</p><p></p>
+<p><em>Warning in Chrome</em></p>
+<p><img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/https-self-signed-cert-chrome.png" alt="https self signed certificate chrome" width="625" height="525" class="alignleft size-full wp-image-839" srcset="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-chrome-300x252.png 300w, http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2016/08/https-self-signed-cert-chrome.png 625w" sizes="(max-width: 625px) 100vw, 625px">
+</p><p style="margin-top:15px;">Accept the warnings and add an exemption (Firefox only) and proceed to the page</p>
+<p>Check out the icon to the left of the url bar like before to examine the self signed cert.
+</p><p><em>Warning in Firefox</em>
+</p><p>
+<img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/ff-cert-error.png"></p>
+<p><em>Warning in Chrome</em>
+</p><p>
+<img src="./WEB322 – Week 12 – Class 1 – Web Programming_files/chrome-cert-error.png"></p>
+<p>Now, after accepting or adding an exception for the warning you should see your login page under https and be able to login with the same credentials as we used in week 10.</p>
+<h5>Letsencypt.org, free HTTPS certificates forever</h5>
+<p><a href="https://letsencrypt.org/" target="_blank">Let’s Encrypt</a> is an open source project that is overseen by of The Linux Foundation. The purpose of Let’s Encrypt is to offer free SSL certificates from a trusted Certificate Authority. Traditionally, web developers have had to purchase SSL certificates from a limited set of Certificate authorities for prices that would range from a few dollars to thousands depending on the complexity of the certificate. The issue with this is these SSL certificates can be generated in a matter of milliseconds and cost virtually nothing to create yet companies charge a lot of money for them and it makes SSL and HTTPS prohibitive for a lot of smaller websites out there.</p>
+<p><a href="https://letsencrypt.org/about/" target="_blank">Let’s Encrypt wants to make SSL certificates available for free, forever in order to create a more secure and privacy respecting internet.</a> They have received support from the major web browsers and their root Certificate Authority is trusted by all major web browsers now. This means you can generate your own SSL Certificate using their infrastructure and it will be trusted by the web browser. You can enable SSL on your website for free and just have to renew the certificates every 90 days (the renewal process can be automated).</p>
+<h6>Using Let’s Encrypt with Node.js</h6>
+<p>We won’t be able to actually get Let’s Encrypt working with an example in this class. The reason is that it requires a custom domain that is publicly available on the web, so that the Let’s Encrypt servers can connect to it and issue a certificate. Since all of our (free) Heroku applications all use the default <em><strong>appname</strong></em>.herokuapp.com domain, they are already SSL-enabled and can be accessed by using https, for example:  https://<em><strong>appname</strong></em>.herokuapp.com.  If our app was using a <a href="https://devcenter.heroku.com/articles/custom-domains" target="_blank">custom domain</a> and was upgraded to use “paid dynos” (<a href="https://devcenter.heroku.com/articles/dyno-types" target="_blank">Hobby or above</a>), we would leverage <a href="https://devcenter.heroku.com/articles/ssl" target="_blank">Heroku SSL</a>. However, even though we will not be using Let’s Encrypt, we will still discuss the main tools involved, so that you will know where to start when developing on your own applications in the future.</p>
+<p>There are a few libraries out there that integrate the Let’s Encrypt environment into Node or the command line to allow generation of certificates: <a href="https://git.daplie.com/Daplie/greenlock-express" target="_blank">greenlock-express</a>, and <a href="https://git.daplie.com/Daplie/greenlock-cli" target="_blank">greenlock-cli</a> are excellent tools for integrating into express or just using the command line to get certificates.</p>
+<p>Let’s Encrypt allows you to generate a certificate that will last 90 days and then has to be renewed. However, as mentioned above, they offer functionality to automatically renew the certificates when they are are few days from expiry. Code examples can be found on the Greenlock github page as well as information about the Let’s Encrypt infrastructure and the process for generating certificates. Further information about Let’s Encrypt including their staging environment, certificate compatibility, revoking certificates, etc. can be found on the <a href="https://letsencrypt.org/docs/" target="_blank">Let’s Encrypt documentation pages</a>.</p>
+<h5>Password Encryption</h5>
+<p>Using HTTPS is a large part of having a secure web site but it’s not everything. Another large piece of security is encrypted passwords. Using HTTPS to send and receive encrypted communications is great for avoiding some forms of attacks but it won’t save you if someone gets into your database and steals all your users’ passwords that are stored in plain text. This is where you will want to think about using an encryption library that can encrypt data for you “one way”. What do we mean by one way encryption? It means the data is encrypted in such a way that it cannot be reversed back into plain text. In order to check if encrypted data matches some plain text data you have to encrypt the plain text data using the same method that was originally used and then compare if the encrypted data matches.
+</p>
+<p>This is a standard way to store and work with passwords. Encrypt them in the database when a user registers and when they try to login, encrypt their plain text password that is sent to the server over a HTTPS POST request, encrypt it and compare the encrypted passwords for a match. This way you are never storing users’ plain text passwords in the database and anyone who has access to the database cannot read them.
+</p>
+<p>A great node.js library to use for the one way encryption of passwords is <a href="https://github.com/dcodeIO/bcrypt.js" target="_blank">bcrypt.js</a>.  We can grab it using <strong>npm</strong> and include it in our solution using:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> bcrypt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bcryptjs'</span>);</code></pre>
+<p>If we wish to encrypt a plain text password (ie: “myPassword123”), we can use <a href="https://en.wikipedia.org/wiki/Bcrypt" target="_blank">bcrypt</a> to generate a <a href="https://en.wikipedia.org/wiki/Salt_(cryptography)" target="_blank">“salt”</a> and <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank">“hash”</a> the text:
+</p><pre><code class="javascript hljs"><span class="hljs-comment">// Encrypt the plain text: "myPassword123"</span>
+bcrypt.genSalt(<span class="hljs-number">10</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, salt</span>) </span>{ <span class="hljs-comment">// Generate a "salt" using 10 rounds</span>
+    bcrypt.hash(<span class="hljs-string">"myPassword123"</span>, salt, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, hash</span>) </span>{ <span class="hljs-comment">// encrypt the password: "myPassword123"</span>
+        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Store the resulting "hash" value in the DB</span>
+    });
+});</code></pre>
+<p>Similairly, if we wish to compare the “hashed” text with plain text (to see if a user-entered password matches the value in the DB), we use:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Pull the password "hash" value from the DB and compare it to "myPassword123" (match)</span>
+bcrypt.compare(<span class="hljs-string">"myPassword123"</span>, hash).then((res) =&gt; {
+   <span class="hljs-comment">// res === true</span>
+});
+
+<span class="hljs-comment">// Pull the password "hash" value from the DB and compare it to "myPasswordABC" (does not match)</span>
+bcrypt.compare(<span class="hljs-string">"myPasswordABC"</span>, hash).then((res) =&gt; {
+    <span class="hljs-comment">// res === false</span>
+});</code></pre>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 12 Next Week</li>
+<li>Assignment 7 Due this Friday at 11:59pm</li>
+</ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank">HTTPS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">Transport Layer Security</a></li>
+<li><a href="https://support.mozilla.org/t5/Documents-Archive/quot-This-Connection-is-Untrusted-quot-error-message-appears/ta-p/589" target="_blank">Browser security warnings</a></li>
+<li><a href="https://letsencrypt.org/" target="_blank">Let’s Encrypt</a></li>
+<li><a href="https://git.daplie.com/Daplie/greenlock-express" target="_blank">Greenlock</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 12 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 12 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

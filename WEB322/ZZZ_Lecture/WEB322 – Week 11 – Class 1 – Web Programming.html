@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week11-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 11 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 11 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week11-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=357">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek11-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek11-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-357 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week11-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week11-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 11 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 11 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 11 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-357" class="post-357 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Introduction to jQuery &amp; Bootstrap Frameworks</h3>
+<img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery-logo.jpg">
+<p>From the jQuery website:</p><blockquote>"jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript."</blockquote>Essentially, jQuery is an extremely popular JS library that we can use to simplify many of the client-side tasks that we learned in WEB222 for <strong>DOM manipulation</strong>, <strong>Event Handling</strong> and <strong>AJAX</strong>.  It also has a large community of developers working on free/open-source "plugins" (reusable jQuery code) that makes incorporating complex UI components &amp; UX functionality simple. For example: <a href="https://fullcalendar.io/" target="_blank">https://fullcalendar.io</a> provides all of the source code necessary to create a fully featured drag/drop calendar component.  This plugin and a ton more can be found on a central <a href="https://plugins.jquery.com/" target="_blank">"Plugin Registry"</a> (many available on <a href="https://www.npmjs.com/search?q=jquery-plugin" target="_blank">NPM</a>) online.<p></p>
+<h4 class="lined">Including jQuery in our Projects</h4>
+<p>To incorporate the jQuery library into our assignments, we simply need to add a reference to it from our HTML page (just like any other "external" JavaScript file / files).  This can be accomplished either by <a href="https://getbootstrap.com/docs/3.3/getting-started/#download" target="_blank">downloading the source files</a> and including them in our solution or using a <a href="https://code.jquery.com/" target="_blank">CDN (Content Delivery Network)</a>.  For example, if we decided to download the minified version of the latest jQuery to include in our projects (usually in /js/lib/jQuery), we would use the code:</p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/lib/jQuery/jquery-3.2.1.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre><p>If we wanted to use the same version from the CDN, we would use the following code instead:</p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-3.2.1.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="</span><span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre>
+<h5 class="lined">Client Side JS &amp; $(document).ready()</h5>
+<p>Now that we have the jQuery library correctly added to our view, we should add another external JS file that uses the library.  In this case, we will add a <strong>"main.js"</strong> file directly under the <strong>"js"</strong> directory (since it isn't a library / plugin) and include it <strong>beneath</strong> jQuery.  This is very important, bccause if we accidentally place code that <em>uses</em> jQuery before the code to include the jQuery library, we will get errors.  Therefore, we must include any external JS files that will be using the jQuery library <strong>beneath</strong> our jQuery &lt;script&gt; element:</p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-3.2.1.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="</span><span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/main.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre><p></p><p>To test to make sure everything is working properly, we will write an anonymous <em>callback</em> function (inside main.js) and provide it to the <strong>$(document).ready()</strong> method:</p>
+<pre><code class="javascript hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"document ready!"</span>);
+});
+
+<span class="hljs-comment">// alternatively:</span>
+
+<span class="hljs-comment">// $(function() {</span>
+<span class="hljs-comment">//    console.log( "document ready!" );</span>
+<span class="hljs-comment">// });</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"file loaded"</span>);</code></pre>
+<p>If we try running our file in the web browser with the console open, we should see the messages: "file loaded" followed by "document ready!".  This is because the (callback) function provided to the <strong>$(document).ready</strong> function contains text that will <em>only</em> output when the <strong>document is ready</strong>, ie: <strong>when the DOM is ready and safe to manipulate</strong>.  Since we will be primarily be using the DOM (updating nodes, wiring up events, etc), we must ensure that all of our jQuery code is written <em>inside</em> a callback provided to $document.ready().  From the <a href="https://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">documentation</a>:</p><blockquote>"A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness for you. Code included inside $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window ).on( "load", function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready."</blockquote>This is why you will see most jQuery examples written in the pattern:<p></p><pre><code class="javascript hljs">$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// do something cool...</span>
+});</code></pre><p>The <strong>dollar sign ($)</strong> syntax is just a shortcut for <strong>jQuery</strong>.  So the above code could be re-written as <strong>jQuery(function(){ ... });</strong>, however this is not as common.  Typically, the dollar sign ($) syntax is left intact, unless it is conflicting with another client-side JS library (prototype.js, MooTools, YUI, etc.), in which case, the <a href="http://api.jquery.com/jQuery.noConflict/" target="_blank">.noConflict()</a> function is used and we abandon the $.</p>
+<h4 class="lined">jQuery Selectors</h4>
+<p>One of the most valuable features provided by jQuery is it's comprehensive and powerful <strong><a href="https://api.jquery.com/category/selectors/" target="_blank">selectors</a></strong> which provide a fast way of accessing elements in the DOM using CSS-style syntax, similar to <strong>document.querySelector()</strong> and <strong>document.querySelectorAll()</strong>.  However, jQuery selectors have been expanded to include more flexibility and cross-browser compatibility. Additionally, since jQuery selectors return one or more objects that <strong><em>wrap</em> native DOM elements</strong>, we also gain access to a number of functions to easily work with the result set (ie: watching for events / modifying the DOM).</p><p>Some common selectors that jQuery gives us are:</p>
+<table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
+<tbody><tr><th style="width:1000px">Selector</th><th style="width: 70%">Description</th></tr>
+<tr><td><a href="https://api.jquery.com/all-selector/" target="_blank">$( "*" )</a></td><td><strong>All Selector:</strong> Selects all elements</td></tr>
+<tr><td><a href="https://api.jquery.com/id-selector/" target="_blank">$( "#myDiv" )</a></td><td><strong>id Selector:</strong> Selects a single element with the given id attribute.</td></tr>
+<tr><td><a href="https://api.jquery.com/class-selector/" target="_blank">$( ".myClass" )</a></td><td><strong>class Selector</strong> Selects all elements with the given class.</td></tr>
+<tr><td><a href="https://api.jquery.com/input-selector/" target="_blank">$( ":input" )</a></td><td><strong>input Selector</strong> Selects all input, textarea, select and button elements.</td></tr>
+<tr><td><a href="https://api.jquery.com/radio-selector/" target="_blank">$( ":radio" )</a></td><td><strong>radio Selector</strong> Selects all elements of type radio.</td></tr>
+<tr><td><a href="https://api.jquery.com/checkbox-selector/" target="_blank">$( ":checkbox" )</a></td><td><strong>checkbox Selector</strong> Selects all elements of type checkbox.</td></tr>
+<tr><td><a href="https://api.jquery.com/visible-selector/" target="_blank">$( ":visible" )</a></td><td><strong>visible Selector</strong> Selects all elements that are visible.</td></tr>
+<tr><td><a href="https://api.jquery.com/hidden-selector/" target="_blank"> $( ":hidden" )</a></td><td><strong>hidden Selector </strong> Selects all elements that are hidden (the opposite of :visible).</td></tr>
+<tr><td><a href="https://api.jquery.com/odd-selector/" target="_blank">$( ":odd" )</a> ie: <a href="https://api.jquery.com/odd-selector/" target="_blank">$( "tr:odd" )</a></td><td><strong>odd Selector</strong> Selects odd elements, zero-indexed. See also <a href="https://api.jquery.com/even-selector/" target="_blank">even</a>.</td></tr>
+<tr><td><a href="https://api.jquery.com/has-selector/" target="_blank">$( ":has(selector)" )</a> ie: <a href="https://api.jquery.com/has-selector/" target="_blank">$( "div:has(p)" )</a></td><td><strong>has() Selector</strong> Selects elements which contain at least one element that matches the specified selector.</td></tr>
+<tr><td colspan="2"><strong>For a full list of the <em>60+</em> selector types</strong>, refer to: <a href="https://api.jquery.com/category/selectors/" target="_blank">https://api.jquery.com/category/selectors</a></td></tr>
+
+</tbody></table>
+<h5 class="lined">Accessing the Selected Elements</h5>
+<p>As discussed above, using one (or more) of the above selectors gives us access to (jQuery wrapped) DOM elements.  Using this, we can either work with the <strong>whole collection</strong> of returned results, ie:</p><pre><code class="javascript hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// make all &lt;li&gt; elements inside &lt;ul class="list1"&gt;...&lt;/ul&gt; bold</span>
+    $(<span class="hljs-string">"ul.list1 li"</span>).css(<span class="hljs-string">"font-weight"</span>, <span class="hljs-string">"bold"</span>); 
+});</code></pre><p>Access <strong>each element</strong> individually using <a href="https://api.jquery.com/each/" target="_blank">.each()</a> &amp; <a href="http://www.learningjquery.com/2007/08/what-is-this" target="_blank">$(this)</a>:</p><pre><code class="javascript hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// append each &lt;li&gt; element inside &lt;ul class="list1"&gt;...&lt;/ul&gt;</span>
+    <span class="hljs-comment">// with it's position in the list</span>
+    $( <span class="hljs-string">"ul.list1 li"</span> ).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> index </span>) </span>{ <span class="hljs-comment">// DO NOT use () =&gt; {} syntax here</span>
+        $(<span class="hljs-keyword">this</span>).append(<span class="hljs-string">" "</span> + index);
+    });
+});</code></pre><p><strong>Filter the results</strong> down further using <a href="https://api.jquery.com/filter/" target="_blank">.filter()</a>:</p><pre><code class="javascript hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// make all odd &lt;li&gt; elements inside &lt;ul class="list1"&gt;...&lt;/ul&gt; bold</span>
+    $(<span class="hljs-string">"ul.list1 li"</span>).filter(<span class="hljs-string">":odd"</span>).css(<span class="hljs-string">"font-weight"</span>, <span class="hljs-string">"bold"</span>); 
+});</code></pre><p></p>
+
+<h4 class="lined">Event Handling</h4>
+<p>An important part of web programming is the ability execute code when a certain "event" occurs (ie: a button is pressed, a form is submitted, a value changed, the user swiped up, etc, etc.).  The act of registering a (callback) function to a specific event is often termed "wiring" up the event, in the same way that we would wire up a light bulb to a light switch. Fortunately, jQuery provides a very intuitive way to add/remove logic from an event, as well as exposing a wide range of events to choose from: </p><ul>
+<li><a href="https://api.jquery.com/category/events/keyboard-events/" target="_blank">Keyboard Events</a></li>
+<li><a href="https://api.jquery.com/category/events/mouse-events/" target="_blank">Mouse Events</a></li>
+<li><a href="https://api.jquery.com/category/events/form-events/" target="_blank">Form Events</a></li>
+<li><a href="https://api.jquery.com/category/events/browser-events/" target="_blank">Browser Events</a></li>
+<li><a href="https://api.jquerymobile.com/category/events/" target="_blank">Mobile Events (swipe, tap, etc)</a></li>
+</ul> 
+If we wish to respond to one of the events listed above, we invoke the <a href="http://api.jquery.com/on/" target="_blank">.on()</a> method on the specific <strong>element(s)</strong> that we wish to "wire" the event to. For example, say we wish to change the font colour of a list element when it's "clicked":<p></p>
+<pre><code class="javascript hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">"ul.list1"</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-string">"li"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">// DO NOT use () =&gt; {} syntax here</span>
+        $(<span class="hljs-keyword">this</span>).css(<span class="hljs-string">"color"</span>, <span class="hljs-string">"red"</span>);
+    });
+
+    $(<span class="hljs-string">"ul.list1"</span>).append(<span class="hljs-string">"&lt;li&gt;I get the event too!&lt;/li&gt;"</span>);
+});
+</code></pre>
+<p>Notice how we can specify the event on a parent element (&lt;ul class="list1"&gt;...&lt;/ul&gt;) and provide a <strong>selector</strong> to specify the target (child) element(s) for the event?  This syntax is important, because if we dynamically add an element to the list it will automatically get the event as well!  For example, say we wish to build DOM nodes dynamically that must respond to an event, such as table rows built from JSON data that show a tooltip when clicked?  To ensure that every new row gets the click event, we specify the event on the table and provide a selector to handle the dynamically-added &lt;tr&gt; elements.</p>
+<p>On the other hand, if we want to <em>remove</em> an event from an element, we simply invoke the <a href="http://api.jquery.com/off/" target="_blank">.off()</a> method on the element:
+</p><pre><code class="javascript hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">"ul.list1"</span>).off(<span class="hljs-string">"click"</span>, <span class="hljs-string">"li"</span>);
+});</code></pre>
+
+<h4 class="lined">DOM Modification</h4>
+<p>Now that we know how to select elements from the DOM and wire events, it is important to discuss how we can actually <strong>update</strong> the DOM.  We have seen this in the examples above using the <a href="http://api.jquery.com/css/" target="_blank">.css()</a> and <a href="http://api.jquery.com/append/" target="_blank">.append()</a>, however jQuery provides a host of other methods to modify the DOM, including:</p>
+<table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
+<tbody><tr><th style="width:1000px">Property / Method</th><th style="width: 70%">Description</th></tr>
+<tr><td><a href="http://api.jquery.com/css/" target="_blank">.css()</a></td><td>Get the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element.</td></tr>
+<tr><td><a href="http://api.jquery.com/append/" target="_blank">.append()</a></td><td>Insert content, specified by the parameter, to the end of each element in the set of matched elements.</td></tr>
+<tr><td><a href="http://api.jquery.com/remove/" target="_blank">.remove()</a></td><td>Remove the set of matched elements from the DOM.</td></tr>
+<tr><td><a href="http://api.jquery.com/clone/" target="_blank">.clone()</a></td><td>Create a deep copy of the set of matched elements.</td></tr>
+<tr><td><a href="http://api.jquery.com/attr/" target="_blank">.attr()</a></td><td>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</td></tr>
+<tr><td><a href="http://api.jquery.com/addClass/" target="_blank">.addClass()</a></td><td>Adds the specified class(es) to each element in the set of matched elements. Also see <a href="http://api.jquery.com/removeClass/" target="_blank">.removeClass()</a></td></tr>
+<tr><td><a href="http://api.jquery.com/replaceWith/" target="_blank">.replaceWith()</a></td><td>Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.</td></tr>
+<tr><td><a href="http://api.jquery.com/wrap/" target="_blank">.wrap()</a></td><td>Wrap an HTML structure around each element in the set of matched elements.</td></tr>
+<tr><td colspan="2"><strong>For a full list of the <em>40+</em> properties / methods</strong> used for DOM manipulation, refer to: <a href="https://api.jquery.com/category/manipulation/" target="_blank">http://api.jquery.com/category/manipulation</a></td></tr>
+
+</tbody></table>
+
+<h4 class="lined">Using AJAX</h4>
+<p>AJAX is rapidly becoming one of the most important technologies in web programming.  AJAX enables single-page applications and more streamlined user interfaces for working with data.  Recall (from week 9), creating an AJAX request with data and working with the response involved the following code (at minimum):</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">let</span> httpRequest = <span class="hljs-keyword">new</span> XMLHttpRequest();
+
+httpRequest.open(<span class="hljs-string">'POST'</span>, <span class="hljs-string">'https://httpbin.org/post'</span>);
+
+<span class="hljs-comment">// set the Request Header and send the request</span>
+httpRequest.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
+httpRequest.send(<span class="hljs-built_in">JSON</span>.stringify({ user: <span class="hljs-string">"John Doe"</span>, job: <span class="hljs-string">"unknown"</span> }));
+
+httpRequest.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// check the current value of the readyState &amp; status properties</span>
+    <span class="hljs-comment">// if successful, process the data</span>
+    <span class="hljs-keyword">if</span> (httpRequest.readyState === <span class="hljs-number">4</span>) { <span class="hljs-comment">// The request has completed ("done")</span>
+        <span class="hljs-keyword">if</span> (httpRequest.status === <span class="hljs-number">200</span>) {  <span class="hljs-comment">// We successfully recieved the response</span>
+            <span class="hljs-comment">// Create object jsData from the JSON received in responseText</span>
+            <span class="hljs-keyword">let</span> jsData = <span class="hljs-built_in">JSON</span>.parse(httpRequest.responseText);
+            <span class="hljs-comment">// render it in the console</span>
+            <span class="hljs-built_in">console</span>.log(jsData);
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"error: "</span> + httpRequest.statusText);
+        }
+    }
+}</code></pre>
+<p>jQuery provides a much cleaner, cross-browser and backwards compatible approach with it's <a href="http://api.jquery.com/jquery.ajax/" target="_blank">$.ajax()</a> method:</p>
+<pre><code class="javascript hljs">$.ajax({
+    url: <span class="hljs-string">"https://httpbin.org/post"</span>,
+    type: <span class="hljs-string">"POST"</span>,
+    data: <span class="hljs-built_in">JSON</span>.stringify({ user: <span class="hljs-string">"John Doe"</span>, job: <span class="hljs-string">"unknown"</span> }),
+    contentType: <span class="hljs-string">"application/json"</span>
+})
+.done(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(data);
+})
+.fail(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"error: "</span> + err.statusText);
+});</code></pre>
+
+<h3 class="lined" style="margin-bottom: 20px;">Bootstrap Framework</h3>
+<img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/bootstrap-5-e1499300485358.png">
+<p>The Bootstrap framework is a set of <strong>JavaScript</strong> &amp; <strong>CSS</strong> files that simplify the design of complex layouts &amp; UI/UX functionality.  It is often used as a starting point for modern websites, given its clean design patterns and unobtrusive JavaScript components.  Bootstrap also has excellent <a href="https://getbootstrap.com/docs/3.3/getting-started/" target="_blank">documentation</a>, making it simple for developers to prototype web apps quickly and efficiently.  It is for these reasons that it's been so widely adopted by the industry as the de facto starting point when building everything from simple static sites to complex web applications.</p>
+
+<h4 class="lined">Including Bootstrap in our Projects</h4>
+<p>Like jQuery, to incorporate Bootstrap into our projects, we simply need to add some external files to our views and we can begin using it right away.  As with any external JavaScript or CSS files, we can choose to either <a href="http://getbootstrap.com/getting-started/#download" target="_blank">download the files</a> to our local project, or use a CDN (content delivery network).</p><p>It is important to note that Bootstrap <strong>depends on jQuery</strong> for it's interactive components, so if we wish to use anything beyond the CSS features of the Bootstrap framework, we must include jQuery as well:</p>
+<p>Using a <strong>local copy</strong> - typically installed in "/lib/bootstrap":</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"/lib/bootstrap/css/bootstrap.min.css"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- it is common to place the .js files at the end of the &lt;body&gt; tag as well --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/lib/jQuery/jquery-3.2.1.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/lib/bootstrap/js/bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre>
+<p>Using a <strong>CDN</strong>:</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- it is common to place the .js files at the end of the &lt;body&gt; tag as well --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-3.2.1.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="</span><span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre>
+
+<h4 class="lined">Responsive Grid System</h4>
+<p>Arguably one of the best features of the Bootstrap framework is it's <a href="https://getbootstrap.com/docs/3.3/css/#grid" target="_blank">Responsive Grid System</a>.  CSS Grid systems have risen in popularity in recent years because they allow designers to easily create visually pleasing, clean layouts without manually fiddling with floats, margins, padding, flexbox, etc.  Additionally, if a "responsive" grid system is used correctly, it can be very simple to create layouts that <strong>also</strong> conform to responsive design principles.  Recall: responsive design can be defined as:</p>
+<blockquote><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/responsive-design-illustration.jpg"><br><br>( img src: <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php" target="_blank">https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php</a> )<br><br>"Responsive web design, originally defined by <a href="http://alistapart.com/article/responsive-web-design/" target="_blank">Ethan Marcotte in A List Apart</a>, responds to the needs of the users and the devices they're using. The layout changes based on the size and capabilities of the device. For example, on a phone users would see content shown in a single column view; a tablet might show the same content in two columns."</blockquote>
+<p>Fortunately, Bootstrap's Grid System makes this task extremely simple, but still provides enough tools to create complex arrangements of elements based on viewport size.</p><p>To get started, we begin with a <strong>.container</strong> - this is the outermost block element that will contain all of the "rows" and "columns" of the grid system as well as centre the content (grid) on the page:</p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>Next, we must figure out how many "rows" we wish to include in our layout.  For now, let's include two (2) rows:</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>To complete our "grid" we must choose how many columns we would like to add (we can have a different number in each row).  In Bootstrap, we can add a <strong>maximum of twelve (12)</strong> columns.  If we wish to have fewer columns (ie: 3 columns), we tell each column how many of the 12 columns it should take up. For example, if we want to have three (3) columns, each column would be as wide as <strong>four (4) columns</strong>, since 4 + 4 + 4 = 12.  Similarly, if we only wanted to have two (2) columns, each column would be as wide as <strong>six (6) columns</strong>, since 6 + 6 = 12, and so on:<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/grid-numbers.png"></p><p>Once we have decided how many columns we want at the largest size, we must determine how each of those columns will <strong>scale with the viewport</strong>.  The most common configuration has the grid starting out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium and larger) devices.</p><p>To achieve this, we use the class <strong>"col-md-*"</strong> where <strong>*</strong> is how <strong>wide</strong> we want the columns to be at their (medium and larger) size.  Let's say that each of our rows will have three (3) columns - in the largest size, it would appear as:<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/grid-md-4.png"><br><br>However, in the mobile and tablet size (extra small to small range), our columns would appear stacked:<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/grid-md-4-stacked.png"></p>
+<p>To implement this in our example from above, we simply add three (3) columns in each "row":</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<h5 class="lined">Viewport Specific Configurations</h5>
+<p>If we want to be more specific with how the grids appear at each viewport size, we can use one or more of the following <a href="https://getbootstrap.com/docs/3.3/css/#grid-options" target="_blank">class prefixes</a> on each row (* represents number of columns):</p>
+<table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
+<tbody><tr><td style="width:1000px">.col-xs-*</td><td style="width: 70%">Extra small devices - Phones ( &lt; 768px )</td></tr>
+<tr><td>.col-sm-*</td><td>Small devices - Tablets ( ≥ 768px )</td></tr>
+<tr><td>.col-md-*</td><td>Medium devices - Desktops ( ≥ 992px )</td></tr>
+<tr><td>.col-lg-*</td><td>Large devices - Desktops ( ≥ 1200px )</td></tr>
+</tbody></table>
+<h5 class="lined">Offsetting Columns</h5>
+<p>Sometimes our design requires columns to be "offset" from the left of the grid.  For example, if we wanted to only use the 4 middle columns, we would create a single "col-md-4" and offset it by four (4) columns from the left.  This can be accomplished with Bootstrap's <strong>.col-x-offset-y</strong> classes, where <strong>x is the target size</strong> (ie, "sm", "md", etc.) and <strong>y is the number of columns</strong> (1 - 12).  For example (from the Boostrap documentation):<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/grid-md-4-offset.png"><br></p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>.col-md-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-md-offset-4"</span>&gt;</span>.col-md-4 .col-md-offset-4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-md-offset-3"</span>&gt;</span>.col-md-3 .col-md-offset-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-md-offset-3"</span>&gt;</span>.col-md-3 .col-md-offset-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-6 col-md-offset-3"</span>&gt;</span>.col-md-6 .col-md-offset-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<!--<h5 class="lined">Overriding Column Order</h5>
+<p>It is also possible to "override" the position of columns using the <strong>.col-x-push-y</strong> and <strong>.col-x-pull-y</strong> classes where <strong>x is the target size</strong> (ie, "sm", "md", etc.) and <strong>y is the number of columns</strong> (1 - 12).  Here, the "push" and "pull" classes force a column out of it's position and moves it either to the <strong>right, y columns</strong> or to the <strong>left, y columns </strong> respectfully.  For example (from the Bootstrap documentation):<br /><br /><img src="http://zenit.senecac.on.ca/~patrick.crawford/wp-content/uploads/2017/07/grid-md-4-ordering.png" /><br /></p>
+<pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-9 col-md-push-3&quot;&gt;.col-md-9 .col-md-push-3&lt;/div&gt;
+        &lt;div class=&quot;col-md-3 col-md-pull-9&quot;&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>-->
+<hr>
+<p><strong>Note:</strong> As a final (but important) note about responsive design; Bootstrap also has created some <strong><a href="https://getbootstrap.com/docs/3.3/css/#responsive-utilities" target="_blank">Responsive Utility Classes</a></strong> that enable the visibility of elements to be toggled depending on each device size (ie: xs, sm, md, lg). Using these utilities in conjunction with the responsive grid system (as illustrated above), it is possible to implement a complex, responsive layout without writing any extra CSS to manage the configuration across device sizes!</p>
+<h4 class="lined">Components</h4>
+<p>Bootstrap comes with a wide range of <a href="https://getbootstrap.com/docs/3.3/components/" target="_blank">reusable components</a> to help implement your design.  They are all widely used, however there is only enough time to discuss the most interesting/important ones today:</p>
+<h5 class="lined">Glyphicons</h5>
+<p>Bootstrap comes bundled with the premium icon font <a href="https://getbootstrap.com/docs/3.3/components/#glyphicons" target="_blank">Glyphicons</a>.  Most modern web apps use icons to help the usability of their application, for example a "magnifying glass" ( <i class="icon-search"></i> ) for searching, or a "floppy disk" ( <i class="icon-save"></i> ) to indicate saving. As a way to offer the icons in as flexible a manner as possible (rendered "cleanly" at any size), special web fonts where introduced that contain the icons.  This is where Glyphicons comes in - it is essentially a font that contains a large range of icons that we can use in our application.  Since it is a font (represented as a vector), we can size the icon up or down depending on our needs using the "font-size" property, without any loss of quality:<br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/icon-font.png"><br>( img src: <a href="http://glyphicons.com/" target="_blank">http://glyphicons.com</a> )</p>
+<p>To incorporate an icon using Bootstrap's Glyphicons (often used in &lt;button&gt; elements), simply use the following code (in this case, we will use the "search" icon):</p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"glyphicon glyphicon-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+<h5 class="lined">Buttons</h5>
+<p>Another important "component" that Bootstrap provides is a set of classes to <a href="https://getbootstrap.com/docs/3.3/css/#buttons" target="_blank">render buttons</a>.  There is no escaping the need for buttons, whether they're hyperlinks ( &lt;a&gt;...&lt;/a&gt; ), buttons ( &lt;button&gt;...&lt;/button&gt; ) or input type=submit / button buttons ( &lt;input type="submit" /&gt;).  Once again, Bootstrap comes to the rescue with a set of classes  to create consistent, clean buttons:<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/bootstrap-buttons.png"><br></p>
+<pre><code class="html hljs xml"><span class="hljs-comment">&lt;!-- Standard button --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+<p>It is important to note that the classes used above (ie: ".btn", ".btn-primary", "btn-success", etc) can also be used on the following types of elements:
+</p><ul><li><strong>hyperlinks:</strong> &lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;</li>
+<li><strong>button elements:</strong> &lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;</li>
+<li><strong>input type="button" elements:</strong> &lt;input class="btn btn-default" type="button" value="Input"&gt;</li>
+<li><strong>input type="submit" elements:</strong> &lt;input class="btn btn-default" type="submit" value="Submit"&gt;</li></ul><p></p>
+<h5 class="lined">Button Sizes</h5>
+<p>While the buttons rendered above look good and match Bootstrap's default style, we don't necessarily always want to render them in that size. To overcome this and add some flexibility to the sizing, Bootstrap has also provided the following sizing classes to work with buttons:<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/bootstrap-btn-sizes.png"><br></p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-lg"</span>&gt;</span>Large button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default btn-lg"</span>&gt;</span>Large button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Default button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Default button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-sm"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default btn-sm"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-xs"</span>&gt;</span>Extra small button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default btn-xs"</span>&gt;</span>Extra small button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+<h5 class="lined">Dropdown Buttons</h5>
+<p>There are a few more interesting things that we can do to work with buttons (ie: setting <a href="https://getbootstrap.com/docs/3.3/css/#buttons-active" target="_blank">"active" state</a>, <a href="https://getbootstrap.com/docs/3.3/css/#buttons-disabled" target="_blank">"disabled" state</a> &amp; creating <a href="https://getbootstrap.com/docs/3.3/css/#buttons-sizes" target="_blank">block level buttons</a>), however one of the coolest (and most useful) button treatments that Bootstrap provides is the "dropdown button":<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/bootstrap-btn-dropdown.png"><br></p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdownMenu1"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span>&gt;</span>
+    Dropdown&amp;nbsp;&amp;nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"dropdownMenu1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"separator"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<h5 class="lined">Navigation Bar</h5>
+<p>Almost every website you visit or web app you use will feature some sort of <strong>navigation bar</strong>.  Users depend on this to navigate through your app and explore all of the features/information available. Bootstrap has it's own <a href="https://getbootstrap.com/docs/3.3/components/#navbar-default" target="_blank">responsive navigation bar</a> that is highly customizable and works very nicely on mobile devices.  To get started, let's create a navigation bar with a "Brand" (space for a logo) and three (3) navigation links, the first of which is "active" (selected) - this would represent the current page / view:<br><br><strong>Full Navigation Bar</strong><br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/navbar-full.png">
+<br><br><strong>Mobile (Compressed) Navigation Bar</strong><br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/navbar-mobile.png">
+<br><br><strong>Mobile (Expanded) Navigation Bar</strong><br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/navbar-mobile-down.png"></p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-inverse navbar-static-top"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggle collapsed"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#bs-example-navbar-collapse-1"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Toggle navigation<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"bs-example-navbar-collapse-1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav navbar-nav"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre>
+<p>There's a lot going on in the above code, but a large chunk of it is boilerplate and is rarely changed.  The main areas that we would typically alter in the above code are:</p>  
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-inverse navbar-static-top"</span>&gt;</span></code></pre>
+<p>Here, we have a few options on how the overall navigation bar will appear by changing which classes we include.  We cannot change the "navbar" class, however we can use the following other options:</p><ul>
+<li><strong>navbar-inverse</strong> can instead be: <strong>"navbar-default"</strong> - this will change the scheme from dark to light</li>
+<li><strong>navbar-static-top</strong> can be either <strong>removed</strong> (resulting in rounded corners), <strong>changed to "navbar-fixed-top"</strong> which will always keep the navbar in place at the <strong>top of the page</strong>, regardless of scroll position, or <strong>changed to "navbar-fixed-bottom"</strong> which will always keep the navbar in place at the <strong>bottom of the page</strong>, regardless of scroll position</li>
+</ul><p></p>
+
+<hr>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+<p>Next, we can skip down to the "navbar-brand" (unless you wish to change the id's from "bs-example-navbar-collapse-1" - in which case simply do a find/replace).  We do not typically change anything fundamental about this code except:</p><ul><li><strong>href="#"</strong> would typically redirect back to the root ("/") or homepage of the website / application</li><li><strong>Brand</strong> - this text would usually be replaced with a logo ("brand") image.</li></ul><p></p>
+
+<hr>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav navbar-nav"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<p>The above unordered list simply contains the list of links that are available in the navigation bar.  We can have one (1) or more of these lists and they can either be left-aligned (by default / <strong>adding the class "navbar-left"</strong>) or right-aligned (by <strong>adding the class "navbar-right"</strong>).</p><p>If we wish to add more or less links, we can add/remove them here.  Additionally, we can add things like:<br><br><strong>Dropdown Lists:</strong><br></p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav navbar-nav"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-toggle"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>Dropdown <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<strong>Form Elements:</strong><br><br><pre style="margin-bottom:0px;"><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav navbar-nav"</span>&gt;</span>
+   ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-form navbar-right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group-btn"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>                
+        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>
+<hr>
+
+<h4 class="lined">Forms</h4>
+<p>Since our WEB322 app has been making extensive use of the Bootstrap form classes, we will be sticking with a simple example - for a more in-depth description of the Bootstrap form classes, refer to the official documentation here: <a href="https://getbootstrap.com/docs/3.3/css/#forms" target="_blank">https://getbootstrap.com/docs/3.3/css/#forms</a>.</p>
+<p>To get started using Bootstrap forms, you really only need to remember two classes: <strong>form-group</strong> and <strong>form-control</strong>.  From the Bootstrap documentation:</p><blockquote>"Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with <strong>.form-control</strong> are set to <strong>width: 100%;</strong> by default. Wrap labels and controls in <strong>.form-group</strong> for optimum spacing."</blockquote><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/bootstrap-simple-form.png"><p></p><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleInputEmail1"</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleInputEmail1"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Email"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleInputPassword1"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleInputPassword1"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Password"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleInputFile"</span>&gt;</span>File input<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleInputFile"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"help-block"</span>&gt;</span>Example block-level help text here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span> Check me out
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>
+
+<h4 class="lined">Bootstrap JavaScript (jQuery) Components</h4>
+<p>Due to time constraints, it is impossible to discuss all of the fantastic <a href="https://getbootstrap.com/docs/3.3/javascript/" target="_blank">Bootstrap JavaScript Components</a> and how they work in detail.  However, we will provide some examples for the more interesting/useful ones.  If you are seriously interested in using Bootstrap in your projects, the above link is a "must-read". Please note that like the other Bootstrap components, the code used below is largely boilerplate and there is little room for configuration out of the box - simply follow the pattern of elements and CSS classes and the Bootstrap framework will take care of the rest.  </p>
+<h5 class="lined">Dismissible Alerts</h5>
+<p><a href="https://getbootstrap.com/docs/3.3/javascript/#alerts" target="_blank">Dismissible Alerts</a> in Bootstrap are simply small divs that provide a temporary message to the user, ie: "Warning: your session will time out in 2 minutes".  We often do not want to clutter the user interface with these alerts, so Bootstrap has included functionality to allow users to "dissmiss" the alert (by pressing a close ("x") button).  Additionally alerts can be given a different colour depending on the kind of alert, including: red ("alert-danger"), yellow ("alert-warning"), blue ("alert-info") and green ("alert-success"):<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/alerts.png"></p>
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-danger alert-dismissible fade in"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Error:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Something went wrong. 
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-warning alert-dismissible fade in"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Warning:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Something might go wrong soon. 
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-info alert-dismissible fade in"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Information:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Something is happening. 
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-success alert-dismissible fade in"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"alert"</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>×<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Success:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Something went right! 
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<h5 class="lined">Tabs</h5>
+<p>Tabs are an extremely common user-interface component.  They have been used in these notes (see Week 7 - "Putting it All Together") and play a significant role in optimizing space on a screen for categorized information.  Using jQuery, the Bootstrap framework has created a standard HTML pattern that we can leverage to create a functioning <a href="https://getbootstrap.com/docs/3.3/javascript/#tabs" target="_blank">tab control</a> without writing a single line of JavaScript!</p><p>Once again the following code is largely boilerplate out of the box. As long as we follow the predefined structure, our tabs will function properly.<br><br><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/tabs.png"></p>
+<pre><code class="html hljs xml"><span class="hljs-comment">&lt;!-- Nav tabs --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-tabs"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#home"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#profile"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"profile"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#messages"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"messages"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Messages<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#settings"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"settings"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"tab"</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Tab panes --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"home"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>home content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"profile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>profile content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"messages"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>messages content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"settings"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>settings content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p>In the above code, notice how we have some identifiers repeated across the "Nav tabs" section and the "Tab panes" section?  These are primarily the <strong>href</strong> and <strong>aria-controls</strong> attributes in the "Nav tabs" section.  The <strong>href</strong> attributes each link to the <strong>corresponding "Tab pane" id</strong> that they wish to show when clicked, and the <strong>aria-controls</strong> attribute helps aid in the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank">accessibility</a> of the control.</p>
+<h6 class="lined">Tab Configuration</h6>
+<p>Even though the tabs are fairly standard, we do have some configuration options available, such as:
+</p><ul><li><strong>Using a Fade Effect</strong>: To make tabs fade in, add the class "fade" to each "tab-pane". The first tab pane must also have the "in" class to make the initial content visible.<br><br><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade in active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"home"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>home content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"profile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>profile content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"messages"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>messages content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"settings"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>settings content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></li>
+<li><strong>Adding "Pill" Styling:</strong> We can make the tabs appear as buttons by adding the class "nav-pills" to the "Nav tabs" &lt;ul&gt; element:<br><br><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-tabs nav-pills"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span>&gt;</span></code></pre></li>
+<li><strong>Stacking the "Pill" Tabs:</strong> Another option is to display the tabs above one another in a "stack".  Please note, this the <strong>not</strong> same thing as <a href="http://dbtek.github.io/bootstrap-vertical-tabs/demo.html" target="_blank">"vertical tabs"</a>.  Stacking the tabs simply places each tab "pill" in a vertical stack with the pane(s) at the bottom.<br><br><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-tabs nav-pills nav-stacked"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span>&gt;</span></code></pre></li>
+</ul><p></p>
+
+
+<h5 class="lined">Modal Window</h5>
+<p>The <a href="https://getbootstrap.com/docs/3.3/javascript/#modals" target="_blank">"modal window"</a> is one of the most important components in the list and you will find yourself needing it on every project.  Essentially, a modal window is a custom in-page popup window that blocks the background content from being clicked on / interacted with.  You will often see login/registration forms, chat windows, forms to edit table row data, etc. placed in modal windows.</p><p>The Bootstrap implementation is very clean and easy to use - it also has the bonus of ensuring that the generated modal windows are "responsive" and will not break the view or cause excessive scrolling when accessed on a mobile device.  The following code is a simple example of how a modal window is defined and how it can be "wired up" to be opened by clicking a button.</p><img src="./WEB322 – Week 11 – Class 1 – Web Programming_files/modal.png"><pre><code class="html hljs xml"><span class="hljs-comment">&lt;!-- Button trigger modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"modal"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#myModal"</span>&gt;</span>
+  Launch demo modal
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myModal"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"dialog"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"myModalLabel"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-dialog"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"document"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"modal"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-title"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myModalLabel"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-body"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"modal"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"console.log('saved!'); $('#myModal').modal('hide');"</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+
+
+
+
+
+<p>Once again, there's a lot going on in the above code, but (as before) a large chunk of it is boilerplate and is rarely changed.  The main areas that we would typically alter in the above code are:</p>  
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"modal"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#myModal"</span>&gt;</span>
+  Launch demo modal
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+<p>This is simply the element that actually launches the modal.  This could be <strong>any element</strong> that has the properties <strong>data-toggle="modal"</strong> and <strong>data-target="#someId"</strong> where "#someId" will be the the id of your "modal" &lt;div&gt;...&lt;/div&gt;.</p>
+
+<hr>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myModal"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"dialog"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"myModalLabel"</span>&gt;</span></code></pre>
+<p>The only things that we can really change here are the <strong>id</strong> of the "modal" and the <strong>aria-labelledby</strong> value (this corresponds to the id of your "modal-title" &lt;h4&gt; - see below)</p>
+
+<hr>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-title"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myModalLabel"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span></code></pre>
+<p>This is the text that appears as the "title" of the modal window.  Here we would typically change the <strong>inner text</strong> and the <strong>id</strong> (we just need to make sure that the id matches the "aria-labeledby" property above.</p>
+
+<hr>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-body"</span>&gt;</span>
+        ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p>The "modal-body" element is where we will place the content of the modal window.  This could be anything, however typically "grid" rows/colums are placed here (see "Responsive Grid System" above) to position the content.
+
+  </p>
+
+<hr>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"modal"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"console.log('saved!'); $('#myModal').modal('hide');"</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p>Finally we have the "modal-footer".  Once again, we can have anything we like in this element, however it is common to have a "Close" button (to cancel the action using the data-dismiss="modal" property) and a "Save" or "Submit" button (to confirm the action and programatically hide the modal using <strong>$("#modalId").modal("hide");</strong>, where "#modalId" is the id of the modal window). </p>
+
+
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+
+<ul><li>Test 11 Next Week</li></ul>
+
+<h3 class="lined">Sources</h3>
+<ul>
+	<li><a href="https://api.jquery.com/" target="_blank">https://api.jquery.com</a></li>
+<li><a href="http://learn.jquery.com/" target="_blank">http://learn.jquery.com</a></li>
+<li><a href="http://www.learningjquery.com/" target="_blank">http://www.learningjquery.com</a></li>
+<li><a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com</a></li>
+<li><a href="https://www.bootply.com/" target="_blank">https://www.bootply.com</a></li>
+<li><a href="https://www.w3schools.com/bootstrap" target="_blank">https://www.w3schools.com/bootstrap</a></li>
+<li><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php" target="_blank">https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/" target="_blank">https://developers.google.com/web/fundamentals/design-and-ui/responsive/</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 11 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 11 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

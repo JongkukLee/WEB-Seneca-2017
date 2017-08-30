@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week7-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 7 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 7 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week7-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=349">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek7-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek7-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-349 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week7-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week7-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 7 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 7 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 7 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-349" class="post-349 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Data Persistence</h3>
+<p>"Data Persistence" (the ability to "persist" or "save" new, updated or deleted information) is a vital part of any web application project. For example, this could be registering new users, deleting users, updating profile information or payment data for users, viewing saved files or uploaded images, etc. etc. To truly create an "application" we must be able to work with (and persist) data.</p>
+<p>Fortunately, there are many different database systems that we can leverage to accomplish this notion of "data persistence".  These range from powerful "relational" database systems, including: <a href="https://www.microsoft.com/en-us/sql-server/" target="_blank">Microsoft SQL Server</a>, <a href="https://www.oracle.com/database/" target="_blank">Oracle</a>, <a href="https://www.mysql.com/" target="_blank">MySQL</a>, <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, and <a href="https://en.wikipedia.org/wiki/List_of_relational_database_management_systems" target="_blank">many others</a> as well as "NoSQL" database systems such as <a href="https://aws.amazon.com/dynamodb/" target="_blank">Amazon's DynamoDB</a>, <a href="https://azure.microsoft.com/en-us/services/documentdb/" target="_blank">Azure DocumentDB</a> and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>.</p><p>In WEB322, we will be focusing on <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> - this week, we will look at how we can work with a PostgreSQL database in a node.js environment. </p>
+<h5 class="lined">PostgreSQL (Postgres)</h5>
+<p>From the PostgreSQL site, <a href="https://www.postgresql.org/" target="blank">postgresql.org</a>:
+</p><blockquote>"PostgreSQL (also known as "Postgres") is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. It runs on all major operating systems, including Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, macOS, Solaris, Tru64), and Windows. It is fully <a href="https://en.wikipedia.org/wiki/ACID" target="_blank">ACID compliant</a>, has full support for foreign keys, joins, views, triggers, and stored procedures (in multiple languages). It includes most SQL:2008 data types, including INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, and TIMESTAMP. It also supports storage of binary large objects, including pictures, sounds, or video. It has native programming interfaces for C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, among others, and <a href="https://www.postgresql.org/docs/manuals/" target="_blank">exceptional documentation</a>.</blockquote><p></p>
+<p>This is a great choice for us for multiple reasons; it is open source, highly available, standards compliant and most importantly, works nicely with node.js.</p>
+<p>To get started, we need to <strong>add a Postgre database (DB)</strong> to a new (or existing) <strong>Heroku application</strong>.  For specific instructions (and to refresh your memory) on creating a new application in Heroku, refer to the <a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku" target="_blank">Getting Started with Heroku</a> guide.  </p><p>Once your app is up and running, <a href="https://id.heroku.com/login" target="_blank">log into Heroku</a> and find your application on the dashboard - it should have an automatically generated name, like "cryptic-garden-34394". Next, follow the steps to set up your free Postgres database!</p>
+<ol>
+<li>Click on your application to go to the configuration screen<br><br></li>
+<li>At the bottom, you will see an "Add-ons" section with a textbox "Quickly add add-ons from Elements" 
+<img src="./WEB322 – Week 7 – Class 1 – Web Programming_files/heroku-screen1.png" alt="Find more add ons" style="margin: 10px 0"></li>
+<li>Type "Heroku Postgres" into this textbox and click the "Heroku Postgres" item that comes up:<img src="./WEB322 – Week 7 – Class 1 – Web Programming_files/heroku-screen4.png" alt="Heroku Postgres" style="margin:10px 0">
+</li><li>This will open a dialog window showing you that "Heroku Postgres" will be added to your application.  Be sure you leave the "Plan name" to <strong>Hobby Dev - Free</strong> and click <strong>Provision</strong><br><br></li>
+<li>This will create an item (link) in your "Add-ons" section with the label: <strong>"Heroku Postgres :: Database"</strong>.  Click this link to go to the page for your new Postgres Database instance!<br><br></li>
+<li>Scroll down to the "Administration" section and click the "View Credentials" button on the right side of the page in the "Database Credentials" section.  This will expand a section that lists all of the credentials that you will use when connecting to this database.<br><br></li>
+<li>Write down the following information for: <strong>Host</strong>, <strong>Database</strong>, <strong>User</strong>, <strong>Port</strong>, <strong>Password</strong>.  Note: You can always log back on to Heroku to see these credentials if you forget them. </li>
+</ol>
+<h5 class="lined">pgAdmin 3</h5>
+<p>Now that we have our brand new Postgres database created in Heroku, why don't we try to connect to it using the most popular GUI tool for Postgres; <a href="https://www.pgadmin.org/" target="_blank">pgAdmin</a>.  If you're following along from the lab room, pgAdmin 3 should already be installed.  However, if you're configuring your home machine, you will need to download pgAdmin 3 (<strong>not 4</strong>) from one of the following locations:</p><ul><li><a href="https://www.pgadmin.org/download/macos.php" target="_blank">Mac OS</a></li><li><a href="https://www.pgadmin.org/download/windows.php" target="_blank">Windows</a></li></ul><p>The reason that we want pgAdmin 3 and not pgAdmin 4 is that pgAdmin 4 has dropped a few features and it will make managing our database hosted on Heroku more difficult.  We are using pgAdmin 3 in all the Mac OSX labs and you should be using it at home as well.  <strong>Note:</strong>  If you're installing it on Mac OSX, you may encounter the following error when you try to open the application: </p><pre>"pgAdmin3" can’t be opened because it is from an unidentified developer. Your security preferences
+allow installation of only apps from the App Store and identified developers.</pre>  This is a feature that was introduced in the last few iterations of OSX.  The workaround can be <a href="https://support.apple.com/kb/ph14369?locale=en_US" target="_blank">found here</a>.<p></p>
+<p>Once pgAdmin 3 is installed and you have opened the app, we need to configure it to connect to our database:</p>
+<ol>
+<li>Click on the <strong>plug icon</strong> in the top left of the window, or select <strong>File &gt; Add Server</strong><br><br></li>
+<li>This will open the "New Server Registration" Dialog window.  Proceed to enter the following information about your Postgres Database on Heroku<br><br>
+<table class="table-bordered table-condensed" style="width:100%">
+<tbody><tr>
+  <th><strong>Field</strong></th>
+  <th style="width: 85%"><strong>Value</strong></th>
+</tr>
+<tr>
+  <td><strong>Name</strong></td>
+  <td>This can be anything you like, ie "Heroku DB 1"</td>
+</tr>
+<tr>
+  <td><strong>Host</strong></td>
+  <td>This is the host for your Heroku Postgres DB, ie: <strong>[some identifier].compute-1.amazonaws.com</strong></td>
+</tr>
+<tr>
+  <td><strong>Port</strong></td>
+  <td>This is the port for your Heroku Postgres DB - it should be the same as what's already there, ie: <strong>5432</strong></td>
+</tr>
+
+<tr>
+  <td><strong>Maintenance DB</strong></td>
+  <td>Enter your randomly generated Heroku Postgres Database name here</td>
+</tr>
+<tr>
+  <td><strong>Username</strong></td>
+  <td>Enter your randomly generated Heroku Postgres Database user name here</td>
+</tr>
+<tr>
+  <td><strong>Password</strong></td>
+  <td>Enter your randomly generated Heroku Postgres Database password here</td>
+</tr>
+<tr>
+  <td><strong>(Advanced) DB Restriction</strong></td>
+  <td>Under the "Advanced" tab in the "DB Restriction" field, enter your Heroku Postgres Database name in single quotes, ie: <strong>'databaseName'</strong> </td>
+</tr>
+</tbody></table>
+ <br><p>Once you have entered all of your information, hit the "Ok" button and click "server groups" in the left sidebar to expand your server connections.  If you entered valid information for the above fields, you should see your Heroku Postgres DB under <strong>Servers (1)</strong>.  Expand this item and the following <strong>"Databases (1)"</strong> item, and you should see your database.  Expand this item, as well as the nested <strong>"Schemas (1)"</strong> item, followed by the <strong>"public"</strong> item, and you should be presented with something that looks like this:<img src="./WEB322 – Week 7 – Class 1 – Web Programming_files/heroku-screen6.png" alt="heroku DB in pgAdmin"></p>
+<p><strong>Success!</strong>  We will be keeping an eye on our data using this tool so leave it running in the background.  Next, why don't we see if we can get our node.js server to connect to the database as well?  For us to be able to connect to a relational database, we will need to use an existing module.  Fortunately, <strong>sequelize</strong> will do exactly what we want.
+</p><h3 class="lined">Sequelize</h3>
+<p>Like all modules in node.js, we will have to use <strong>Node Package Manager (npm)</strong> to acquire the module from the online package collection.  With your application folder open in Visual Studio Code, open the <strong>integrated terminal</strong> and enter the command</p><pre>npm install sequelize --save</pre>followed by the command: <br><br> <pre>npm install pg pg-hstore --save</pre><p></p>
+<p>This will add both the <strong>sequelize</strong> and the <strong>pg / pg-hstore</strong> modules to our node_modules folder, as well as add their names &amp; version numbers to our package.json file under "dependencies".</p><p>Next, we need to update our <strong>server.js</strong> file to use the new modules so that we can test our connection to the database.  If you're working with an existing application, comment out any existing Express app code (routes, listen, etc.) that you have in server.js (for the time being) and add the following code:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> Sequelize = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sequelize'</span>);
+
+<span class="hljs-comment">// set up sequelize to point to our postgres database</span>
+<span class="hljs-keyword">var</span> sequelize = <span class="hljs-keyword">new</span> Sequelize(<span class="hljs-string">'database'</span>, <span class="hljs-string">'user'</span>, <span class="hljs-string">'password'</span>, {
+    host: <span class="hljs-string">'host'</span>,
+    dialect: <span class="hljs-string">'postgres'</span>,
+    port: <span class="hljs-number">5432</span>,
+    dialectOptions: {
+        ssl: <span class="hljs-literal">true</span>
+    }
+});
+
+sequelize
+    .authenticate()
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Connection has been established successfully.'</span>);
+    })
+    .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Unable to connect to the database:'</span>, err);
+    });</code></pre><p></p>
+
+<p>Where <strong>database</strong> is your randomly generated Heroku Postgres Database name, <strong>user</strong> is your username, <strong>password</strong> is your password and lastly, <strong>host</strong> will be your Heroku Postgres Database host url.  Recall: all of this information is available online via the Heroku dashboard  under <strong>Resources &gt; Add-ons - Heroku Postgres :: Database</strong> for your specific app</p>
+<p>Once you have updated your app to use the <strong>Sequelize</strong> module, try running it using our usual "<strong>node server.js</strong>" command.  If everything was entered correctly, you should see the following message in the console:</p>
+<pre>Executing (default): SELECT 1+1 AS result
+Connection has been established successfully.</pre>
+<p>If you see any errors, go back and check that you have entered all of your credentials correctly when creating the sequelize object.  Recall: You can use Ctrl + c to stop a node.js application from running.</p>
+
+<h5 class="lined">Models (Tables) Introduction</h5>
+<p>Now that we have successfully tested the connection to our Postgres database from our node.js application, we must discuss what the <strong>Sequelize</strong> module does and how we will be using it to manage data persistence within our Postgres Database.</p><p>Sequelize is technically an <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">Object-Relational Mapping ("ORM") framework</a>. It maps our JavaScript objects ("models") to tables and rows within our database and will automatically execute relevant SQL commands on the database whenever data using our "models" (JavaScript objects) is updated.  This saves us the trouble of manually writing complex SQL statements whenever we wish to update the back-end database to reflect changes made by the user.  We can simply update our data and let Sequelize do the rest!</p>
+<p>To see this in action, update your server.js file to use the following code:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> Sequelize = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sequelize'</span>);
+
+<span class="hljs-comment">// set up sequelize to point to our postgres database</span>
+<span class="hljs-keyword">var</span> sequelize = <span class="hljs-keyword">new</span> Sequelize(<span class="hljs-string">'database'</span>, <span class="hljs-string">'user'</span>, <span class="hljs-string">'password'</span>, {
+    host: <span class="hljs-string">'host'</span>,
+    dialect: <span class="hljs-string">'postgres'</span>,
+    port: <span class="hljs-number">5432</span>,
+    dialectOptions: {
+        ssl: <span class="hljs-literal">true</span>
+    }
+});
+
+<span class="hljs-comment">// Define a "Project" model</span>
+
+<span class="hljs-keyword">var</span> Project = sequelize.define(<span class="hljs-string">'Project'</span>, {
+    title: Sequelize.STRING,
+    description: Sequelize.TEXT
+});
+
+<span class="hljs-comment">// synchronize the Database with our models and automatically add the </span>
+<span class="hljs-comment">// table if it does not exist</span>
+
+sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// create a new "Project" and add it to the database</span>
+    Project.create({
+        title: <span class="hljs-string">'Project1'</span>,
+        description: <span class="hljs-string">'First Project'</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">project</span>) </span>{
+        <span class="hljs-comment">// you can now access the newly created Project via the variable project</span>
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"success!"</span>)
+    }).catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"something went wrong!"</span>);
+    });
+});</code></pre>
+<p>Once again, <strong>database</strong> is your randomly generated Heroku Postgres Database name, <strong>user</strong> is your username, <strong>password</strong> is your password and <strong>host</strong> is your Heroku Postgres Database host url.</p>
+<p>There is a lot going on in the above code - but before we walk through what everything is doing, try updating the above code with your database credentials and run it once again with <strong>node server.js</strong>.  You should see the something very similar to the following output:</p>
+<pre>Executing (default): INSERT INTO "Projects" ("id","title","description","createdAt","updatedAt") VALUES (DEFAULT,'Project1','First Project','2017-02-28 22:45:25.163 +00:00','2017-02-28 22:45:25.163 +00:00') RETURNING *;
+success!</pre>
+<p>It appears that Sequelize has done some of the heavy lifting for us.  To confirm that the create operation was successful and that we have indeed persisted "Project1" in a new "Project" table, go back to your <strong>pgAdmin3</strong> application, right-click on "<strong>Tables (0)</strong>" and choose "Refresh".  You should now see our new "Projects" table in the list!<br><br>
+<img src="./WEB322 – Week 7 – Class 1 – Web Programming_files/heroku-screen7.png" alt="pgAdmin with the Projects table"></p>
+<p>To view the contents of the table, <strong>right-click</strong> on the <strong>"Projects"</strong> table and select <strong>View Data &gt; View Top 100 Rows</strong>.  This will open a new window with a grid view that you can use to explore the data in the table:<br><br>
+<img src="./WEB322 – Week 7 – Class 1 – Web Programming_files/heroku-screen8.png" alt="View Project Data in pgAdmin"> </p>
+<p>You will notice that there are some columns in the "Project" table that we didn't define in our "Project" Model; specifically: <strong>id</strong>, <strong>createdAt</strong> and <strong>updatedAt</strong>; recall:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Define a "Project" model</span>
+
+<span class="hljs-keyword">var</span> Project = sequelize.define(<span class="hljs-string">'Project'</span>, {
+    title: Sequelize.STRING,
+    description: Sequelize.TEXT
+});</code></pre>
+<p>It follows that the <strong>title</strong> and <strong>description</strong> columns are there, but where did the others come from?  The addition of the extra columns are actually added by default by the <strong>sequelize</strong> module.  Whenever we "define" a new model, we automatically get <strong>id</strong>, <strong>createdAt</strong> and <strong>updatedAt</strong> and when we save data using this model, our data is automatically updated to include correct values for those fields.  This is extremely handy, as we didn't actually create our primary-key for the table! (sequelize went ahead and made "id" our primary key).  Also, the <strong>createdAt</strong> and <strong>updatedAt</strong> fields are both widely used.  However, if we decide that we want to specify our own auto-incrementing primary key and remove the createdAt and updatedAt fields, we can define our model using the following code instead:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Define a "Project" model</span>
+
+<span class="hljs-keyword">var</span> Project = sequelize.define(<span class="hljs-string">'Project'</span>, {
+    project_id: {
+        type: Sequelize.INTEGER,
+        primaryKey: <span class="hljs-literal">true</span>, <span class="hljs-comment">// use "project_id" as a primary key</span>
+        autoIncrement: <span class="hljs-literal">true</span> <span class="hljs-comment">// automatically increment the value</span>
+    },
+    title: Sequelize.STRING,
+    description: Sequelize.TEXT
+},{
+    createdAt: <span class="hljs-literal">false</span>, <span class="hljs-comment">// disable createdAt</span>
+    updatedAt: <span class="hljs-literal">false</span> <span class="hljs-comment">// disable updatedAt</span>
+});</code></pre>
+<p>Now that we have defined our <strong>Project</strong> model (either with or without the "createdAt" and "updatedAt" timestamps) we can look at the rest of the code, ie the <strong>sync()</strong> operation and creating <strong>Project1</strong> - recall:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// synchronize the Database with our models and automatically add the </span>
+<span class="hljs-comment">// table if it does not exist</span>
+
+sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// create a new "Project" and add it to the database</span>
+    Project.create({
+        title: <span class="hljs-string">'Project1'</span>,
+        description: <span class="hljs-string">'First Project'</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">project</span>) </span>{
+        <span class="hljs-comment">// you can now access the newly created Project via the variable project</span>
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"success!"</span>)
+    }).catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"something went wrong!"</span>);
+    });
+});</code></pre>
+<p>The <a href="http://docs.sequelizejs.com/class/lib/sequelize.js~Sequelize.html#instance-method-sync" target="_blank">sequelize.sync()</a> operation needs to be completed before we can do anything else.  This ensures that all of our models are represented in the database as tables.  If we have defined a model in our code that doesn't correspond to a table in the database, <strong>sequelize.sync()</strong> will automatically create it (as we have seen).</p>
+<p>Once our models have been successfully sync()'d with the database, we can start working with the data.  You will notice that we use the familiar <strong>then()</strong> and <strong>catch()</strong> functions; this is because both sync() and create() return a <strong>promise</strong> (see "Promises" in the "JavaScript Concept Review" weekly notes) and as we stated above, we must work with the data <strong>after</strong> the sync() operation has successfully completed.</p>
+<p>If sync() resolves successfully, we then wish to create a new record in the "Project" table, so we use <strong>Project.create()</strong> method and pass it some data (<strong>title</strong> and <strong>description</strong>).  If the operation completed successfully, we see the message "success!" in the console - otherwise we catch the error and output "something went wrong!"</p>
+
+<h3 class="lined">Defining Models - in detail</h3>
+<p>One of the most important things we must do when working with Sequelize is to correctly <a href="http://docs.sequelizejs.com/en/latest/docs/models-definition/" target="_blank">set up all of our models</a>.  Once the models are set up successfully, working with the data is simple.  Since each model technically corresponds to a table within our database, what we are really doing is defining tables.  Each column of a table within our database stores a specific <strong>type</strong> of data.  In our previous example, we define the column <strong>title</strong> as a <strong>STRING</strong> and the column <strong>description</strong> as <strong>TEXT</strong> within a table called <strong>Project</strong>.  Sequelize provides definitions for a full <a href="http://docs.sequelizejs.com/en/latest/api/datatypes/" target="_blank">list of types</a>, and each column is given a type.  The following is a list of the most common types:
+</p><ul>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#string" target="_blank">Sequelize.STRING</a> - A variable length string. Default length 255</li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#text" target="_blank">Sequelize.TEXT</a> - An unlimited length text column. </li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#integer" target="_blank">Sequelize.INTEGER</a> - A 32 bit integer.</li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#float" target="_blank">Sequelize.FLOAT</a> - Floating point number (4-byte precision).</li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#double" target="_blank">Sequelize.DOUBLE </a> - Floating point number (8-byte precision)</li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#date" target="_blank">Sequelize.DATE</a> - A datetime column</li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#time" target="_blank">Sequelize.TIME</a> - A time column</li>
+<li><a href="http://docs.sequelizejs.com/en/latest/api/datatypes/#boolean" target="_blank">Sequelize.BOOLEAN</a> - A boolean column</li>
+</ul>
+<br>So, if we want to define a model (table) that stores blog entries, we could use the following code:<p></p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Define a "BlogEntry" model</span>
+
+<span class="hljs-keyword">var</span> BlogEntry = sequelize.define(<span class="hljs-string">'BlogEntry'</span>, {
+    title: Sequelize.STRING,  <span class="hljs-comment">// entry title</span>
+    author: Sequelize.STRING, <span class="hljs-comment">// author of the entry</span>
+    entry: Sequelize.TEXT, <span class="hljs-comment">// main text for the entry</span>
+    views: Sequelize.INTEGER, <span class="hljs-comment">// number of views</span>
+    postDate: Sequelize.DATE <span class="hljs-comment">// Date the entry was posted</span>
+});</code></pre>
+
+<p><strong>NOTE:</strong> It is also possible to introduce <strong>data validation</strong> when we define our models.  For a full list of available rules and how they're implemented, see: <a href="http://docs.sequelizejs.com/manual/tutorial/models-definition.html#validations" target="_blank">Model validations</a> in the official documentation.</p>
+
+<h5 class="lined">Model Relationships / Associations </h5>
+<p>As we know from our work in earlier semesters, tables (models) can be <strong>related</strong> using foreign key relationships / <a href="http://docs.sequelizejs.com/class/lib/associations/base.js~Association.html" target="_blank">associations</a>. For example, say we have a table of <strong>Users</strong> and a table of <strong>Tasks</strong>, where each User could have <strong>1 ore more</strong> Tasks.  To enforce this relationship, we would add an additional column on the Tasks table as a foreign-key to the Users table, since 1 or more Tasks could belong to a specific user.  For example, "Task 1", "Task 2" and "Task 3" could all belong to "User 1", whereas "Task 4" and "Task 5" may belong to "User 2".</p>
+<p>Using Sequelize models, we can easily define this relationship using the <a href="http://docs.sequelizejs.com/manual/tutorial/associations.html#one-to-many-associations" target="_blank">hasMany()</a> method on our User model (since "User has many Task(s)"), for example:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Define our "User" and "Task" models</span>
+
+<span class="hljs-keyword">var</span> User = sequelize.define(<span class="hljs-string">'User'</span>, {
+    fullName: Sequelize.STRING, <span class="hljs-comment">// the user's full name (ie: "Jason Bourne")</span>
+    title: Sequelize.STRING <span class="hljs-comment">// the user's title within the project (ie, developer)</span>
+});
+
+<span class="hljs-keyword">var</span> Task = sequelize.define(<span class="hljs-string">'Task'</span>, {
+    title: Sequelize.STRING, <span class="hljs-comment">// title of the task</span>
+    description: Sequelize.TEXT <span class="hljs-comment">// main text for the task</span>
+});
+
+<span class="hljs-comment">// Associate Tasks with user &amp; automatically create a foreign key</span>
+<span class="hljs-comment">// relationship on "Task" via an automatically generated "UserId" field</span>
+
+User.hasMany(Task);</code></pre>
+<p>If we wish to create a User and then assign him some tasks, we can "create" the tasks immediately after the user is created, ie:</p>
+<pre><code class="javascript hljs">sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  
+    <span class="hljs-comment">// Create user "Jason Bourne"</span>
+    User.create({
+        fullName: <span class="hljs-string">"Jason Bourne"</span>,
+        title: <span class="hljs-string">"developer"</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user</span>) </span>{
+
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"user created"</span>);
+        
+         <span class="hljs-comment">// Create "Task 1" for the new user</span>
+        Task.create({
+            title: <span class="hljs-string">"Task 1"</span>,
+            description: <span class="hljs-string">"Task 1 description"</span>,
+            UserId: user.get(<span class="hljs-string">'id'</span>) <span class="hljs-comment">// set the correct Userid foreign key</span>
+        }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Task 1 created"</span>)});
+
+        <span class="hljs-comment">// Create "Task 2" for the new user</span>
+        Task.create({
+            title: <span class="hljs-string">"Task 2"</span>,
+            description: <span class="hljs-string">"Task 2 description"</span>,
+            UserId: user.get(<span class="hljs-string">'id'</span>) <span class="hljs-comment">// set the correct Userid foreign key</span>
+        }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Task 2 created"</span>)});
+    });
+
+});</code></pre>
+<p>Next, try running this code and take a look at your database in pgAdmin 3. You should see that two new tables, <strong>"Users"</strong> and <strong>"Tasks"</strong> have been created, with <strong>"Jason Bourne"</strong> inside the "User" table and <strong>"Task 1"</strong> and <strong>"Task 2"</strong> inside the "Task" table.  The two new tasks will both have a UserId matching "Jason Bourne"'s id! We have achieved the one-to-many relationship between this user and his tasks.</p>
+
+<p><strong>NOTE:</strong> other relationships can be defined using the following functions: 
+</p><ul style="margin-bottom: 20px;">
+<li><a href="http://docs.sequelizejs.com/manual/tutorial/associations.html#belongsto" target="_blank">belongsTo()</a></li>
+<li><a href="http://docs.sequelizejs.com/manual/tutorial/associations.html#hasone" target="_blank">hasOne()</a></li>
+<li><a href="http://docs.sequelizejs.com/manual/tutorial/associations.html#belongs-to-many-associations" target="_blank">belongsToMany()</a></li>
+</ul><p></p>
+<h3 class="lined">CRUD - Create Read Update Delete</h3>
+<p>The four major operations that are typically performed on data are <strong>C</strong>reate, <strong>R</strong>ead, <strong>U</strong>pdate and <strong>D</strong>elete (<strong>CRUD</strong>).  Using these four operations, we can effectively work with the data in our database.  Assume we have a simple <strong>Name</strong> model defined: </p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// Define a "Name" model</span>
+
+<span class="hljs-keyword">var</span> Name = sequelize.define(<span class="hljs-string">'Name'</span>, {
+    fName: Sequelize.STRING,  <span class="hljs-comment">// first Name</span>
+    lName: Sequelize.STRING, <span class="hljs-comment">// Last Name</span>
+});</code></pre>
+<p>We can use the following code to <strong>C</strong>reate new names, <strong>R</strong>ead a list of names, <strong>U</strong>pdate a specific name and lastly <strong>D</strong>elete a name from the "Name" table in our database</p>
+<h5 class="lined">Create</h5>
+<p>To <strong>create</strong> new names in our <strong>Name</strong> table, we can use the following code: </p>
+<pre><code language="javascript" class="hljs javascript">sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    Name.create({
+        fName: <span class="hljs-string">"Kyler"</span>,
+        lName: <span class="hljs-string">"Odin"</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Kyler Odin created"</span>)});
+
+     Name.create({
+        fName: <span class="hljs-string">"Grier"</span>,
+        lName: <span class="hljs-string">"Garrick"</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Grier Garrick created"</span>)});
+
+     Name.create({
+        fName: <span class="hljs-string">"Kolby"</span>,
+        lName: <span class="hljs-string">"Greyson"</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Kolby Greyson created"</span>)});
+
+});</code></pre>
+<p>In the above code we <a href="http://docs.sequelizejs.com/manual/tutorial/instances.html#creating-persistent-instances" target="_blank">create</a> three new objects following the fields defined in our "Name" model.  Since our "Name" model is synchronized with the database, this adds three new records - each with their own unique "id" value, as well as "createdAt" and "updatedAt" values for the implicit primary key and timestamp columns.  The create function automatically persists the new object to the database and since it also returns a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">promise</a>, we can execute code after the operation is complete.  In this case we simply output the name to the console. </p>
+<h5 class="lined">Read</h5>
+<p>To <strong>read</strong> entries from our <strong>Name</strong> table, we can use the following code: </p>
+<pre><code language="javascript" class="hljs javascript">sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// return all first names only</span>
+    Name.findAll({ 
+        attributes: [<span class="hljs-string">'fName'</span>]
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"All first names"</span>);
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i =<span class="hljs-number">0</span>; i &lt; data.length; i++){
+            <span class="hljs-built_in">console</span>.log(data[i].fName);
+        }
+    });
+
+    <span class="hljs-comment">// return all first names where id == 2</span>
+    Name.findAll({ 
+        attributes: [<span class="hljs-string">'fName'</span>],
+        where: {
+            id: <span class="hljs-number">2</span>
+        }
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"All first names where id == 2"</span>);
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i =<span class="hljs-number">0</span>; i &lt; data.length; i++){
+            <span class="hljs-built_in">console</span>.log(data[i].fName);
+        }
+    });
+
+});</code></pre>
+<p>Here, we are once again using a reference to our "Name" model.  This time we are using it to fetch data from the "Name" table using the <a href="http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-findAll" target="_blank">findAll()</a> method.  This method takes a number of configuration options in it's object parameter, such as <strong>attributes</strong>, which allows you to limit the columns that are returned (in this case we only want 'fName') and a <strong>where</strong> parameter that enables us to specify conditions that the data must meet to be returned. In the above example, <strong>id</strong> must have a value of <strong>2</strong>.  See the documentation for <a href="http://docs.sequelizejs.com/en/latest/docs/querying/" target="_blank">advanced queries</a> for more detailed query information.</p><p>Lastly, we can also specify an <a href="http://docs.sequelizejs.com/en/latest/docs/querying/#ordering" target="_blank">order</a> that the returned data should be in.  In the above example, we are not concerned with the order, however in the below "Putting it All Together" example, we wish to order the output by "id" (accomplished by setting the <strong>order:</strong> parameter to <strong>['id']</strong>)</p>
+<h5 class="lined">Update</h5>
+<p>To <strong>update</strong> existing names in our <strong>Name</strong> table, we can use the following code: </p>
+<pre><code language="javascript" class="hljs javascript">sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// update User 2's last name to "James"</span>
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> this also updates the "updatedAt field"</span>
+    Name.update({
+        lName: <span class="hljs-string">"James"</span>
+    }, {
+        where: { id: <span class="hljs-number">2</span> } <span class="hljs-comment">// only update user with id == 2</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"successfully updated user 2"</span>);});
+
+});</code></pre>
+<p>In order to "update" a record in the "Name" table, we make use of the <a href="http://docs.sequelizejs.com/manual/tutorial/instances.html#updating-saving-persisting-an-instance" target="_blank">update</a> method.  This method takes two parameters: an object that contains all of the properties and (updated) values for a record, and a second object that is used to specify options for the update - most importantly, the <strong>"where"</strong> property.  The "where" property contains an object that is used to specify exactly <em>which</em> record should be updated.  In this case, it is the row that has an <strong>id</strong> value of <strong>2</strong>. </p>
+<h5 class="lined">Delete</h5>
+<p>To <strong>delete</strong> existing names in our <strong>Name</strong> table, we can use the following code: </p>
+<pre><code language="javascript" class="hljs javascript">sequelize.sync().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// remove User 3 from the database</span>
+    Name.destroy({
+        where: { id: <span class="hljs-number">3</span> } <span class="hljs-comment">// only remove user with id == 3</span>
+    }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"successfully removed user 3"</span>);});
+
+});</code></pre>
+<p>The delete functionality is actually achieved via a method called <a href="http://docs.sequelizejs.com/manual/tutorial/instances.html#destroying-deleting-persistent-instances">destroy</a>.  In this case, we invoke the <strong>destroy</strong> method on the model that contains the record that we wish to remove (ie, "Name").  It takes a single options object as it's only parameter and like the <strong>update</strong> function, the most important option is the <strong>"where"</strong> property.  The "where" property contains an object that is used to specify exactly <em>which</em> record should be removed.  In this case, it is the row that has an <strong>id</strong> value of <strong>3</strong>. </p>
+
+<h3 class="lined">Putting it All Together</h3>
+<p>Now that we know to perform each of the <strong>CRUD</strong> operations when using the Sequelize module, why don't we see what can create?  The below example makes use of many of the modules that were discussed not only today, but in earlier weeks as well (such as <a href="https://www.npmjs.com/package/body-parser" target="_blank">body-parser</a> and <a href="https://www.npmjs.com/package/express-handlebars" target="_blank">express-handlebars</a>) to create a very simple "names registry" application.  This web application allows users to manipulate a persistent list of full names (first name &amp; last name) by <strong>C</strong>reating new names to add to the list, <strong>R</strong>eading the full list of names, <strong>U</strong>pdating existing names and finally, <strong>D</strong>eleting names from our back-end Postgres database.</p>
+<p>To run this example locally, you will have to update your dependencies (see package.json) via <strong>npm</strong> in the <strong>integrated terminal</strong> as well as the connection to your <strong>Postgres</strong> database in the <strong>server.js</strong> file, under the comment "// define the connection to our Postgres instance".</p><p>Once the application is running, you will be able to see all of the changes reflected in your Postgres database via pgAdmin 3 (don't forget to refresh your data) and every time you run the server and test the application in a browser, you will see the same, updated list of names!</p>
+<div class="b-tabs  margin-40">
+    <ul class="tabs-nav">
+	<li class="active"><span>server.js</span></li><li><span>views &gt; viewTable.hbs</span></li><li><span>package.json</span></li>					
+    </ul>
+    <div class="tabs-content" style="padding-top:4px;">
+         <div class="tab active"><pre style="padding-right: 0px;"><code style="max-height:600px; overflow-y:auto;" class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+<span class="hljs-keyword">const</span> exphbs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express-handlebars"</span>);
+<span class="hljs-keyword">const</span> Sequelize = <span class="hljs-built_in">require</span>(<span class="hljs-string">"sequelize"</span>);
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">"body-parser"</span>);
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+<span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// instruct the app to use the "bodyparser" middleware</span>
+app.use(bodyParser.urlencoded({ extended: <span class="hljs-literal">true</span> }));
+
+<span class="hljs-comment">// instruct the app to use express handlebars for the view engine with the .hbs extension</span>
+app.engine(<span class="hljs-string">".hbs"</span>, exphbs({ extname: <span class="hljs-string">".hbs"</span> }));
+app.set(<span class="hljs-string">"view engine"</span>, <span class="hljs-string">".hbs"</span>);
+
+<span class="hljs-comment">// define the connection to our Postgres instance </span>
+<span class="hljs-keyword">const</span> sequelize = <span class="hljs-keyword">new</span> Sequelize(<span class="hljs-string">"database"</span>, <span class="hljs-string">"user"</span>, <span class="hljs-string">"password"</span>, {
+  host: <span class="hljs-string">"host"</span>,
+  dialect: <span class="hljs-string">"postgres"</span>,
+  port: <span class="hljs-number">5432</span>,
+  dialectOptions: {
+    ssl: <span class="hljs-literal">true</span>
+  }
+});
+
+<span class="hljs-comment">// Define our Models - "Name"</span>
+
+<span class="hljs-keyword">const</span> Name = sequelize.define(<span class="hljs-string">"Name"</span>, {
+  fName: Sequelize.STRING,  <span class="hljs-comment">// first Name</span>
+  lName: Sequelize.STRING, <span class="hljs-comment">// Last Name</span>
+});
+
+<span class="hljs-comment">// synchronize the database before we do anything else</span>
+sequelize.sync().then(() =&gt; {
+
+  <span class="hljs-comment">// define the "/" route</span>
+  app.get(<span class="hljs-string">"/"</span>, (req, res) =&gt; {
+
+    <span class="hljs-comment">// fetch all of the names and order them by id</span>
+    Name.findAll({
+      order: [<span class="hljs-string">"id"</span>]
+    }).then((data) =&gt; {
+      <span class="hljs-comment">// render the "viewTable" view with the data</span>
+      res.render(<span class="hljs-string">"viewTable"</span>, {
+        data: data
+      });
+    });
+  });
+
+  <span class="hljs-comment">// define the "/updateName" route</span>
+  app.post(<span class="hljs-string">"/updateName"</span>, (req, res) =&gt; {
+
+    <span class="hljs-comment">// check to see if both first name &amp; last name fields are blank</span>
+    <span class="hljs-keyword">if</span> (req.body.lName.length == <span class="hljs-number">0</span> &amp;&amp; req.body.fName.length == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// remove a record from the  "Name" model with the data from req.body</span>
+      Name.destroy({
+        where: { id: req.body.id }
+      }).then(() =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"successsfully removed user: "</span> + req.body.id);
+        res.redirect(<span class="hljs-string">"/"</span>); <span class="hljs-comment">// redirect back to the home page</span>
+      });
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// update a record using the "Name" model with the data from req.body</span>
+      Name.update({
+        lName: req.body.lName,
+        fName: req.body.fName
+      }, {
+          where: { id: req.body.id }
+        }).then(() =&gt; {
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"successfully updated name: "</span> + req.body.id);
+          res.redirect(<span class="hljs-string">"/"</span>); <span class="hljs-comment">// redirect back to the home page</span>
+        });
+    }
+  });
+
+  <span class="hljs-comment">// define the "/addName" route</span>
+  app.post(<span class="hljs-string">"/addName"</span>, (req, res) =&gt; {
+    <span class="hljs-comment">// create a record using the "Name" model with the data from req.body</span>
+    Name.create({
+      lName: req.body.lName,
+      fName: req.body.fName
+    }).then(() =&gt; {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"successfully created a new name"</span>);
+      res.redirect(<span class="hljs-string">"/"</span>);
+    });
+  });
+
+  <span class="hljs-comment">// start the server to listen on HTTP_PORT</span>
+  app.listen(HTTP_PORT, onHttpStart);
+
+});
+
+</code></pre></div>
+         <div class="tab"><pre style="padding-right: 0px;"><code style="max-height:600px; overflow-y:auto;" class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Postgres Example - Names<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>All Names<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: small"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>To <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>change<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> a name, make the change and click &amp;ldquo;Update&amp;rdquo;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>To <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>remove<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> a name, clear out both fields and click &amp;ldquo;Update&amp;rdquo; <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>To <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>add<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> a name, enter a new name in the empty fields and click &amp;ldquo;Add New&amp;rdquo;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        {{#each data}}
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"updateName"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"id"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{dataValues.id}}"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fName"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{dataValues.fName}}"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"lName"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{dataValues.lName}}"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Update<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {{/each}}
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"addName"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fName"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"lName"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Add New<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div>
+         <div class="tab"><pre style="padding-right: 0px;"><code style="max-height:600px; overflow-y:auto;" class="javascript hljs">{
+  <span class="hljs-string">"name"</span>: <span class="hljs-string">"postgres1"</span>,
+  <span class="hljs-string">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-string">"description"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-string">"main"</span>: <span class="hljs-string">"server.js"</span>,
+  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"test"</span>: <span class="hljs-string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  },
+  <span class="hljs-string">"author"</span>: <span class="hljs-string">"WEB322"</span>,
+  <span class="hljs-string">"license"</span>: <span class="hljs-string">"ISC"</span>,
+  <span class="hljs-string">"dependencies"</span>: {
+    <span class="hljs-string">"body-parser"</span>: <span class="hljs-string">"^1.17.0"</span>,
+    <span class="hljs-string">"express"</span>: <span class="hljs-string">"^4.14.1"</span>,
+    <span class="hljs-string">"express-handlebars"</span>: <span class="hljs-string">"^3.0.0"</span>,
+    <span class="hljs-string">"pg"</span>: <span class="hljs-string">"^6.1.2"</span>,
+    <span class="hljs-string">"pg-hstore"</span>: <span class="hljs-string">"^2.3.2"</span>,
+    <span class="hljs-string">"sequelize"</span>: <span class="hljs-string">"^3.30.2"</span>
+  }
+}
+</code></pre></div>
+    <div>
+</div>
+
+</div>
+</div>
+</li></ol></div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+
+<ul><li>Test 7 After the Break</li>
+<li>Assignment 4 Due this Friday at 11:59pm</li></ul>
+
+<h3 class="lined">Sources</h3>
+<ul>
+	<li><a href="https://www.postgresql.org/" target="_blank">https://www.postgresql.org</a></li>
+        <li><a href="http://docs.sequelizejs.com/" target="_blank">http://docs.sequelizejs.com/</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">https://en.wikipedia.org/wiki/Object-relational_mapping</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 7 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 7 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

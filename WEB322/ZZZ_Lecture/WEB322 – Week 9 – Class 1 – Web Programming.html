@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week9-class1/ -->
+<html lang="en-CA" class="csstransforms no-csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 9 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 9 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week9-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=353">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek9-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek9-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-353 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week9-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week9-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 9 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 9 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 9 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-353" class="post-353 page type-page status-publish hentry post-1 odd">
+
+        <div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">AJAX Review / Practical AJAX Programming</h3>
+<p>
+   Up until this point, everything in this course has involved logic that exists primarily on the server (server-side).  However, there is one piece of technology that plays a vital role on the client side that needs to be discussed as well.  This is <strong>AJAX (Asynchronous JavaScript and XML)</strong> - a collection of technologies used together to create a richer user experience by enabling data to be transferred between a web client (browser) and web server without the need to refresh the page.</p>
+<h5 class="lined">AJAX Review: XMLHttpRequest</h5> 
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank">XMLHttpRequest</a> Object (often abbreviated to XHR) is what allows us to make requests for data once a page has loaded.  It has a number of properties and methods that do the heavy lifting of establishing a connection to a server, monitoring the state of the request/response and executing custom code when the state has changed (ie, the request has completed and we have received a response).</p>
+<p>The following is a list of the most common properties / methods used when preforming an AJAX request on the client side (assuming: <strong>httpRequest = new XMLHttpRequest();</strong>):</p>
+<table class="table-bordered table-condensed">
+<tbody><tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open" target="_blank">open()</a></strong></td>
+   <td><p><strong>Method:&nbsp;&nbsp;</strong>The <strong>open()</strong> method is responsible for initializing the request according to specific parameters, which typically include the method ("GET", "POST", "PUT", "DELETE", etc.), and url responsible for serving the data ("http://someurl/api/data", etc.).  However there are a number of other <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open#Parameters" target="_blank">optional parameters</a> including <strong>async</strong>, <strong>user</strong>, and <strong>password</strong>.</p><p>A typical call to the <strong>open()</strong> method:</p><pre><code class="js hljs javascript">httpRequest.open(<span class="hljs-string">'GET'</span>, <span class="hljs-string">'https://reqres.in/api/users?page=1'</span>);</code></pre></td>
+</tr>
+<tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setrequestheader" target="_blank">setRequestHeader</a></strong></td>
+<td><p><strong>Property:&nbsp;&nbsp;</strong>The <strong>setRequestHeader</strong> method is used primarily when we wish to <strong>send()</strong> data along with our AJAX request (see send() below) and need to specify the "Content-Type".  For example, if we wish to send JSON data, we would set the "Content-Type" to "application/json"</p><pre><code class="js hljs javascript">httpRequest.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);</code></pre></td>
+  
+</tr>
+<tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send" target="_blank">send()</a></strong></td>
+   <td><p><strong>Method:&nbsp;&nbsp;</strong>  The <strong>send()</strong> method is responsible for actually sending the request off to the location specified in the "open()" method.  If we are not sending any data to the server (ie: during a "GET" request) we do not provide any parameters to the function.  However, if we wish to send data, we would place it as a single parameter to the method, for example:</p><pre><code class="js hljs javascript"><span class="hljs-comment">// send the request without any data</span>
+httpRequest.send();
+
+<span class="hljs-comment">// or send it with data</span>
+httpRequest.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
+httpRequest.send(<span class="hljs-built_in">JSON</span>.stringify({user:<span class="hljs-string">"John Doe"</span>, job:<span class="hljs-string">"unknown"</span>}));</code></pre></td>
+</tr>
+<tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/onreadystatechange" target="blank">onreadystatechange</a></strong></td>
+   <td><p><strong>Property:&nbsp;&nbsp;</strong> The <strong>onreadystatechange</strong> property is an Event Handler that gets invoked whenever the <strong>readyState</strong> property of the XMLHttpRequest changes; for example, once the request has been initialized or completed. This often takes the form of an anonymous function, ie:</p>
+<pre><code class="js hljs javascript">httpRequest.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// check the current value of the readyState &amp; status properties</span>
+    <span class="hljs-comment">// if successful, process the data</span>
+}</code></pre></td>
+</tr>
+
+
+<tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readystate" target="_blank">readyState</a></strong></td>
+   <td><p><strong>Property:&nbsp;&nbsp;</strong>The <strong>readyState</strong> property represents the "state" the the request is currently in (ie, 0: Unsent, 1: Opened, 2: Headers Received, 3: Loading, 4: Done).  We are typically interested when the request is "done" (complete), however it is important to note that the request will move into this state whether or not the request was successful.</p><p>For example, inside our onreadystatechange callback function we can find out if the current state is "done" and if it is, we can check it's status, receive data, etc.</p><pre><code class="js hljs javascript">httpRequest.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// check the current value of the readyState &amp; status properties</span>
+    <span class="hljs-comment">// if successful, process the data</span>
+
+    <span class="hljs-keyword">if</span> (httpRequest.readyState === <span class="hljs-number">4</span>) {
+        <span class="hljs-comment">// The request has completed ie, it's "done"</span>
+    }
+}</code></pre></td>
+</tr>
+<tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status" target="_blank">status</a></strong></td>
+   <td><p><strong>Property:&nbsp;&nbsp;</strong>The <strong>status</strong> property represents the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">HTTP Status Code</a> that was sent with the response.  Ideally, we want this to be <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200" target="_blank">200 (Ok)</a> - which states that the request has succeeded.  We typically verify this in the onreadystatechange callback function after it has been confirmed that the readyState is "done", for example:</p><pre><code class="js hljs javascript">httpRequest.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// check the current value of the readyState &amp; status properties</span>
+    <span class="hljs-comment">// if successful, process the data</span>
+
+    <span class="hljs-keyword">if</span> (httpRequest.readyState === <span class="hljs-number">4</span>) {
+        <span class="hljs-comment">// The request has completed ("done")</span>
+        <span class="hljs-keyword">if</span> (httpRequest.status === <span class="hljs-number">200</span>) {
+            <span class="hljs-comment">// We successfully received the response</span>
+        }
+    }
+}</code></pre></td>
+</tr>
+<tr>
+   <td><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText" target="_blank">responseText</a></strong></td>
+   <td><p><strong>Property:&nbsp;&nbsp;</strong>Lastly, the <strong>responseText</strong> property holds the data returned from the request.  Typically this is a JSON formatted string (see below) and we can create an object from this data using <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank">JSON.parse</a>. When requesting data, we generally only wish to read the responseText if the response was completed successfully.  To ensure this, we read the property only after we know that the <strong>request has completed</strong> and the <strong>status is 'OK'</strong>, for example:</p><pre><code class="javascript hljs">httpRequest.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// check the current value of the readyState &amp; status properties</span>
+    <span class="hljs-comment">// if successful, process the data</span>
+
+    <span class="hljs-keyword">if</span> (httpRequest.readyState === <span class="hljs-number">4</span>) {
+        <span class="hljs-comment">// The request has completed ("done")</span>
+        <span class="hljs-keyword">if</span> (httpRequest.status === <span class="hljs-number">200</span>) {
+            <span class="hljs-comment">// We successfully received the response</span>
+
+            <span class="hljs-comment">// Create object jsData from the JSON </span>
+            <span class="hljs-comment">// received in responseText</span>
+            <span class="hljs-keyword">let</span> jsData = <span class="hljs-built_in">JSON</span>.parse(httpRequest.responseText);
+        }
+    }
+}</code></pre></td></tr>
+</tbody></table><br><br>
+<h3 class="lined">JSON Review</h3>
+<p>As we have seen from above, the format of choice when sending data to/from a webserver using AJAX is <strong>JSON (JavaScript Object Notation)</strong>.  This is a plain-text format that  easily converts to a JavaScript object in memory.  Essentially, JSON is a way to define an object using "Object Literal" notation, <strong>outside</strong> your application.  Using the native JavaScript built-in <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank">JSON Object</a>, we can preform the conversion from plain-text (JSON) to JavaScript Object (and vice-versa) easily.  For example:   </p>
+<h5>Converting JSON to an Object</h5>
+<pre><code class="javascript hljs"><span class="hljs-keyword">let</span> myJSONStr = <span class="hljs-string">'{"users":[{"userId":1,"fName":"Joe","lName":"Smith"},{"userId":2,"fName":"Jeffrey","lName":"Sherman"},{"userId":3,"fName":"Shantell","lName":"McLeod"}]}'</span>;
+
+<span class="hljs-comment">// Convert to An Object:</span>
+<span class="hljs-keyword">let</span> myObj = <span class="hljs-built_in">JSON</span>.parse(myJSONStr);
+
+<span class="hljs-comment">// Access the 3rd user (Shantell McLeod)</span>
+<span class="hljs-built_in">console</span>.log(myObj.users[<span class="hljs-number">2</span>].fName); <span class="hljs-comment">// Shantell</span></code></pre>
+<h5>Converting an Object to JSON</h5><pre><code class="javascript hljs"><span class="hljs-keyword">let</span> myObj = {users: [{userId:<span class="hljs-number">1</span>,fName:<span class="hljs-string">"Joe"</span>,lName:<span class="hljs-string">"Smith"</span>},
+                     {userId:<span class="hljs-number">2</span>,fName:<span class="hljs-string">"Jeffrey"</span>,lName:<span class="hljs-string">"Sherman"</span>},
+                     {userId:<span class="hljs-number">3</span>,fName:<span class="hljs-string">"Shantell"</span>,lName:<span class="hljs-string">"McLeod"</span>}]};
+
+<span class="hljs-keyword">let</span> myJSON = <span class="hljs-built_in">JSON</span>.stringify(myObj);
+
+<span class="hljs-built_in">console</span>.log(myJSON); <span class="hljs-comment">// Outputs: '{"users":[{"userId":1,"fName":"Joe","lName":"Smith"},{"userId":2,"fName":"Jeffrey","lName":"Sherman"},{"userId":3,"fName":"Shantell","lName":"McLeod"}]}' </span></code></pre> 
+<h3 class="lined">Responding with JSON</h3>
+<p>Now that we're refreshed with the concept of actually making an AJAX request from the client side, why don't we set up a new web server to respond to the request with some JSON?  Fortunately, the Express.js framework makes this fairly simple with it's <a href="https://expressjs.com/en/api.html#res.json" target="_blank">res.json</a> method.  In this case, we can pass the function a JavaScript Object and the method will automatically "stringify" it and send the converted JSON as the response.  It will even include the correct <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type" target="_blank">Content-Type</a> header value (ie: "application/json").  For example:   </p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+<span class="hljs-comment">// setup a 'route' to listen on the default url path (http://localhost)</span>
+app.get(<span class="hljs-string">"/"</span>, (req, res) =&gt; {
+
+    <span class="hljs-keyword">let</span> message = { msg: <span class="hljs-string">"Welcome!"</span>};
+
+    <span class="hljs-comment">// send the message as JSON</span>
+    res.json(message);
+});
+
+<span class="hljs-comment">// setup http server to listen on HTTP_PORT</span>
+app.listen(HTTP_PORT, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+});</code></pre>
+<h3 class="lined">Creating a REST API (Introduction)</h3>
+<p>You may have heard of the term <strong>REST</strong> or <strong>RESTful</strong> API when reading about Web Programming.  In fact, we have made use of a real REST API (see the publicly available: <a href="https://reqres.in/" target="_blank">https://reqres.in</a>) to practice our AJAX skills by making requests for data.  At it's most basic level, you can essentially think of a REST ("Representational State Transfer") API as a way to use the HTTP protocol (ie, <a href="https://tools.ietf.org/html/rfc7231#section-4.3.1" target="_blank">"GET"</a>, <a href="https://tools.ietf.org/html/rfc7231#section-4.3.3" target="_blank">"POST"</a>, <a href="https://tools.ietf.org/html/rfc7231#section-4.3.4" target="_blank">"PUT"</a>, <a href="https://tools.ietf.org/html/rfc7231#section-4.3.5" target="_blank">"DELETE"</a>, etc...) with a standard message format (ie, JSON or XML) to preform CRUD operations on a data source.</p><p>  What makes this so valuable is that by creating a RESTful API, we remove any assumptions about how a client will access the data.  We could make HTTP requests to the API from a website, mobile app, etc. and it would be the website or app's job to correctly render the data once it's received.  This simplifies development of front-end applications that use the data and even removes any specific programming language requirements for the client!  If it can handle HTTP requests / responses and JSON, it can use our data!</p>
+<p>Before we think about getting any kind of persistent storage involved however, why don't we first see how we can configure all of our routes in our server to allow for CRUD operations on a simple collection of users in the format</p><pre>{userId: number, fName: string, lName: string}
+</pre> 
+<table class="table-bordered table-condensed">
+<tbody><tr>
+<th>Route</th>
+<th>HTTP&nbsp;Method</th>
+<th style="width:100%">Description</th>
+</tr>
+<tr>
+<td>/api/users</td>
+<td>GET</td>
+<td>Get all the users</td>
+</tr>
+<tr>
+<td>/api/users</td>
+<td>POST</td>
+<td>Create a user</td>
+</tr>
+<tr>
+<td>/api/users/:userId</td>
+<td>GET</td>
+<td>Get a single user</td>
+</tr>
+<tr>
+<td>/api/users/:userId</td>
+<td>PUT</td>
+<td>Update a user with new information</td>
+</tr>
+<tr>
+<td>/api/users/:userId</td>
+<td>DELETE</td>
+<td>Delete a user</td>
+</tr>
+</tbody></table>
+<br>
+<p>When these routes are applied to our Express server code, we get something that looks like this:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+app.get(<span class="hljs-string">"/api/users"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"fetch all users"</span>});
+});
+
+app.post(<span class="hljs-string">"/api/users"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"add a user"</span>});
+});
+
+app.get(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"get user with Id: "</span> + req.params.userId});
+});
+
+app.put(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"update User with Id: "</span> + req.params.userId});
+});
+
+app.delete(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+     res.json({message: <span class="hljs-string">"delete User with Id: "</span> + req.params.userId});
+});
+
+<span class="hljs-comment">// setup http server to listen on HTTP_PORT</span>
+app.listen(HTTP_PORT, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+});</code></pre>
+<p>Here, we have made use of the <a href="https://expressjs.com/en/api.html#req" target="_blank">request</a> object's <a href="https://expressjs.com/en/api.html#req.params" target="_blank">params method</a> to identify the specific user that needs to be fetched, updated or deleted based on the URL alone.  In a sense, what we're allowing here is for the URL + HTTP Method to act as a way of querying the data source, as <strong>/api/users/3</strong>, <strong>/api/users/4923</strong> or even <strong>/api/users/twelve</strong> will all be accepted.  They may not necessarily return valid data, but the routes will be found by our server and we can attempt to preform the requested operation.</p>
+<p>Now that we have all of the routes for our API in place, why don't we create a "view" that will make AJAX requests to test our API functionality?  To begin, create a <strong>views</strong> folder and add the file <strong>index.html</strong>.  This will be a simple HTML page consisting of 5 buttons (each corresponding to a piece of functionality in our API) and some simple JavaScript to make an AJAX request.</p><p>However, since we are serving this file from the same server that our API is on, we will need to add some additional code to our server file; specifically:</p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);</code></pre>and<br><br><pre><code class="javascript hljs">app.get(<span class="hljs-string">"/"</span>, (req,res) =&gt; {
+    res.sendFile(path.join(__dirname + <span class="hljs-string">"/views/index.html"</span>));
+});</code></pre>
+<p>Finally - our server is setup and ready to serve the index.html file at our main route ("/").  Our next step is to add our client-side logic / JS to the index.html file.  Here, we hard-code some requests to the API and output their results to the web console to make sure they function correctly:</p><pre><code class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>API Test<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeAJAXRequest</span>(<span class="hljs-params">method, url, data</span>)</span>{
+                <span class="hljs-keyword">let</span> httpRequest = <span class="hljs-keyword">new</span> XMLHttpRequest();
+                httpRequest.open(method, url);
+                <span class="hljs-keyword">if</span>(data){
+                    httpRequest.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
+                    httpRequest.send(<span class="hljs-built_in">JSON</span>.stringify(data));
+                }<span class="hljs-keyword">else</span>{
+                    httpRequest.send();
+                }
+
+                httpRequest.onreadystatechange = () =&gt; {
+                    <span class="hljs-keyword">if</span> (httpRequest.readyState === <span class="hljs-number">4</span>) {
+                        <span class="hljs-keyword">if</span> (httpRequest.status === <span class="hljs-number">200</span>) {
+                            <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.parse(httpRequest.responseText));
+                        }<span class="hljs-keyword">else</span>{
+                            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Error getting Data"</span>);
+                        }
+                    }
+                }
+            }
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAllUsers</span>(<span class="hljs-params"></span>)</span>{
+                 makeAJAXRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/api/users"</span>);
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addNewUser</span>(<span class="hljs-params"></span>)</span>{
+                 makeAJAXRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/api/users"</span>, {fName: <span class="hljs-string">"Bob"</span>, lName: <span class="hljs-string">"Jones"</span>});
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getUserById</span>(<span class="hljs-params"></span>)</span>{
+                makeAJAXRequest(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"/api/users/2"</span>);
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateUserById</span>(<span class="hljs-params"></span>)</span>{
+                makeAJAXRequest(<span class="hljs-string">"PUT"</span>, <span class="hljs-string">"/api/users/2"</span>, {fName: <span class="hljs-string">"Wanda"</span>, lName: <span class="hljs-string">"Smith"</span>});
+            }
+
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deleteUserById</span>(<span class="hljs-params"></span>)</span>{
+                makeAJAXRequest(<span class="hljs-string">"DELETE"</span>, <span class="hljs-string">"/api/users/2"</span>);
+            }
+
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Test the API by outputting to the browser console:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Get All Users --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"getAllUsers()"</span>&gt;</span>Get All Users<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-comment">&lt;!-- Add New User --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"addNewUser()"</span>&gt;</span>Add New User<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-comment">&lt;!-- Get User By Id --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"getUserById()"</span>&gt;</span>Get User<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-comment">&lt;!-- Update User By Id --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"updateUserById()"</span>&gt;</span>Update User<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-comment">&lt;!-- Delete User By Id --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"deleteUserById()"</span>&gt;</span>Delete User<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre><p>Once you have entered the above code, save the changes and try running your server locally to see what happens.  You will see that All of the routes tested return a JSON formatted message!  Now we know that our REST API will correctly respond to AJAX requests made by the client.  Additionally, If you open the <strong>Network tab</strong> (Google Chrome) before initiating one of the calls to <strong>Update</strong> or <strong>Add a New User</strong>, you will see that our request is also carrying a payload of information, ie:<br><br><img src="./WEB322 – Week 9 – Class 1 – Web Programming_files/ajax-send2.png" alt="AJAX Request Payload"></p>
+<p>If we wish to capture this information in our routes (so that we can make the appropriate updates to our data source), we must make some small modifications to our server.js file and individual routes (ie: POST to "/api/users" &amp; PUT to "/api/users/:userId").  The first thing that we must do is include the <a href="https://www.npmjs.com/package/body-parser" target="_blank">body-parser</a> module.  Recall from week 5 - we require this module if we wish to access the "body" component of the request.</p><p></p>After this module is added (<strong>npm install body-parser --save</strong>), you can update the top of your server file to include the module:<p></p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'body-parser'</span>);</code></pre><p>Additionally, we must include the following line before our routes, to ensure that our application can correctly access JSON formatted data from the body of the request:</p><pre><code class="javascript hljs">app.use(bodyParser.json());</code></pre><p>Now that this change has been made, we can access data passed to our API using the <a href="https://expressjs.com/en/api.html#req.body" target="_blank">req.body</a> property.   More specifically, we can update our POST &amp; PUT routes to use req.body to fetch the new / updated <strong>fName</strong> and <strong>lName</strong> properties:</p><pre><code class="javascript hljs">app.post(<span class="hljs-string">"/api/users"</span>, (req, res) =&gt; {
+     res.json({message: <span class="hljs-string">"add the user: "</span> + req.body.fName + <span class="hljs-string">" "</span> + req.body.lName});
+});</code></pre>and<br><br>
+<pre><code class="javascript hljs">app.put(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"update User with Id: "</span> + req.params.userId + <span class="hljs-string">" to "</span> + req.body.fName + <span class="hljs-string">" "</span> + req.body.lName});
+});</code></pre><p>If you have followed the instructions above correctly, your <strong>server.js</strong> file should look like this:</p><pre><code class="javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'body-parser'</span>);
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-keyword">const</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+app.use(bodyParser.json());
+
+app.get(<span class="hljs-string">"/"</span>, (req,res) =&gt; {
+    res.sendFile(path.join(__dirname + <span class="hljs-string">"/views/index.html"</span>));
+});
+
+app.get(<span class="hljs-string">"/api/users"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"fetch all users"</span>});
+});
+
+app.post(<span class="hljs-string">"/api/users"</span>, (req, res) =&gt; {
+     res.json({message: <span class="hljs-string">"add the user: "</span> + req.body.fName + <span class="hljs-string">" "</span> + req.body.lName});
+});
+
+app.get(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"get user with Id: "</span> + req.params.userId});
+});
+
+app.put(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+    res.json({message: <span class="hljs-string">"update User with Id: "</span> + req.params.userId + <span class="hljs-string">" to "</span> + req.body.fName + <span class="hljs-string">" "</span> + req.body.lName});
+});
+
+app.delete(<span class="hljs-string">"/api/users/:userId"</span>, (req, res) =&gt; {
+     res.json({message: <span class="hljs-string">"delete User with Id: "</span> + req.params.userId});
+});
+
+<span class="hljs-comment">// setup http server to listen on HTTP_PORT</span>
+app.listen(HTTP_PORT, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+});</code></pre>
+<p>If we try running our server and test our API again, you will see that the messages returned back from the server correctly echo the data sent to the API!  We now have everything that we need to preform simple CRUD operations via AJAX on a data source using a RESTful service.  The only thing missing is the data store itself. </p><p><strong>NOTE:</strong> If we want to allow our API to respond to requests from <em>outside</em> the domain (this is what <a href="https://reqres.in/" target="_blank">https://reqres.in</a> does), we will have to enable <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS" target="_blank">Cross-Origin Resource Sharing (CORS)</a> - see the 3rd party <a href="https://www.npmjs.com/package/cors" target="_blank">CORS middleware</a></p>
+<!--<p>In modern Web applications, the client is constantly watching for <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">events</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">accessing DOM elements</a> / values, communicating with the API using AJAX (as above) and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree" target="_blank">updating the DOM</a>.</p>-->
+<!--<p>In a modern web application, we would constantly be communicating with our API from the client and <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">updating the DOM</a></strong>.  Recall from WEB222: 
+
+<table class="table-bordered table-condensed">
+<tr><td><strong>Element&nbsp;Access&nbsp;Methods</strong></td><td style="width:100%;"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">document.querySelector()</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector" target="_blank">element.querySelector()</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll" target="_blank">element.querySelectorAll()</a></li><li>document.forms</li></ul></td></tr>
+<tr><td><strong>Element&nbsp;Properties</strong></td><td><ul><li></li><li></li></ul></td></tr>
+<tr><td><strong>Wiring&nbsp;Events</strong></td><td><ul><li></li><li></li></ul></td></tr>
+</table>-->
+
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+
+<ul><li>Test 9 Next Week</li></ul>
+
+<h3 class="lined">Sources</h3>
+<ul>
+	<li><a href="https://developer.mozilla.org/en-US/docs/AJAX" target="_blank">https://developer.mozilla.org/en-US/docs/AJAX</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP</a></li>
+        <li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON</a></li>
+<li><a href="https://expressjs.com/en/api.html" target="_blank">https://expressjs.com/en/api.html</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 9 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 9 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week2-class1/ -->
+<html lang="en-CA" class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<title>WEB322 – Week 2 – Class 1  –  Web Programming</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Spyropress 3.7.0">
+	<link rel="alternate" type="application/rss+xml" title="Web Programming RSS Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+	<link rel="pingback" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php">
+<meta name="robots" content="noindex,follow">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Programming » Comments Feed" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/~patrick.crawford\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./WEB322 – Week 2 – Class 1 – Web Programming_files/wp-emoji-release.min.js.다운로드" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="prettyPhoto-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="turquoise-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/turquoise.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-theme-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-animate-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/theme-animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/dynamic.css" type="text/css" media="all">
+<link rel="stylesheet" id="builder-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/builder.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery-migrate.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zenit.senecac.on.ca/~patrick.crawford/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week2-class1/">
+<link rel="shortlink" href="http://zenit.senecac.on.ca/~patrick.crawford/?p=337">
+<link rel="alternate" type="application/json+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek2-class1%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://zenit.senecac.on.ca/~patrick.crawford/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fzenit.senecac.on.ca%2F%7Epatrick.crawford%2Findex.php%2Fweb322%2Fcourse-notes%2Fweek2-class1%2F&amp;format=xml">
+
+</head>
+
+
+<body class="page page-id-337 page-child parent-pageid-205 page-template-default chrome bg-random_grey_variations">
+
+<!-- wrapper -->
+<div id="wrapper">
+<div class="main full desk">
+    <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
+
+    <!-- header -->
+
+     <header id="header">
+
+        <div class="b-top-bar">
+    <div class="layout">
+        <div class="wrap-left">
+            <span class="top-bar-text"><!--Professor - Seneca College-->Seneca College</span>
+        </div>
+        <div class="wrap-right">
+                        <!--<div class="top-bar-social"><a  class="tw" href="https://twitter.com/patatseneca" target="_blank" ><i class="icon-twitter"></i></a></div>-->
+        </div>
+    </div>
+</div>   
+<div class="sticky-wrapper" style="height: 80px;"><div class="sticky-header clearfix stuck">     
+    <div class="header">
+        <div class="layout clearfix">
+            <div class="mob-layout wrap-left">
+                <div class="logo" id="logo"><a class="logo" href="http://zenit.senecac.on.ca/~patrick.crawford/" title="Web Programming">Web Programming</a></div>                <div class="btn-menu icon-reorder"></div>  
+            </div>
+            <div class="pull-right">
+                <form class="b-search-form" role="search" method="get" id="searchform" action="http://zenit.senecac.on.ca/~patrick.crawford/">
+    <div class="input-wrap">
+        <i class="icon-search"></i>
+        <input type="text" name="s" placeholder="Search..." value="">
+    </div>
+</form>
+            
+            </div>
+            <div class="menu-right pull-right">           
+                <ul id="menu-primary" class="menu"><li class="dropdown with-sub"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week2-class1/#" class="dropdown-toggle">WEB322</a>
+<ul role="menu" class="submenu">
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></li>
+	<li class="active"><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></li>
+	<li><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></li>
+	<li><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></li>
+</ul>
+</li>
+</ul>            </div>
+            
+        </div>
+        <ul id="menu-primary-1" class="mob-menu"><li class="dropdown"><div> <span class="btn-submenu"></span><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/week2-class1/#" class="dropdown-toggle">WEB322</a></div>
+<ul role="menu" class="mob-submenu">
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/">WEB322 Home</a></div></li>
+	<li class="active"><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/">Course Notes</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/web322-weekly-schedule/">Weekly Schedule</a></div></li>
+	<li><div><a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/">Getting Started with Heroku</a></div></li>
+	<li><div><a target="_blank" href="https://github.com/Seneca-WEB322/examples">Examples (GitHub)</a></div></li>
+</ul>
+</li>
+</ul>    </div>
+</div></div>
+
+
+
+     </header>
+
+     <!-- /header -->
+
+    
+
+
+<div class="b-titlebar">
+	<div class="layout">
+		<!-- Bread Crumbs -->
+		<!--<ul class="crumbs">
+			<li>You are here:</li>
+			<li><a href="http://zenit.senecac.on.ca/~patrick.crawford">Home</a></li>
+			<li><a href="#">WEB322 – Week 2 – Class 1</a></li>
+		</ul>-->
+		<ul class="crumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		
+			<!-- Breadcrumb NavXT 5.3.1 -->
+<li class="home"></li><li><a property="item" typeof="WebPage" title="Go to Web Programming." href="http://zenit.senecac.on.ca/~patrick.crawford" class="home"><span property="name">Web Programming</span></a><meta property="position" content="1"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Home." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/" class="post post-page"><span property="name">WEB322 Home</span></a><meta property="position" content="2"></li>
+<li></li><li><a property="item" typeof="WebPage" title="Go to WEB322 Course Notes." href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/" class="post post-page"><span property="name">WEB322 Course Notes</span></a><meta property="position" content="3"></li>
+<li class="current_item"></li><li><span property="name">WEB322 – Week 2 – Class 1</span><meta property="position" content="4"></li>
+		</ul>
+		<!-- Title -->
+		<h1>WEB322 – Week 2 – Class 1</h1>
+	</div>
+</div>
+<div class="content">
+
+    <!-- content -->
+
+    <div class="content shortcodes">
+
+                <div class="layout"><div id="post-337" class="post-337 page type-page status-publish hentry post-1 odd">
+
+        <p><span id="more-337"></span></p>
+<div class="row">
+<div class="row-item col-3_4">
+<h3 class="lined">Introduction to Node.js</h3>
+<p><a href="https://nodejs.org/" target="_blank"><img src="./WEB322 – Week 2 – Class 1 – Web Programming_files/node-logo.jpg"></a></p>
+<p>As we learned last week, Node.js is actually a JavaScript runtime environment based on Chrome’s V8 engine.  It is a command-line program (written in C++) that you can install on your local machine or on a web-server that will take your JavaScript code and execute it.  This means that we don’t actually need a web browser to execute JavaScript at all – we just need a JavaScript engine.  Why don’t we try a short example:</p>
+<ol class="expanded">
+<li>
+If you haven’t already, be sure to<a class="btn small" href="https://nodejs.org/" target="_blank" style="margin: 0 5px;">download</a>and install the current release of Node.js.  If you’re not sure whether or not you have Node.js installed, open the <strong>Command Prompt</strong> and type <strong>node -v</strong>.  If Node.js has been installed, this will output the version.
+</li>
+<li class="top-20">
+Make sure you have Visual Studio Code installed.  As we discussed last week, this is an open-source, cross-platform development environment provided by Microsoft.  While it is true that you can write your code in any text editor, Visual Studio Code works very nicely alongside Node.js and all examples going forward will assume that you are using Visual Studio Code.  You can<a class="btn small" href="https://code.visualstudio.com/download" target="_blank" style="margin: 0 0 0 5px">download it here</a>
+</li>
+<li>On your Local computer, navigate to your desktop and <strong>create a folder</strong> called <strong>Ex1</strong></li>
+<li>Open <strong>Visual Studio Code</strong> and select <strong>File -&gt; Open Folder</strong>.  Choose your newly created <strong>“Ex1”</strong> Folder and click <strong>“Select Folder”</strong></li>
+<li>You should see an “Explorer” pane open on the left side with two items: “Open Editors” and “Ex1”.  Click to expand “Ex1” and locate the “New File” button ( <img src="./WEB322 – Week 2 – Class 1 – Web Programming_files/vscode-new-file.jpg"> ).  Click this and type <strong>“hello.js”.</strong></li>
+<li> You should now see your newly created “Hello.js” file in the editor.  Enter the following line of code:
+<pre class="top-10 bottom-10"><code class="javascript hljs"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello World!"</span>);</code></pre>
+<p> and click <strong>File -&gt; Save (Ctrl + S)</strong></p></li>
+<li>Open the <strong>Integrated Terminal</strong> by selecting <strong>View -&gt; Integrated Terminal (Ctrl + `)</strong> and type:
+<pre class="top-10"><code class="bash hljs">node hello.js</code></pre>
+</li>
+</ol>
+<p><strong>Hello World!</strong>  This is the most basic example in Node.js – notice how we didn’t need to open a web browser, scratchpad, devtools, etc?  It’s also important to note that the command <strong>“node hello.js”</strong> can be executed in any command prompt as long as the active working directory is set to wherever your <strong>hello.js</strong> file is located (Ex1 in this case).  The Integrated Terminal is just a quick, easy way to get a command prompt running in the correct location without leaving the development environment.</p>
+<p>Regarding the code that we wrote, it’s very simple; however we have made an important assumption: that we have access to a global <strong>“console”</strong> object.  In Node.js we have access to <a href="https://nodejs.org/api/globals.html" target="_blank">a number of global objects / variables</a> in addition to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" target="_blank">the built-in objects that are built into the JavaScript language</a>. Some of the Node.js Globals that we will be using include:</p>
+<table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
+<tbody>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/console.html" target="_blank">Console</a></strong>
+</td>
+<td>
+The console object provides a simple debugging console that is similar to the JavaScript console mechanism provided by web browsers.<br>
+<br>Some of the key methods that we will be using are:<p></p>
+<ul>
+<li><a href="https://nodejs.org/api/console.html#console_console_log_data" target="_blank">console.log()</a></li>
+<li><a href="https://nodejs.org/api/console.html#console_console_time_label" target="_blank">console.time()</a> / <a href="https://nodejs.org/api/console.html#console_console_timeend_label" target="_blank">console.timeEnd()</a></li>
+<li><a href="https://nodejs.org/api/console.html#console_console_dir_obj_options" target="_blank">console.dir()</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/process.html#process_process" target="_blank">Process</a></strong>
+</td>
+<td>
+The process object is a global instance of the <a href="https://nodejs.org/api/events.html#events_class_eventemitter" target="_blank">EventEmitter</a> class that provides information about, and control over, the current Node.js process. It exposes many properties, methods and events related to controlling system interactions.<br>
+<br>Some of the key elements that we will be using are:<p></p>
+<ul>
+<li>Methods: process.on() (see: <a href="https://nodejs.org/api/events.html#events_emitter_on_eventname_listener" target="_blank">eventEmitter.on()</a>), <a href="https://nodejs.org/api/process.html#process_process_abort" target="_blank">process.abort()</a>, <a href="https://nodejs.org/api/process.html#process_process_kill_pid_signal">process.kill()</a>, <a href="https://nodejs.org/api/process.html#process_process_exit_code" target="_blank">proces.exit()</a></li>
+<li>Properties: <a href="https://nodejs.org/api/process.html#process_process_stdin">process.stdin</a>, <a href="https://nodejs.org/api/process.html#process_process_stdout">process.stdout</a>, <a href="https://nodejs.org/api/process.html#process_process_stderr">process.stderr</a>, <a href="https://nodejs.org/api/process.html#process_process_pid" target="_blank">process.pid</a></li>
+<li>Events: <a href="https://nodejs.org/api/process.html#process_event_beforeexit" target="_blank">beforeExit</a>, <a href="https://nodejs.org/api/process.html#process_event_exit" target="_blank">Exit</a>, <a href="https://nodejs.org/api/process.html#process_event_uncaughtexception" target="_blank">uncaughtException</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong><a href="https://nodejs.org/api/globals.html#globals_dirname" target="_blank">__dirname</a></strong></td>
+<td>The name of the directory that the currently executing script resides in.<br>
+<br>For example: if our .js file is located in /Users/pcrawford/ex1.js:<p></p>
+<pre><code class="javascript hljs"><span class="hljs-built_in">console</span>.log(__dirname);
+<span class="hljs-comment">// outputs /Users/pcrawford</span></code></pre>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong><a href="https://nodejs.org/api/globals.html#globals_filename" target="_blank">__filename</a></strong></td>
+<td>The filename of the code being executed. This is the resolved absolute path of this code file.<br>
+<br>For example: if our .js file is located in /Users/pcrawford/ex1.js:<p></p>
+<pre><code class="javascript hljs"><span class="hljs-built_in">console</span>.log(__filename);
+<span class="hljs-comment">// outputs /Users/pcrawford/ex1.js</span></code></pre>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong><a href="https://nodejs.org/api/timers.html#timers_settimeout_callback_delay_arg" target="_blank">setTimeout()</a></strong></td>
+<td>This function will execute a piece of code (function) after a certain delay.  It accepts 3 parameters:<p></p>
+<ul>
+<li><strong>callback</strong> Function: The function to call when the timer elapses.</li>
+<li><strong>delay</strong> number: The number of milliseconds to wait before calling the callback</li>
+<li><strong>[, …arg]</strong> Optional arguments to pass when the callback is called.</li>
+</ul>
+<p>For example:</p>
+<pre><code class="javascript hljs"><span class="hljs-comment">// outputs "Hello after 1 second" to the console</span>
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello after 1 second"</span>);
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong><a href="https://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg" target="_blank">setInterval()</a></strong></td>
+<td>This function will execute a piece of code (function) after a certain delay and continue to call it repeatedly.  It accepts 3 parameters (below) and returns a <a href="https://nodejs.org/api/timers.html#timers_class_timeout" target="_blank">timeout</a> object<p></p>
+<ul>
+<li><strong>callback</strong> Function: The function to call when the timer elapses.</li>
+<li><strong>delay</strong> number: The number of milliseconds to wait before calling the callback</li>
+<li><strong>[, …arg]</strong> Optional arguments to pass when the callback is called.</li>
+</ul>
+<p><strong>Note:</strong> Unless you want the interval to continue forever, you need to call <a href="https://nodejs.org/api/timers.html#timers_clearinterval_timeout" target="_blank">clearInterval()</a> with the timeout object as a parameter to halt the interval<br>
+<br>For example:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> count = <span class="hljs-number">1</span>; <span class="hljs-comment">// global counter</span>
+<span class="hljs-keyword">var</span> maxCount = <span class="hljs-number">5</span>; <span class="hljs-comment">// global maximum</span>
+
+<span class="hljs-keyword">var</span> myCountInterval = setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello after "</span> + (count++) + <span class="hljs-string">" second(s)"</span>);
+    checkMaximum();
+}, <span class="hljs-number">1000</span>);
+
+<span class="hljs-keyword">var</span> checkMaximum = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (count &gt; maxCount) {
+        clearInterval(myCountInterval);
+    }
+}</code></pre>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong><a href="https://nodejs.org/api/globals.html#globals_require" target="_blank">require()</a></strong></td>
+<td>The require function is the easiest way to include modules that exist in separate files. The basic functionality of require is that it reads a javascript file, executes the file, and then proceeds to return the exports object.  More about modules and the require() function discussed below.<br>
+</td></tr>
+</tbody>
+</table>
+<p>Now that we have written and executed our very first program with JavaScript using Node.js – why don’t we try another example.  This time, lets add some user input.  Recall when we first discussed JavaScript in the previous course, we did not capture user input using JavaScript, but instead relied on explicitly setting test values at the top of our programs. This allowed us to have specific control over the type of input we were testing. However, it might be interesting to deal with “live data” in a pure JS environment and fortunately for us, we have access to the extensive collection of <a href="https://nodejs.org/api/modules.html" target="_blank">modules</a> that come bundled with Node.js – more specifically, we have access to the <a href="https://nodejs.org/api/readline.html#readline_readline" target="_blank">readline</a> module, which can be used for this purpose, for example:<br>
+<code>
+</code></p><pre class="javascript"><code class="hljs"><span class="hljs-keyword">var</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">'readline'</span>);
+
+<span class="hljs-keyword">var</span> rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question(<span class="hljs-string">'Enter Your Name: '</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">answer</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello '</span> +  answer);
+  rl.close();
+});</code></pre><code>
+</code><p><code></code></p>
+<p>Notice the first line of our code invokes the global <strong>require()</strong> function which returns an object from the core <a href="https://nodejs.org/api/readline.html#readline_readline" target="_blank">“readline”</a> module, which we store in a variable named “readline”.  Now we have access to all of the functionality from the <strong>readline</strong> module, including an input/output mechanism via the <a href="https://nodejs.org/api/readline.html#readline_readline_createinterface_options" target="_blank">createInterface()</a> method which creates a new <a href="https://nodejs.org/api/readline.html#readline_class_interface" target="_blank">Interface</a> instance (named “r1” from above). This exposes a handy method called <a href="https://nodejs.org/api/readline.html#readline_rl_question_query_callback" target="_blank">question()</a> that we can use to capture and output user data at the command prompt.  </p>
+<p>Node also includes a number of other extremely useful core <a href="https://nodejs.org/api/modules.html#modules_modules" target="_blank">“modules”</a>, including:</p>
+<table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
+<tbody>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/util.html#util_util" target="_blank">util</a></strong>
+</td>
+<td>
+A collection of helper utility methods you can use with your applications in node.js
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/path.html#path_path" target="_blank">path</a></strong>
+</td>
+<td>
+The path module provides utilities for working with file and directory paths. This will come in quite handy when working with reading template files or writing uploaded files for example.
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/events.html#events_events" target="_blank">events</a></strong>
+</td>
+<td>
+The events module allows you to register an event ‘listener’ and act on those events within node. You can emit an event when a certain condition happens and node will automatically call a function connected to the listening event.
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/fs.html#fs_file_system" target="_blank">fs</a></strong>
+</td>
+<td>
+This module is used to work directly with the file system to read and write files. All methods of fs have synchronous and asynchronous versions of the methods. Depending on your needs, you can make use of either type but typically it is best to use the async versions to avoid blocking the node event loop.
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/url.html#url_url" target="_blank">url</a></strong>
+</td>
+<td>
+The url utility module provides methods for parsing and working with a url. You can use it to get pieces of a given url string like the protocol, hostname, port, querystring parameters, anchor hash, etc
+</td>
+</tr>
+<tr>
+<td valign="top">
+<strong><a href="https://nodejs.org/api/querystring.html#querystring_query_string" target="_blank">queryString</a></strong>
+</td>
+<td>Similar to the url module the queryString module has utility methods for parsing and working with the query string part of a url. It can convert a query string into an object of the key value pairs and more.
+</td>
+</tr>
+</tbody>
+</table>
+<h5>Modules</h5>
+<p>We can also create our own Modules that work the same way, by making use of a global <a href="https://nodejs.org/api/globals.html#globals_module" target="_blank">“module”</a> object – which isn’t truly “global” in the same sense as “console”, but instead global to each of your modules, which are located in separate .js files. For example, consider the two following files (modEx1.js: the main file that node will execute, and message.js: the file containing the module):</p>
+<p><strong>file ./modEx1.js</strong><br>
+<code>
+</code></p><pre class="javascript"><code class="hljs"><span class="hljs-keyword">var</span> message = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./modules/message.js"</span>);
+
+message.writeMessage(<span class="hljs-string">"Hello World!"</span>);
+
+message.readMessage();</code></pre><code>
+</code><p><code></code></p>
+<p><strong>file: ./modules/message.js</strong><br>
+<code>
+</code></p><pre class="javascript"><code class="hljs"><span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> Node.js wraps the contents of this file in a function:</span>
+<span class="hljs-comment">// (function (exports, require, module, __filename, __dirname) { ... });</span>
+<span class="hljs-comment">// so that we have access to the working file/directory names as well</span>
+<span class="hljs-comment">// as creating an isolated scope for the module, so that our</span>
+<span class="hljs-comment">// variables are not global. </span>
+
+<span class="hljs-keyword">var</span> localFunction = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+ <span class="hljs-comment">// a function local to this module</span>
+}
+
+<span class="hljs-keyword">var</span> localMessage = <span class="hljs-string">""</span>;
+
+<span class="hljs-built_in">module</span>.exports.writeMessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>)</span>{
+   localMessage = msg;
+}
+
+<span class="hljs-built_in">module</span>.exports.readMessage = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(localMessage + <span class="hljs-string">" from "</span> +  __filename);
+}</code></pre><code>
+</code><p><code></code></p>
+<p>Executing the code in modEx1.js (ie: <strong>node modEx1.js</strong>) should output:</p>
+<p><strong>“Hello World” from …</strong></p>
+<p>where … is the absolute location of the message.js file in your system, for example: <strong>C:\Users\patrick.crawford\ModTest\modules\message.js</strong></p>
+<p>Notice how our “message” module uses the <a href="https://nodejs.org/api/modules.html#modules_module_exports" target="_blank">exports</a> property of the <a href="https://nodejs.org/api/globals.html#globals_module" target="_blank">“module”</a> object to store functions and data that we want to be accessible in the object returned from the require(“./modules/message.js”); function call from modEx1.js.  Generally speaking, if you want to add anything to the object returned by “require” for your module, it’s added to the module.exports object from within your module.  In this case, we only added two functions (readMessage() and writeMessage()). </p>
+<p>Using this methodology, we can safely create reusable code in an isolated way that can easily be added (plugged in) to another .js file.   </p>
+<h5>NPM – Node Package Manager</h5>
+<p>The Node package manager is a core piece of the module based node ecosystem. The package manager allows us to create reusable modules that can be packaged and put on the npm repository for others to use. We will make heavy use of the Node Package Manager in this course.</p>
+<p>Node Package Manager (npm for short), is installed by default when you install node. From the command line you can run ‘npm’ with various commands to download and remove packages for use with your Node applications. When you have installed a package from npm you use it in the same way as using your own modules like above, with the require() function.</p>
+<p>All npm packages that you install locally for your application will be installed in a node_modules folder in your project folder.</p>
+<p>Here are the most common npm commands you will use:</p>
+<table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
+<thead>
+<tr>
+<td>Command</td>
+<td>Description</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>npm install [Module Name]<br>EX: npm install express</td>
+<td>install is used to install a package from the npm repository so that you can use it with your application. EX: var express = require(“express”);</td>
+</tr>
+<tr>
+<td width="200">npm uninstall [module name]</td>
+<td>uninstall does exactly what you would think, it uninstalls a module from the node_modules folder and your application will no longer be able to require() it.</td>
+</tr>
+<tr>
+<td>npm init</td>
+<td>create a new package.json file for a fresh application. More on this part later.</td>
+</tr>
+<tr>
+<td>npm prune</td>
+<td>The prune command will look through your package.json file and remove any npm modules that are installed that are not required for your project. More on this part later.</td>
+</tr>
+<tr>
+<td>npm list</td>
+<td>Show a list of all packages installed for use by this application.</td>
+</tr>
+</tbody>
+</table>
+<h6>Globally installing packages</h6>
+<p>Every so often, you will want to install a package globally. Installing a package globally means you will install it like an application on your computer which you can run from the command line, not use it in your application code. For example, some npm packages are tools that are used as part of your development process on your application:</p>
+<p>One example is the <a href="https://www.npmjs.com/package/migrate" target="_blank">migrate package</a> which allows you to write migration scripts for your application that can migrate your data in your database and keep track of which files have been run.</p>
+<p>Another example is <a href="https://www.npmjs.com/package/grunt-cli" target="blank">grunt-cli</a> so that you can run grunt commands from the command line to do things like setup tasks for running unit tests or checking for formatting errors in code before pushing up new code to a repository.</p>
+<p>A third example is <a href="https://www.npmjs.com/package/bower" target="blank">bower</a>. Bower is a package manager similar to npm but typically used for client side package management. To install a package globally you just add the -g switch to your npm install command. For example:
+</p><pre>npm install bower -g</pre>
+<p></p>
+<p>Globally installed packages do not get install in your node_modules folder and instead are installed in a folder in your user directory. The folder uses for global packages varies for Windows, Mac, and Linux. See the documentation if you need to find globally installed packages on your machine.
+</p>
+<h5>package.json explained</h5>
+<p>
+The Node Package Manager is great. It provides an easy way to download reusable packages or publish your own for other developers to use. However,  there are a few problems with sharing modules and using other modules, once you want to work on an application with someone else.  For example:
+ </p>
+<p>How are you going to make sure everyone working on your project has all the packages the application requires?</p>
+<p>How are you going to make sure everyone has the <strong>same version</strong> of all those packages?</p>
+<p>And lastly, how are you going to handle updating a package and making sure everyone else on your project updates as well?</p>
+<p>Well that’s where the package.json file comes in.</p>
+<p>The package.json file is a listing of all the packages your application requires and also which versions are required. It provides a simple way for newcomers to your project to get started easily and stay up to date when packages get updated. </p>
+<p>The <a href="https://docs.npmjs.com/getting-started/using-a-package.json">npm documentation for the package.json file</a> has all the information you will need as you begin building applications in node.js</p>
+<p>
+Let’s look at a simple package.json example file</p>
+<pre><code class="javascript hljs">$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See <span class="hljs-string">`npm help json`</span> <span class="hljs-keyword">for</span> definitive documentation on these fields
+and exactly what they <span class="hljs-keyword">do</span>.
+
+Use <span class="hljs-string">`npm install </span><pkg><span class="hljs-string"> --save`</span> afterwards to install a package and
+save it <span class="hljs-keyword">as</span> a dependency <span class="hljs-keyword">in</span> the package.json file.
+
+Press ^C at any time to quit.
+name: (seneca) seneca
+version: (<span class="hljs-number">1.0</span><span class="hljs-number">.0</span>)
+description:
+entry point: (index.js) week2.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC) MIT
+About to write to C:\seneca\package.json:
+
+{
+  <span class="hljs-string">"name"</span>: <span class="hljs-string">"seneca"</span>,
+  <span class="hljs-string">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-string">"description"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-string">"main"</span>: <span class="hljs-string">"week2.js"</span>,
+  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"test"</span>: <span class="hljs-string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  },
+  <span class="hljs-string">"author"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-string">"license"</span>: <span class="hljs-string">"MIT"</span>
+}
+
+Is <span class="hljs-keyword">this</span> ok? (yes) yes
+</pkg></code></pre>
+<p>You can start your own package.json file from scratch but it is much easier to run an <strong>npm init</strong> in your project folder, answer a few questions, and your initialized package.json file will be generated for you. Once generated, you can edit it if you decide to change the name or version (for example). Once you decide to add packages to your app you can simply install the package with <strong>npm install</strong> and use the <strong>–save</strong> option to also save the package and version into the package.json file for you so that when others want to work on your app, they will have the package.json file and can use <strong>npm install</strong> to install all the required dependencies with the right version. Think of package.json as a checklist for your application for all of its dependencies.
+</p>
+<h5>Building a simple web server using Node.js with Express.js</h5>
+<p>In week 4, your going to learn more about express.js but for now let’s introduce it as a module you can install from NPM that has lot’s of code that wraps up more complicated code and as a result it makes writing your own web server MUCH easier than writing it from scratch in node.js</p>
+<p>First, we will install the package to our app before we even start building our server</p>
+<pre>$ npm install express --save
+seneca@1.0.0 C:\seneca
+`-- express@4.14.0
+  +-- accepts@1.3.3
+  | +-- mime-types@2.1.13
+  | | `-- mime-db@1.25.0
+  | `-- negotiator@0.6.1
+  +-- array-flatten@1.1.1
+  +-- content-disposition@0.5.1
+  +-- content-type@1.0.2
+  +-- cookie@0.3.1
+  +-- cookie-signature@1.0.6
+  +-- debug@2.2.0
+  | `-- ms@0.7.1
+  +-- depd@1.1.0
+  +-- encodeurl@1.0.1
+  +-- escape-html@1.0.3
+  +-- etag@1.7.0
+  +-- finalhandler@0.5.0
+  | +-- statuses@1.3.1
+  | `-- unpipe@1.0.0
+  +-- fresh@0.3.0
+  +-- merge-descriptors@1.0.1
+  +-- methods@1.1.2
+  +-- on-finished@2.3.0
+  | `-- ee-first@1.1.1
+  +-- parseurl@1.3.1
+  +-- path-to-regexp@0.1.7
+  +-- proxy-addr@1.1.2
+  | +-- forwarded@0.1.0
+  | `-- ipaddr.js@1.1.1
+  +-- qs@6.2.0
+  +-- range-parser@1.2.0
+  +-- send@0.14.1
+  | +-- destroy@1.0.4
+  | +-- http-errors@1.5.1
+  | | +-- inherits@2.0.3
+  | | `-- setprototypeof@1.0.2
+  | `-- mime@1.3.4
+  +-- serve-static@1.11.1
+  +-- type-is@1.6.14
+  | `-- media-typer@0.3.0
+  +-- utils-merge@1.0.0
+  `-- vary@1.1.0
+
+npm WARN seneca@1.0.0 No description
+npm WARN seneca@1.0.0 No repository field.
+</pre>
+<p>Now if we take a look at the package.json file you can see that it has a new section that has been added for the express dependency.</p>
+<pre><code class="javascript hljs"><span class="hljs-string">"dependencies"</span>: {
+  <span class="hljs-string">"express"</span>: <span class="hljs-string">"^4.14.0"</span>
+}
+</code></pre>
+<p>This means that if we give our project to someone else now they can just type <strong>npm install</strong> and it will install the dependencies listed here and the app should be able to run and have everything it needs.
+</p>
+<p>
+Now let’s start our week2.js file and create a web server in 25 lines of code! Create a new week2.js that looks like this:</p>
+<pre><code class="javascript hljs"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+<span class="hljs-keyword">var</span> app = express();
+
+<span class="hljs-keyword">var</span> HTTP_PORT = process.env.PORT || <span class="hljs-number">8080</span>;
+
+<span class="hljs-comment">// call this function after the http server starts listening for requests</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onHttpStart</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Express http server listening on: "</span> + HTTP_PORT);
+}
+
+<span class="hljs-comment">// setup a 'route' to listen on the default url path (http://localhost)</span>
+app.get(<span class="hljs-string">"/"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+   res.send(<span class="hljs-string">"Hello World&lt;br /&gt;&lt;a href='/about'&gt;Go to the about page&lt;/a&gt;"</span>);
+});
+
+<span class="hljs-comment">// setup another route to listen on /about</span>
+app.get(<span class="hljs-string">"/about"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req,res</span>)</span>{
+   res.send(<span class="hljs-string">"&lt;h3&gt;About&lt;/h3&gt;"</span>);
+});
+
+<span class="hljs-comment">// setup http server to listen on HTTP_PORT</span>
+app.listen(HTTP_PORT, onHttpStart);
+</code></pre>
+<p>You can now run this web server by typing <strong>node week2</strong> from the commandline.</p>
+<pre>$ node week2
+Express http server listening on: 8080
+</pre>
+<p>and visit the website by navigating to <strong>http://localhost:8080</strong>
+</p>
+<p><!--
+<h6>Organizing the Directory Structure</h6>
+
+
+
+<p>
+When you download a module for your application or run an npm install to install the dependencies of a package.json file, npm will create a folder called <strong>node_modules</strong>. We briefly mentioned this above. It is important to organize your directories of your project cleanly to make it easier to maintain and for others to be able to work on your code efficiently.<br />
+The typical best practice for organizing your project is to have 3 folders in your project root.
+
+<pre>client/
+node_modules/
+server/
+</pre>
+
+
+This allows you to separate client work from server work and node_modules in their own folder. We will mostly be dealing with the server folder in this course and will start by learning how to generate client side pages from the server.
+</p>
+
+
+
+<p>
+There are 2 methods to build a client side view for a web page. The first is to generate the page from a view on the server side and send back all the HTML from the server to the user. The second is to send the html template for a page to the client at page load and then just send json data to fill out the page as a user makes requests. This can be more efficient but it also comes at a cost of more modern browser requirements. In this course we will be using the first method.
+</p>
+
+
+--></p>
+<h6>Sending a HTML page back from a “get” request</h6>
+<p>Now that we know how to send messages back from our server, it’s very simple to extend this functionality to return files (ie, HTML pages) instead.</p>
+<p>To begin, we must first create a “views” folder for our HTML files inside the working (open) folder.</p>
+<pre>/node_modules
+/views
+week2.js
+package.json
+</pre>
+<p></p>
+<p>Next,  we must add a new require for the path module at the top of our week2.js file.</p>
+<pre>var path = require("path");</pre>
+<p>And most importantly, add the  new about.html page inside our new views folder:</p>
+<pre><code class="html hljs xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is what it's all about.<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'/'</span>&gt;</span>Go back to home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Your project folder should now look something like the below:</p>
+<pre>/node_modules
+/views
+  about.html
+week2.js
+package.json
+</pre>
+<p>In order to serve this page, we make a small change to our “/about” route (ie; use the <strong>sendFile</strong> method instead of the send method on the response object).</p>
+<pre><code class="html hljs xml">// setup another route to listen on /about
+app.get("/about", function(req,res){
+  res.sendFile(path.join(__dirname + "/views/about.html"));
+});
+</code></pre>
+<p>To test your server, run <strong>node week2</strong> to see the results on <strong>http://localhost:8080</strong></p>
+<h5>Running this example on Heroku</h5>
+<p>If we wish to see this code run on Heroku, we follow the same procedure highlighted in the <a href="http://zenit.senecac.on.ca/~patrick.crawford/index.php/web322/course-notes/getting-started-with-heroku/" target="_blank">Getting Started with Heroku</a> guide, ie, logging in to heroku (<strong>heroku login</strong>), creating an app (<strong>heroku create</strong>) and pushing our code to the server using <strong>git push heroku master</strong>.</p>
+<p>However, there is one small change that we can make to our package.json file to ensure that the correct .js file is started on Heroku when we deploy our app.  This is necessary if we have multiple server files for debugging and testing; as is the case with the “example code” from github – it contains multiple servers, one for each week!</p>
+<p>Fortunately, when you push your code to Heroku, the automated build process will run the command&nbsp;<strong>npm start</strong> once it is complete. This command (npm start) looks in the package.json file for the “start” property within the “scripts” property and run that command (ie, <strong>node somefile.js</strong>). Let’s make sure there is a start property on the scripts property of the package.json file for this example.</p>
+<pre>{
+  "name": "seneca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node week2.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
+</pre>
+<p>This will ensure that Heroku runs the week2.js file when you push your code to the new app!</p>
+<p>If all goes well you should see a link to your project, allowing you to see this example running live on the web.
+</p>
+<p>From the Heroku website in your account, you can view the logs of your app and you should see something like this:</p>
+<pre>2017-03-11T21:32:25.893498+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-03-11T21:32:30.214137+00:00 app[web.1]: 
+2017-03-11T21:32:30.214155+00:00 app[web.1]: &gt; seneca@1.0.0 start /app
+2017-03-11T21:32:30.214156+00:00 app[web.1]: &gt; node week2.js
+2017-03-11T21:32:30.214157+00:00 app[web.1]: 
+2017-03-11T21:32:30.594484+00:00 app[web.1]: Express http server listening on: 54172
+</pre>
+<p></p>
+</div>
+<div class="row-item col-1_4">
+<h3 class="lined">Announcements</h3>
+<ul>
+<li>Test 2 Next Week</li>
+<li>Assignment 1 Due this Friday at 11:59pm</li></ul>
+<h3 class="lined">Sources</h3>
+<ul>
+<li><a href="https://nodejs.org/" target="_blank">https://nodejs.org</a></li>
+<li><a href="https://developer.mozilla.org/" target="_blank">https://developer.mozilla.org</a></li>
+<li><a href="https://docs.nodejitsu.com/" target="+blank">https://docs.nodejitsu.com</a></li>
+<li><a href="https://docs.npmjs.com/getting-started/using-a-package.json" target="+blank">Package.json documentation</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div></div>
+ </div>  
+
+<!-- /content -->
+
+
+
+    
+    <!-- footer -->
+
+    <footer id="footer">
+
+    <div class="footer">
+
+    <!-- Widget Area -->
+        
+        <div class="b-widgets">
+    
+            <div class="layout">
+    
+                <div class="row">
+    
+                    <div id="text-3" class="widget widget_text row-item col-1_4">			<div class="textwidget">© 2017 Seneca College - Maintained by <a href="mailto:patrick.crawford@senecacollege.ca">Patrick Crawford</a></div>
+		</div>    
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- End Widget Area -->
+
+    <!-- Copyright Area -->
+        
+    <div class="b-copyright">
+
+        <div class="layout">
+
+            <!-- Copyright Text -->
+
+                        
+
+            
+
+        </div>
+
+    </div>
+    
+    
+</div>
+
+<!-- END FOOTER 
+
+============================================= -->
+
+
+
+
+	
+
+
+    </footer>
+
+    <!-- /footer -->
+
+    
+</div>
+<!-- wrapper -->
+</div>
+<!-- Powered by WordPress and the SpyroPress Framework -->
+
+<link rel="stylesheet" id="hljstheme-css" href="./WEB322 – Week 2 – Class 1 – Web Programming_files/default.css" type="text/css" media="all">
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery.prettyPhoto.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/filter.js.다운로드"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_settings = {"ajaxURL":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php","twitter_feed":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-admin\/admin-ajax.php?action=spyropress_twitter_tweets","loaderUrl":"","sending":"Sending ...","assets":"http:\/\/zenit.senecac.on.ca\/~patrick.crawford\/wp-content\/themes\/boson\/assets\/","bg":"bg-random_grey_variations"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/twitter.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery.isotope.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery.flexslider.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/owl.carousel.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/zebra_accordion.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery-ui.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/waypoints.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/waypoints-sticky.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery.scrollTo.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/jquery.appear.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/main.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/wp-embed.min.js.다운로드"></script>
+<script type="text/javascript" src="./WEB322 – Week 2 – Class 1 – Web Programming_files/highlight.common.pack.js.다운로드"></script>
+    <style>pre.hljs {padding: 5px; font-size:13px !important;}
+pre.hljs code {}</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+
+            init_fn_flag = true;
+
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+        });
+
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+
+
+
+<div class="btn-up"></div></body></html>
